@@ -1,34 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap');
 /****************** 
       RESET
 ******************/
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+	font-size: 62.5%;
+	overflow-x: hidden;
 }
 
 body {
-    background-color: #edf3f8;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    transition: 0.3s;
-    overflow-x: hidden;
+	background-color: #111;
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	transition: 0.3s;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
 }
 
-.container {
-    max-width: 111rem;
-    margin: 0 auto;
+.container-nav {
+	max-width: 134rem;
+	margin: 0 auto;
+}
+
+/* Buttons */
+button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	text-decoration: none;
 }

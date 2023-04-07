@@ -1,0 +1,302 @@
+/* Temmporary */
+h3 {
+	color: #fff;
+}
+/*******************
+    Main Containers 
+********************/
+.main-navigation {
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0px -13px 10px 12px #fff;
+	display: flex;
+	flex-direction: row;
+	height: 5.76rem;
+	padding: 0 1.8rem;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+/***********
+    Logo 
+************/
+.nav .logo-container__icon {
+	width: 11.5rem;
+}
+
+.nav .logo-container span {
+	display: none;
+}
+
+/********************
+    Nav Desktop Menu 
+*********************/
+.nav .desktop-menu {
+	display: none;
+}
+
+/***********************
+    Cart and Menu Icon 
+************************/
+.nav .cart-menu {
+	display: flex;
+	gap: 3rem;
+	width: 7.3rem;
+}
+
+.nav .cart-menu .cart-menu__icon-container {
+	position: relative;
+}
+
+.nav .cart-menu .cart-menu__icon-container .cart-icon {
+	height: 2.3rem;
+	width: auto;
+}
+
+.nav .cart-menu .cart-menu__icon-container .cart-total {
+	background-color: #c92626;
+	color: #fff;
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	position: absolute;
+	border-radius: 50%;
+	height: 1.6rem;
+	width: 1.6rem;
+	font-weight: 500;
+	top: -0.4rem;
+	right: -1rem;
+}
+
+.nav .cart-menu button .menu-icon-hamburger {
+	height: 2rem;
+	cursor: pointer;
+}
+
+.nav .cart-menu button .menu-icon-close {
+	height: 1.6rem;
+	cursor: pointer;
+}
+
+/***********************
+    Mobile Menu 
+************************/
+.mobile-menu {
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	height: min-content;
+	top: 17.9rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 69rem;
+	list-style: none;
+	display: none;
+}
+
+/* Menu Active Styling */
+.mobile-menu.menu-active {
+	display: initial;
+}
+
+/* Sub Menu Active positioning */
+.mobile-menu.sub-menu-active {
+	top: 22.3rem;
+}
+
+.mobile-menu li {
+	font-weight: 600;
+	font-size: 1.5rem;
+	padding: 1.2rem 0 1.2rem 1rem;
+	border-bottom: 1px solid #eee;
+}
+
+.mobile-menu li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mobile-menu li:nth-of-type(2) {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Chevron Icon for Mobile Menu */
+.mobile-menu li .chevron-icon {
+	height: 2rem;
+	padding: 0 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.mobile-menu li .chevron-icon[aria-expanded='true'] {
+	transform: rotateX(180deg);
+}
+
+/* Sub Menu List items */
+.mobile-menu .accessories-list {
+	display: none;
+}
+
+.mobile-menu.sub-menu-active .accessories-list {
+	background-color: #f4f4f4;
+	display: flex;
+	padding-left: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation {
+		padding: 0 4.2rem;
+		height: 6.64rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/*******************
+    	Main Containers 
+	********************/
+	.main-navigation {
+		padding: 0 5.12rem;
+		height: 7.73rem;
+	}
+
+	/***********
+    	Logo 
+	************/
+	.nav .logo-container__icon {
+		width: 15rem;
+	}
+
+	/********************
+    	Nav Desktop Menu 
+	*********************/
+	.nav .desktop-menu {
+		display: initial;
+		list-style: none;
+		display: flex;
+		gap: 3rem;
+	}
+
+	.nav .desktop-menu li {
+		font-weight: 600;
+		font-size: 1.5rem;
+		cursor: pointer;
+		padding: 2rem 0;
+	}
+
+	/* Accessories li */
+	.nav .desktop-menu li:nth-of-type(2) {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.8rem;
+		align-items: center;
+		position: relative;
+	}
+
+	/* Red chevron Desktop */
+	.nav .desktop-menu li .chevron-icon-red {
+		height: 0.9rem;
+		position: relative;
+		top: 0.1rem;
+	}
+
+	/* Drop Down for Accessories */
+	.nav .desktop-menu .nav__desktop-drop-down {
+		position: absolute;
+		background-color: #fff;
+		bottom: -8.4rem;
+		left: -0.7rem;
+		width: 22rem;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #111;
+		gap: 2rem;
+		padding: 1.2rem 1.5rem 1.2rem;
+		visibility: hidden;
+	}
+
+	.nav .desktop-menu .nav__desktop-drop-down::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: -0.4rem;
+		left: 50%;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid black;
+		transform: translate(-50%, -50%);
+	}
+
+	.nav .desktop-menu li:nth-of-type(2):hover .nav__desktop-drop-down {
+		visibility: visible;
+	}
+
+	.nav .desktop-menu a:hover {
+		color: #c92626;
+	}
+
+	/* a tags in li's */
+	.nav .desktop-menu li a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	/* Every li but not the second one */
+	.nav .desktop-menu li:not(:nth-child(2)):hover {
+		color: #cf2e2e;
+	}
+
+	/***********************
+    	Cart and Menu Icon 
+	************************/
+	.nav .cart-menu button .menu-icon-close,
+	.nav .cart-menu button .menu-icon-hamburger {
+		display: none;
+	}
+
+	/***********************
+    	Mobile Menu 
+	************************/
+	.mobile-menu.menu-active {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	/***********
+    	Logo 
+	************/
+	.nav .logo-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		text-decoration: none;
+		font-size: 1.32rem;
+		font-style: italic;
+		color: inherit;
+	}
+
+	.nav .logo-container span {
+		display: initial;
+	}
+
+	/********************
+    	Nav Desktop Menu 
+	*********************/
+	.nav .desktop-menu {
+		position: relative;
+		right: 5rem;
+	}
+}

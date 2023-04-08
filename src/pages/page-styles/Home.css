@@ -1,0 +1,158 @@
+/*******************
+    HERO SECTION 
+********************/
+.home-hero {
+	background: url(../../assets/Home/Turris-Hero-min-scaled.jpg) no-repeat 70% / cover;
+	min-height: 69vh;
+	padding: 1.875rem;
+}
+
+.home-hero__container {
+	width: 100%;
+}
+
+.home-hero__content h1 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 3.2rem;
+}
+
+.home-hero__content span {
+	font-size: 7rem;
+	font-weight: 800;
+}
+
+.home-hero__button {
+	background-color: #fff;
+	border-radius: 3rem;
+	color: #000;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.66;
+	margin-top: 3rem;
+	padding: 1.15rem 3.1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+	.home-hero {
+		padding: 3.87rem;
+	}
+
+	.home-hero__content h1 {
+		font-size: 3.6rem;
+	}
+
+	.home-hero__content span {
+		font-size: 14rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.home-hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: 80vh;
+	}
+}
+
+/***********************
+    Featured In Section
+************************/
+.featured-in {
+	height: 53rem;
+	background-color: #000;
+	padding: 5rem 1.875rem;
+}
+
+.featured-in h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+/* Icons Grid */
+.featured-in .featured-in__icons-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	column-gap: 3.2rem;
+	row-gap: 2rem;
+	margin: 7rem auto;
+	max-width: 51rem;
+}
+
+.featured-in .featured-in__icons-grid a {
+	display: flex;
+	justify-content: center;
+}
+
+/* Video */
+.featured-in__video-container {
+	position: relative;
+	height: 10rem;
+	max-width: 131rem;
+	margin: 0 auto;
+	margin-top: 18.5rem;
+}
+
+.featured-in .featured-in__video {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	border: none;
+	width: 100%;
+	max-width: 51rem;
+}
+
+@media screen and (min-width: 768px) {
+	.featured-in {
+		height: 62.2rem;
+	}
+	.featured-in .featured-in__icons-grid {
+		max-width: 69rem;
+		justify-content: center;
+	}
+
+	.featured-in .featured-in__video {
+		max-width: 69rem;
+		top: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.featured-in {
+		height: 79.3rem;
+	}
+	.featured-in .featured-in__icons-grid {
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 93rem;
+	}
+
+	.featured-in .featured-in__video {
+		max-width: 93rem;
+		top: 210%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.featured-in {
+		height: 93rem;
+	}
+
+	.featured-in .featured-in__icons-grid {
+		max-width: 128rem;
+	}
+
+	.featured-in .featured-in__video {
+		max-width: 128rem;
+		top: 280%;
+	}
+}

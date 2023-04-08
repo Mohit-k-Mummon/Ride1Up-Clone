@@ -1,7 +1,16 @@
 import React from 'react';
+import './page-styles/Home.css';
+
+import HeroSection from '../components/HomePage/HeroSection';
+import FeaturedInSection from '../components/HomePage/FeaturedInSection';
 
 const HomePage = () => {
-	return <h3>HomePage</h3>;
+	return (
+		<>
+			<HeroSection />
+			<FeaturedInSection />
+		</>
+	);
 };
 
 export default HomePage;

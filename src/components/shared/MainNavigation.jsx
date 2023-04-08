@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './MainNavigation.css';
 
-import logo from '../../assets/Logo.png';
-import cartIcon from '../../assets/shopping-cart.png';
-import menuHamburger from '../../assets/menu-hamburger.png';
-import chevron from '../../assets/down-arrow.png';
-import redChevron from '../../assets/red-chevron.png';
-import closeIcon from '../../assets/close.png';
+import logo from '../../assets/Navigation/Logo.png';
+import cartIcon from '../../assets/Navigation/shopping-cart.png';
+import menuHamburger from '../../assets/Navigation/menu-hamburger.png';
+import chevron from '../../assets/Navigation/down-arrow.png';
+import redChevron from '../../assets/Navigation/red-chevron.png';
+import closeIcon from '../../assets/Navigation/close.png';
 
 // Router
 import { NavLink } from 'react-router-dom';

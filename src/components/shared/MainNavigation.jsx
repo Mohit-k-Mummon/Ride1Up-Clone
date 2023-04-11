@@ -9,7 +9,7 @@ import redChevron from '../../assets/Navigation/red-chevron.png';
 import closeIcon from '../../assets/Navigation/close.png';
 
 // Router
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const MainNavigation = () => {
 	// Mobile Menu Active State
@@ -35,6 +35,26 @@ const MainNavigation = () => {
 		);
 	}
 
+	// Scroll to bikes section Desktop Link Handler
+	const navigate = useNavigate();
+	const scrollToBikesHandler = async event => {
+		event.preventDefault();
+		// The navigate function is asynchronous, if we do not use await
+		// here then the section variable will be undefined
+		await navigate('/');
+		const section = document.getElementById('shop-bikes-section');
+		section.scrollIntoView({ behavior: 'smooth', duration: 500 });
+	};
+
+	// Scroll to bikes section Mobile Link Handler
+	const mobileScrollToBikesAndToggleHandler = async event => {
+		setMenuExpanded(!menuExpanded);
+		event.preventDefault();
+		await navigate('/');
+		const section = document.getElementById('shop-bikes-section');
+		section.scrollIntoView({ behavior: 'smooth', duration: 500 });
+	};
+
 	return (
 		<header className='main-navigation'>
 			<nav className='nav container-nav'>
@@ -44,7 +64,9 @@ const MainNavigation = () => {
 				</NavLink>
 				<ul className='desktop-menu'>
 					<li>
-						<NavLink to={'/'}>Ebikes</NavLink>
+						<NavLink to={'/'} onClick={scrollToBikesHandler}>
+							Ebikes
+						</NavLink>
 					</li>
 					<li>
 						Accessories
@@ -93,9 +115,7 @@ const MainNavigation = () => {
 					}`}
 				>
 					<li>
-						<NavLink to={'/'} onClick={menuToggleHandler}>
-							Ebikes
-						</NavLink>
+						<NavLink onClick={mobileScrollToBikesAndToggleHandler}>Ebikes</NavLink>
 					</li>
 					<li onClick={subMenuToggleHandler}>
 						Accessories

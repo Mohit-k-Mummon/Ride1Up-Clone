@@ -10,7 +10,7 @@ import { ReactComponent as ElectricIcon } from '../../assets/Home/electric-icon.
 
 const ShopBikesSection = () => {
 	return (
-		<section className='shop-bikes'>
+		<section id='shop-bikes-section' className='shop-bikes'>
 			<header className='shop-bikes__header'>
 				<ElectricIcon />
 				<h1>Find the Best Value Electric Bike</h1>

@@ -1,0 +1,210 @@
+{
+    "bikes": [
+        {
+            "name": "Roadster v2",
+            "versions": [
+              {
+                "name": "Large",
+                "priceByColor": {
+                  "Burgundy, Matte": 1095,
+                  "Gravel Gray": 1245,
+                  "Black, Matte": 1095,
+                  "Silver, Matte": 1095
+                },
+                "inStock": true,
+                "onSale": false
+              },
+              {
+                "name": "Small",
+                "priceByColor": {
+                  "Burgundy, Matte": 1095,
+                  "Gravel Gray": 1095,
+                  "Black, Matte": 1195,
+                  "Silver, Matte": 1095
+                },
+                "inStock": true,
+                "onSale": false
+              }
+            ]
+          },
+        {
+            "name": "Core-5",
+            "versions": [
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Mint": 1045,
+                        "Azure Blue": 1045,
+                        "Midnight Gray": 1045
+                    },
+                    "inStock": true,
+                    "onSale": false
+                },
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Mint": 1045,
+                        "Azure Blue": 1045,
+                        "Midnight Gray": 1045
+                    },
+                    "inStock": true,
+                    "onSale": false
+                }
+            ]
+        },
+        {
+            "name": "Turris",
+            "versions": [
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Forest Green": 1295,
+                        "Origami White": 1295,
+                        "Graphite Gray": 1295
+                    },
+                    "inStock": true,
+                    "onSale": false
+                },
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Forest Green": 1295,
+                        "Origami White": 1295,
+                        "Graphite Gray": 1295
+                    },
+                    "inStock": true,
+                    "onSale": false
+                }
+            ]
+        },
+        {
+            "name": "Cafe Cruiser",
+            "versions": [
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Carbon, Matte": 1495,
+                        "Indigo, Matte": 1495,
+                        "Latte, Gloss": 1495
+                    },
+                    "inStock": true,
+                    "onSale": true
+                },
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Carbon, Matte": 1595,
+                        "Indigo, Matte": 1595,
+                        "Latte, Gloss": 1595
+                    },
+                    "inStock": true,
+                    "onSale": false
+                }
+            ]
+        },
+        {
+            "name": "700 Series",
+            "versions": [
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Steel Blue" : 1695,
+                        "Graphite Gray" : 1695
+                    },
+                    "inStock": true,
+                    "onSale": false
+                },
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Steel Blue" : 1695,
+                        "Graphite Gray" : 1695
+                    },
+                    "inStock": true,
+                    "onSale": true
+                }
+            ]
+        },
+        {
+            "name": "LMT'D",
+            "versions": [
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Midnight Gray" : 1495,
+                        "SandStone" : 1495
+                    },
+                    "inStock": true,
+                    "onSale": true
+                },
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Midnight Gray" : 1495,
+                        "SandStone" : 1495
+                    },
+                    "inStock": true,
+                    "onSale": true
+                }
+            ]
+        },
+        {
+            "name": "Prodigy",
+            "versions": [
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Carbon, Matte" : 2295,
+                        "Chalk, Gloss" : 2295,
+                        "Chameleon, Gloss" : null
+                    },
+                    "inStock": true,
+                    "onSale": false
+                },
+                {
+                    "name": "XC",
+                    "priceByColor": {
+                        "Carbon, Matte" : 2395,
+                        "Chalk, Gloss" : null,
+                        "Chameleon, Gloss" : 2445
+                    },
+                    "inStock": true,
+                    "onSale": true
+                },
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Carbon, Matte" : 2295,
+                        "Chalk, Gloss" : null,
+                        "Chameleon, Gloss" : 2345
+                    },
+                    "inStock": true,
+                    "onSale": false
+                }
+            ]
+        },
+        {
+            "name": "Revv1",
+            "versions": [
+                {
+                    "name": "FS",
+                    "priceByColor": {
+                        "Moss Green" : 2395,
+                        "Graphite Gray" : 2395
+                    },
+                    "inStock": true,
+                    "onSale": false
+                },
+                {
+                    "name": "HT",
+                    "priceByColor": {
+                        "Moss Green" : 1895,
+                        "Graphite Gray" : 1895
+                    },
+                    "inStock": true,
+                    "onSale": false
+                }
+            ]
+        }
+    ]
+}

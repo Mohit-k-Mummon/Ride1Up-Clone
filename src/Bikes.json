@@ -12,18 +12,30 @@
                   "Silver, Matte": 1095
                 },
                 "inStock": true,
-                "onSale": false
+                "onSale": false,
+                "originalPrice": {
+                    "Burgundy, Matte": null,
+                    "Gravel Gray": null,
+                    "Black, Matte": null,
+                    "Silver, Matte": null
+                }
               },
               {
                 "name": "Small",
                 "priceByColor": {
                   "Burgundy, Matte": 1095,
-                  "Gravel Gray": 1095,
-                  "Black, Matte": 1195,
+                  "Gravel Gray": 1245,
+                  "Black, Matte": 1095,
                   "Silver, Matte": 1095
                 },
                 "inStock": true,
-                "onSale": false
+                "onSale": false,
+                "originalPrice": {
+                    "Burgundy, Matte": null,
+                    "Gravel Gray": null,
+                    "Black, Matte": null,
+                    "Silver, Matte": null
+                }
               }
             ]
           },
@@ -38,7 +50,12 @@
                         "Midnight Gray": 1045
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Mint": null,
+                        "Azure Blue": null,
+                        "Midnight Gray": null
+                    }
                 },
                 {
                     "name": "ST",
@@ -48,7 +65,12 @@
                         "Midnight Gray": 1045
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Mint": null,
+                        "Azure Blue": null,
+                        "Midnight Gray": null
+                    }
                 }
             ]
         },
@@ -63,7 +85,12 @@
                         "Graphite Gray": 1295
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Forest Green": null,
+                        "Origami White": null,
+                        "Graphite Gray": null
+                    }
                 },
                 {
                     "name": "ST",
@@ -73,7 +100,12 @@
                         "Graphite Gray": 1295
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Forest Green": null,
+                        "Origami White": null,
+                        "Graphite Gray": null
+                    }
                 }
             ]
         },
@@ -88,7 +120,12 @@
                         "Latte, Gloss": 1495
                     },
                     "inStock": true,
-                    "onSale": true
+                    "onSale": true,
+                    "originalPrice": {
+                        "Carbon, Matte": 1595,
+                        "Indigo, Matte": 1595,
+                        "Latte, Gloss": 1595
+                    }
                 },
                 {
                     "name": "ST",
@@ -98,7 +135,12 @@
                         "Latte, Gloss": 1595
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Carbon, Matte": null,
+                        "Indigo, Matte": null,
+                        "Latte, Gloss": null
+                    }
                 }
             ]
         },
@@ -112,16 +154,24 @@
                         "Graphite Gray" : 1695
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Steel Blue" : null,
+                        "Graphite Gray" : null
+                    }
                 },
                 {
                     "name": "ST",
                     "priceByColor": {
-                        "Steel Blue" : 1695,
-                        "Graphite Gray" : 1695
+                        "Steel Blue" : 1595,
+                        "Graphite Gray" : 1595
                     },
                     "inStock": true,
-                    "onSale": true
+                    "onSale": true,
+                    "originalPrice": {
+                        "Steel Blue" : 1695,
+                        "Graphite Gray" : 1695
+                    }
                 }
             ]
         },
@@ -135,7 +185,11 @@
                         "SandStone" : 1495
                     },
                     "inStock": true,
-                    "onSale": true
+                    "onSale": true,
+                    "originalPrice": {
+                        "Midnight Gray" : 1695,
+                        "SandStone" : 1695
+                    }
                 },
                 {
                     "name": "ST",
@@ -144,7 +198,11 @@
                         "SandStone" : 1495
                     },
                     "inStock": true,
-                    "onSale": true
+                    "onSale": true,
+                    "originalPrice": {
+                        "Midnight Gray" : 1695,
+                        "SandStone" : 1695
+                    }
                 }
             ]
         },
@@ -159,7 +217,12 @@
                         "Chameleon, Gloss" : null
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Carbon, Matte" : null,
+                        "Chalk, Gloss" : null,
+                        "Chameleon, Gloss" : null
+                    }
                 },
                 {
                     "name": "XC",
@@ -169,7 +232,12 @@
                         "Chameleon, Gloss" : 2445
                     },
                     "inStock": true,
-                    "onSale": true
+                    "onSale": false,
+                    "originalPrice": {
+                        "Carbon, Matte" : null,
+                        "Chalk, Gloss" : null,
+                        "Chameleon, Gloss" : null
+                    }
                 },
                 {
                     "name": "XR",
@@ -179,7 +247,12 @@
                         "Chameleon, Gloss" : 2345
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Carbon, Matte" : null,
+                        "Chalk, Gloss" : null,
+                        "Chameleon, Gloss" : null
+                    }
                 }
             ]
         },
@@ -193,7 +266,11 @@
                         "Graphite Gray" : 2395
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Moss Green" : null,
+                        "Graphite Gray" : null
+                    }
                 },
                 {
                     "name": "HT",
@@ -202,7 +279,11 @@
                         "Graphite Gray" : 1895
                     },
                     "inStock": true,
-                    "onSale": false
+                    "onSale": false,
+                    "originalPrice": {
+                        "Moss Green" : null,
+                        "Graphite Gray" : null
+                    }
                 }
             ]
         }

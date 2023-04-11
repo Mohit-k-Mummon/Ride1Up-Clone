@@ -199,15 +199,44 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
-.bike__header {
+/* Sale Badge */
+.bike .bike__sale-badge {
+	background-color: #c92626;
+	color: #fff;
+	text-transform: uppercase;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+	font-weight: 700;
+	position: absolute;
+	top: -1.8rem;
+	right: -1rem;
+	display: none;
+}
+
+.bike.onSale .bike__sale-badge {
+	display: flex;
+}
+
+.bike .bike__header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 100%;
 	padding: 3rem 2rem 0;
+}
+
+/* Adds more padding to header top when bike is on sale */
+.bike.onSale .bike__header {
+	padding: 5.5rem 2rem 0;
 }
 
 .shop-bikes__container {
@@ -261,12 +290,38 @@
 	flex-direction: column;
 	align-items: flex-end;
 	gap: 1rem;
+	position: relative;
 }
 
+/* Original Pre Sale Price  */
+.bike .bike__price-container .original-price {
+	display: none;
+}
+
+.bike.onSale .bike__price-container .original-price {
+	position: absolute;
+	top: -2.5rem;
+	color: rgb(143, 143, 143);
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	text-decoration: line-through;
+	display: none;
+}
+
+.bike.onSale .bike__price-container .original-price.active {
+	display: initial;
+}
+
+/* Current Price */
 .bike__price-container .price {
 	font-size: 2.2rem;
 	line-height: 2.2rem;
 	font-weight: 800;
+}
+
+.bike.onSale .bike__price-container .price.active {
+	text-decoration: underline;
 }
 
 .bike__price-container .in-stock {
@@ -372,6 +427,10 @@
 		font-weight: 400;
 	}
 
+	.bike.onSale .bike__price-container .price.active {
+		font-weight: 800;
+	}
+
 	.bike__price-container .in-stock {
 		margin-right: 0.5rem;
 	}
@@ -381,5 +440,26 @@
 	/* SECTION */
 	.shop-bikes {
 		max-width: 134rem;
+	}
+
+	/* Original Pre Sale Price  */
+	.bike.onSale .bike__price-container .original-price {
+		position: absolute;
+		top: 1.5rem;
+		left: -8.5rem;
+		color: rgb(143, 143, 143);
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+		text-decoration: line-through;
+		display: none;
+	}
+
+	/* Current Price */
+	.bike.onSale .bike__price-container .price.active {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+		font-weight: 800;
+		text-decoration: underline;
 	}
 }

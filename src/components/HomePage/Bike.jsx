@@ -191,14 +191,34 @@ const Bike = props => {
 	let bikeImage = bikeImages[props.name][currentVersion][currentColor];
 
 	// Formatting the bike price
+	// Function for formatting prices
+	const formatPrice = price => {
+		if (price) {
+			return price.toLocaleString('en-US', {
+				minimumFractionDigits: 2,
+				maximumFractionDigits: 2,
+			});
+		}
+	};
+	// CurrentPrice Formatted
 	const price = versionColors[currentColor];
-	const formattedPrice = price.toLocaleString('en-US', {
-		minimumFractionDigits: 2,
-		maximumFractionDigits: 2,
+	const formattedPrice = formatPrice(price);
+
+	// SalePrice Formatted
+	const originalPrice = version.originalPrice[currentColor];
+	const formattedOriginalPrice = formatPrice(originalPrice);
+
+	// onSale boolean for displaying badge and original price
+	let onSale = false;
+	props.versions.forEach(version => {
+		if (version.onSale === true) {
+			onSale = true;
+		}
 	});
 
 	return (
-		<div className='bike'>
+		<div className={`bike ${onSale ? 'onSale' : ''}`}>
+			<span className='bike__sale-badge'>Sale!</span>
 			<header className='bike__header'>
 				{/* Bike name and version buttons */}
 				<div className='bike__heading-container'>
@@ -217,7 +237,14 @@ const Bike = props => {
 				</div>
 				{/* Bike price */}
 				<div className='bike__price-container'>
-					<span className='price'>${formattedPrice}</span>
+					{/* Original Price Span */}
+					<span className={`original-price ${originalPrice ? 'active' : ''}`}>
+						${formattedOriginalPrice}
+					</span>
+					{/* Current Price Span */}
+					<span className={`price ${originalPrice ? 'active' : ''}`}>
+						${formattedPrice}
+					</span>
 					<span className='in-stock'>In Stock</span>
 				</div>
 			</header>

@@ -47,9 +47,9 @@ const FeaturedInSection = () => {
 					src='https://player.vimeo.com/video/704729592'
 					width={'1310'}
 					height={'720'}
-					allowFullScreen=''
-					webkitallowfullscreen=''
-					mozallowfullscreen=''
+					allowFullScreen='true'
+					webkitallowfullscreen='true'
+					mozallowfullscreen='true'
 				></iframe>
 			</div>
 		</section>

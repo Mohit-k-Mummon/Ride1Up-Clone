@@ -43,7 +43,7 @@ const MainNavigation = () => {
 		// here then the section variable will be undefined
 		await navigate('/');
 		const section = document.getElementById('shop-bikes-section');
-		section.scrollIntoView({ behavior: 'smooth', duration: 500 });
+		section.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	// Scroll to bikes section Mobile Link Handler
@@ -52,7 +52,7 @@ const MainNavigation = () => {
 		event.preventDefault();
 		await navigate('/');
 		const section = document.getElementById('shop-bikes-section');
-		section.scrollIntoView({ behavior: 'smooth', duration: 500 });
+		section.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	return (

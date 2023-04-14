@@ -574,38 +574,6 @@
 	.performance-header__title {
 		font-size: 3rem;
 	}
-}
-
-@media screen and (min-width: 1024px) {
-	.performance {
-		max-width: 96rem;
-	}
-
-	.performance-image-container {
-		max-width: 111rem;
-	}
-
-	.performance-header__title {
-		font-size: 3.6rem;
-	}
-
-	/* Icon sizing */
-	.performance-feature__icon {
-		height: 6rem;
-		width: auto;
-	}
-
-	.performance-feature__title {
-		font-size: 1.3rem;
-		line-height: 1.3rem;
-		text-align: center;
-	}
-
-	.performance-feature__label {
-		color: #c92626;
-		font-size: 1.6rem;
-		line-height: 1.6rem;
-	}
 
 	/*********************************
 	 Those little buttons on the bike
@@ -655,8 +623,8 @@
 		left: 8%;
 	}
 	.performance-image-button.speed {
-		bottom: 27.5%;
-		right: 53.2%;
+		bottom: 26%;
+		right: 52.3%;
 	}
 	.performance-image-button.power {
 		bottom: 32.5%;
@@ -855,6 +823,38 @@
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.performance {
+		max-width: 96rem;
+	}
+
+	.performance-image-container {
+		max-width: 111rem;
+	}
+
+	.performance-header__title {
+		font-size: 3.6rem;
+	}
+
+	/* Icon sizing */
+	.performance-feature__icon {
+		height: 6rem;
+		width: auto;
+	}
+
+	.performance-feature__title {
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+		text-align: center;
+	}
+
+	.performance-feature__label {
+		color: #c92626;
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	}
+}
+
 @media screen and (min-width: 1400px) {
 	.performance {
 		max-width: 134rem;
@@ -880,5 +880,124 @@
 		font-size: 2.4rem;
 		line-height: 2.4rem;
 		white-space: nowrap;
+	}
+
+	/* BIKE IMAGE */
+	/* POSITIONING OF THE BUTTONS */
+	.performance-image-button.speed {
+		bottom: 27.5%;
+		right: 53.2%;
+	}
+}
+
+/***********************
+    FAQ Accordian
+************************/
+.faq-accordian {
+	padding: 0 1.8rem;
+	margin: 10rem auto;
+	max-width: 69rem;
+	height: fit-content;
+}
+
+/* Main Button */
+.faq-accordian-button {
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 2.6rem;
+	cursor: pointer;
+	border-bottom: 1px solid #000;
+	color: #000;
+	padding: 2rem 0;
+	width: 100%;
+	text-align: left;
+	font-family: 'Prompt', sans-serif;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Plus and Minus icon */
+.faq-accordian-button svg {
+	height: 2rem;
+	position: relative;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+/* Faq's container */
+.faq-container {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-container.active {
+	max-height: 9999px;
+	transition: all 1s cubic-bezier(0, 1, 0, 1);
+}
+
+/* Faq item */
+.faq-accordian-card {
+	border-bottom: 1px solid #000;
+	padding: 1.5rem;
+	overflow: hidden;
+}
+
+.faq-accordian-toggle {
+	cursor: pointer;
+}
+
+.faq-accordian__title {
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+.faq-accordian-toggle.active .faq-accordian__title {
+	font-weight: 800;
+}
+
+.faq-accordian__collapse {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height 0.35s ease;
+}
+
+.faq-accordian__collapse.show {
+	height: auto;
+}
+
+/* Text */
+.faq-accordian__body {
+	min-height: 1px;
+}
+.faq-accordian__body p {
+	margin-top: 2rem;
+	line-height: 2.16rem;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.faq-accordian__collapse .bold {
+	font-weight: 800;
+	font-style: italic;
+	color: rgb(54, 54, 54);
+}
+
+@media screen and (min-width: 768px) {
+	.faq-accordian-button {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.faq-accordian {
+		max-width: 96rem;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.faq-accordian {
+		max-width: 131rem;
 	}
 }

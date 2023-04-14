@@ -8,60 +8,60 @@ import ColorSwatches from './ColorSwatches';
 
 // Importing images for all the different bike models and colors offered
 // Roadster
-import roadsterBurgundy from '../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Burgundy-scaled.jpg';
-import roadsterGravel from '../../assets/Home/Bikes/Roadster v2/Roadster_v2_Gravel_Grey-scaled.jpg';
-import roadsterBlack from '../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Black-scaled.jpg';
-import roadsterSilver from '../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Silver-scaled.jpg';
+import roadsterBurgundy from '../../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Burgundy-scaled.jpg';
+import roadsterGravel from '../../../assets/Home/Bikes/Roadster v2/Roadster_v2_Gravel_Grey-scaled.jpg';
+import roadsterBlack from '../../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Black-scaled.jpg';
+import roadsterSilver from '../../../assets/Home/Bikes/Roadster v2/Roadster_v2_Matte_Silver-scaled.jpg';
 
 // Core-5
-import coreMintST from '../../assets/Home/Bikes/Core-5/ST/Core-5-Rev_Core5-ST-Mint-Ebike.jpg';
-import coreAzureST from '../../assets/Home/Bikes/Core-5/ST/PP_Core5-ST-Azure-Blue-Ebike.jpg';
-import coreBlackST from '../../assets/Home/Bikes/Core-5/ST/PP_Core5-ST-Midnight-Grey-Ebike.jpg';
-import coreMintXR from '../../assets/Home/Bikes/Core-5/XR/Core-5-Rev_Core5-XR-Mint-Ebike.jpg';
-import coreAzureXR from '../../assets/Home/Bikes/Core-5/XR/PP_Core5-XR-Azure-Blue-Ebike.jpg';
-import coreBlackXR from '../../assets/Home/Bikes/Core-5/XR/PP_Core5-XR-Midnight-Grey-Ebike.jpg';
+import coreMintST from '../../../assets/Home/Bikes/Core-5/ST/Core-5-Rev_Core5-ST-Mint-Ebike.jpg';
+import coreAzureST from '../../../assets/Home/Bikes/Core-5/ST/PP_Core5-ST-Azure-Blue-Ebike.jpg';
+import coreBlackST from '../../../assets/Home/Bikes/Core-5/ST/PP_Core5-ST-Midnight-Grey-Ebike.jpg';
+import coreMintXR from '../../../assets/Home/Bikes/Core-5/XR/Core-5-Rev_Core5-XR-Mint-Ebike.jpg';
+import coreAzureXR from '../../../assets/Home/Bikes/Core-5/XR/PP_Core5-XR-Azure-Blue-Ebike.jpg';
+import coreBlackXR from '../../../assets/Home/Bikes/Core-5/XR/PP_Core5-XR-Midnight-Grey-Ebike.jpg';
 
 // Turris
-import turrisGreenXR from '../../assets/Home/Bikes/Turris/XR/Turris_XR_Green_Profile.jpg';
-import turrisWhiteXR from '../../assets/Home/Bikes/Turris/XR/Turris_XR_White_Profile.jpg';
-import turrisGrayXR from '../../assets/Home/Bikes/Turris/XR/Turris_XR_Gray_Profile.jpg';
-import turrisGreenST from '../../assets/Home/Bikes/Turris/ST/Turris_ST_Green_Profile.jpg';
-import turrisWhiteST from '../../assets/Home/Bikes/Turris/ST/Turris_ST_White_Profile.jpg';
-import turrisGrayST from '../../assets/Home/Bikes/Turris/ST/Turris_ST_Gray_Profile.jpg';
+import turrisGreenXR from '../../../assets/Home/Bikes/Turris/XR/Turris_XR_Green_Profile.jpg';
+import turrisWhiteXR from '../../../assets/Home/Bikes/Turris/XR/Turris_XR_White_Profile.jpg';
+import turrisGrayXR from '../../../assets/Home/Bikes/Turris/XR/Turris_XR_Gray_Profile.jpg';
+import turrisGreenST from '../../../assets/Home/Bikes/Turris/ST/Turris_ST_Green_Profile.jpg';
+import turrisWhiteST from '../../../assets/Home/Bikes/Turris/ST/Turris_ST_White_Profile.jpg';
+import turrisGrayST from '../../../assets/Home/Bikes/Turris/ST/Turris_ST_Gray_Profile.jpg';
 
 // Cafe Cruiser
-import cafeBlackXR from '../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Gunmetal_Grey-scaled.jpg';
-import cafeIndigoXR from '../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Indigo_Matte-scaled.jpg';
-import cafeLatteXR from '../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Latte_Gloss-scaled.jpg';
-import cafeBlackST from '../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Gunmetal_Grey-scaled.jpg';
-import cafeIndigoST from '../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Indigo_Matte-scaled.jpg';
-import cafeLatteST from '../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Latte_Gloss-scaled.jpg';
+import cafeBlackXR from '../../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Gunmetal_Grey-scaled.jpg';
+import cafeIndigoXR from '../../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Indigo_Matte-scaled.jpg';
+import cafeLatteXR from '../../../assets/Home/Bikes/Cafe Cruiser/XR/Cafe_Cruiser_XR_Latte_Gloss-scaled.jpg';
+import cafeBlackST from '../../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Gunmetal_Grey-scaled.jpg';
+import cafeIndigoST from '../../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Indigo_Matte-scaled.jpg';
+import cafeLatteST from '../../../assets/Home/Bikes/Cafe Cruiser/ST/Cafe_Cruiser_ST_Latte_Gloss-scaled.jpg';
 
 // 700 Series
-import SeriesBlueXR from '../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Steel.jpg';
-import SeriesBlackXR from '../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Gunmetal_Gray.jpg';
-import SeriesBlueST from '../../assets/Home/Bikes/700 Series/ST/700-Series_ST_Steel.jpg';
-import SeriesBlackST from '../../assets/Home/Bikes/700 Series/ST/700-Series_ST_Gunmetal_Gray.jpg';
+import SeriesBlueXR from '../../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Steel.jpg';
+import SeriesBlackXR from '../../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Gunmetal_Gray.jpg';
+import SeriesBlueST from '../../../assets/Home/Bikes/700 Series/ST/700-Series_ST_Steel.jpg';
+import SeriesBlackST from '../../../assets/Home/Bikes/700 Series/ST/700-Series_ST_Gunmetal_Gray.jpg';
 
 // LMT'D
-import LMTDBlackXR from '../../assets/Home/Bikes/LMTD/XR/PP-Edit_LMTD-XR-Midnight.jpg';
-import LMTDSandXR from '../../assets/Home/Bikes/LMTD/XR/PP_LMTD-XR-Sand.jpg';
-import LMTDBlackST from '../../assets/Home/Bikes/LMTD/ST/PP_LMTD-ST-Midnight.jpg';
-import LMTDSandST from '../../assets/Home/Bikes/LMTD/ST/PP_LMTD-ST-Sand.jpg';
+import LMTDBlackXR from '../../../assets/Home/Bikes/LMTD/XR/PP-Edit_LMTD-XR-Midnight.jpg';
+import LMTDSandXR from '../../../assets/Home/Bikes/LMTD/XR/PP_LMTD-XR-Sand.jpg';
+import LMTDBlackST from '../../../assets/Home/Bikes/LMTD/ST/PP_LMTD-ST-Midnight.jpg';
+import LMTDSandST from '../../../assets/Home/Bikes/LMTD/ST/PP_LMTD-ST-Sand.jpg';
 
 // Prodigy
-import ProdigyBlackST from '../../assets/Home/Bikes/Prodigy/ST/Prodigy_ST_Matte_Gray.jpg';
-import ProdigyWhiteST from '../../assets/Home/Bikes/Prodigy/ST/Prodigy_ST_Chalk.jpg';
-import ProdigyBlackXR from '../../assets/Home/Bikes/Prodigy/XR/Prodigy_XR_Matte_Gray.jpg';
-import ProdigyGreenXR from '../../assets/Home/Bikes/Prodigy/XR/Prodigy_XR_Chameleon.jpg';
-import ProdigyBlackXC from '../../assets/Home/Bikes/Prodigy/XC/Prodigy_XC_Matte_Gray.jpg';
-import ProdigyGreenXC from '../../assets/Home/Bikes/Prodigy/XC/Prodigy_XC_Chameleon.jpg';
+import ProdigyBlackST from '../../../assets/Home/Bikes/Prodigy/ST/Prodigy_ST_Matte_Gray.jpg';
+import ProdigyWhiteST from '../../../assets/Home/Bikes/Prodigy/ST/Prodigy_ST_Chalk.jpg';
+import ProdigyBlackXR from '../../../assets/Home/Bikes/Prodigy/XR/Prodigy_XR_Matte_Gray.jpg';
+import ProdigyGreenXR from '../../../assets/Home/Bikes/Prodigy/XR/Prodigy_XR_Chameleon.jpg';
+import ProdigyBlackXC from '../../../assets/Home/Bikes/Prodigy/XC/Prodigy_XC_Matte_Gray.jpg';
+import ProdigyGreenXC from '../../../assets/Home/Bikes/Prodigy/XC/Prodigy_XC_Chameleon.jpg';
 
 // Revv1
-import RevvBlackFS from '../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Gray_Profile.jpg';
-import RevvGreenFS from '../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Moss_Profile.jpg';
-import RevvBlackHT from '../../assets/Home/Bikes/Revv 1/HT/Revv1_HT_Gray_Profile.jpg';
-import RevvGreenHT from '../../assets/Home/Bikes/Revv 1/HT/Revv1_HT_Moss_Profile.jpg';
+import RevvBlackFS from '../../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Gray_Profile.jpg';
+import RevvGreenFS from '../../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Moss_Profile.jpg';
+import RevvBlackHT from '../../../assets/Home/Bikes/Revv 1/HT/Revv1_HT_Gray_Profile.jpg';
+import RevvGreenHT from '../../../assets/Home/Bikes/Revv 1/HT/Revv1_HT_Moss_Profile.jpg';
 
 // Object containing image paths for different bike versions and colors
 const bikeImages = {

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { ReactComponent as PerformIcon } from '../../assets/Home/perform-icon.svg';
-import speedIcon from '../../assets/Home/speed-icon1.png';
-import rangeIcon from '../../assets/Home/range-icon1.png';
-import motorIcon from '../../assets/Home/motor-icon-11.png';
+import { ReactComponent as PerformIcon } from '../../../assets/Home/perform-icon.svg';
+import speedIcon from '../../../assets/Home/speed-icon1.png';
+import rangeIcon from '../../../assets/Home/range-icon1.png';
+import motorIcon from '../../../assets/Home/motor-icon-11.png';
 
 import PerformanceImageContainer from './PerformanceImageContainer';
 

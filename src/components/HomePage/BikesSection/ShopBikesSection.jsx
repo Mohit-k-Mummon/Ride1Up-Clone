@@ -1,12 +1,12 @@
 import React from 'react';
 
-import bikesData from '../../Bikes.json';
+import bikesData from '../../../Bikes.json';
 
 // Component
 import Bike from './Bike';
 
 // Images
-import { ReactComponent as ElectricIcon } from '../../assets/Home/electric-icon.svg';
+import { ReactComponent as ElectricIcon } from '../../../assets/Home/electric-icon.svg';
 
 const ShopBikesSection = () => {
 	return (

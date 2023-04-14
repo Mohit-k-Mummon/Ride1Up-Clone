@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Images
-import EbrIcon from '../../assets/Home/ebr-logo-white-1.png';
-import ForbesIcon from '../../assets/Home/Forbes-Icon.png';
-import NytIcon from '../../assets/Home/nyt-logo-white-1.png';
-import ElectrekIcon from '../../assets/Home/electrek-1.png';
+import EbrIcon from '../../../assets/Home/ebr-logo-white-1.png';
+import ForbesIcon from '../../../assets/Home/Forbes-Icon.png';
+import NytIcon from '../../../assets/Home/nyt-logo-white-1.png';
+import ElectrekIcon from '../../../assets/Home/electrek-1.png';
 
 const FeaturedInSection = () => {
 	return (

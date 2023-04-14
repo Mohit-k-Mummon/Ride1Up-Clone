@@ -1,6 +1,6 @@
 import React from 'react';
 
-import series700 from '../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Gunmetal_Gray.jpg';
+import series700 from '../../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Gunmetal_Gray.jpg';
 
 const PerformanceImageContainer = () => {
 	return (

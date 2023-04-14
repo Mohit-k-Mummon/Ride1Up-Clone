@@ -1,10 +1,10 @@
 import React from 'react';
 import './page-styles/Home.css';
 
-import HeroSection from '../components/HomePage/HeroSection';
-import FeaturedInSection from '../components/HomePage/FeaturedInSection';
-import ShopBikesSection from '../components/HomePage/ShopBikesSection';
-import PerformanceSection from '../components/HomePage/PerformanceSection';
+import HeroSection from '../components/HomePage/HeroSection/HeroSection';
+import FeaturedInSection from '../components/HomePage/FeaturedInSection/FeaturedInSection';
+import ShopBikesSection from '../components/HomePage/BikesSection/ShopBikesSection';
+import PerformanceSection from '../components/HomePage/PerformanceSection/PerformanceSection';
 import FaqAccordian from '../components/HomePage/FaqSection/FaqAccordian';
 
 const HomePage = () => {

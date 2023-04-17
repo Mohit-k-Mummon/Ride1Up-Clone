@@ -44,3 +44,27 @@ button {
 	border: none;
 	text-decoration: none;
 }
+
+.sr-only {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+/* Form reset */
+form,
+input,
+textarea,
+select,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import 'react-slick';
+
 // Router
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RootLayout from './pages/Root';

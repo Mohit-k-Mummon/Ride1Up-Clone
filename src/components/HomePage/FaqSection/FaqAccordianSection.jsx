@@ -9,7 +9,7 @@ import { ReactComponent as Minus } from '../../../assets/Home/minus-solid.svg';
 
 import FaqItem from './FaqItem';
 
-const FaqAccordian = () => {
+const FaqAccordianSection = () => {
 	const [faqActive, setFaqActive] = useState(false);
 	const [activeIndex, setActiveIndex] = useState(null);
 	const contentElMain = useRef();
@@ -63,4 +63,4 @@ const FaqAccordian = () => {
 	);
 };
 
-export default FaqAccordian;
+export default FaqAccordianSection;

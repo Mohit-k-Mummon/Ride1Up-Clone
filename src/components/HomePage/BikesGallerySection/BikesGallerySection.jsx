@@ -43,12 +43,14 @@ const BikesGallerySection = () => {
 	const settings = {
 		dots: false,
 		infinite: true,
+		autoplay: true,
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		autoplay: true,
-		speed: 5000,
-		autoplaySpeed: 500,
+		speed: 10000,
+		autoplaySpeed: 1000,
 		cssEase: 'linear',
+		swipe: false,
+		pauseOnHover: false,
 		responsive: [
 			{
 				breakpoint: 1400,
@@ -79,7 +81,7 @@ const BikesGallerySection = () => {
 				</h2>
 				<Link className='view-gallery-button'>View Gallery</Link>
 			</header>
-			<Slider {...settings}>
+			<Slider {...settings} aria-label='Bikes Gallery'>
 				{images.map((image, index) => (
 					<img key={index} src={image} alt=''></img>
 				))}

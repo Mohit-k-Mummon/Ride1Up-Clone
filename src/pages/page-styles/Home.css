@@ -1007,6 +1007,8 @@
 ************************/
 .bikes-gallery {
 	overflow-x: hidden;
+	position: relative;
+	top: 5px;
 }
 
 .bikes-gallery-header {

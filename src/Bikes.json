@@ -2,6 +2,7 @@
     "bikes": [
         {
             "name": "Roadster v2",
+            "id": "roadster-v2",
             "versions": [
               {
                 "name": "Large",
@@ -41,6 +42,7 @@
           },
         {
             "name": "Core-5",
+            "id": "core-5",
             "versions": [
                 {
                     "name": "XR",
@@ -76,6 +78,7 @@
         },
         {
             "name": "Turris",
+            "id": "turris",
             "versions": [
                 {
                     "name": "XR",
@@ -111,6 +114,7 @@
         },
         {
             "name": "Cafe Cruiser",
+            "id": "cruiser",
             "versions": [
                 {
                     "name": "XR",
@@ -146,6 +150,7 @@
         },
         {
             "name": "700 Series",
+            "id": "700-series",
             "versions": [
                 {
                     "name": "XR",
@@ -177,6 +182,7 @@
         },
         {
             "name": "LMT'D",
+            "id": "lmtd",
             "versions": [
                 {
                     "name": "XR",
@@ -208,6 +214,7 @@
         },
         {
             "name": "Prodigy",
+            "id": "prodigy",
             "versions": [
                 {
                     "name": "ST",
@@ -258,6 +265,7 @@
         },
         {
             "name": "Revv1",
+            "id": "revv-1",
             "versions": [
                 {
                     "name": "FS",

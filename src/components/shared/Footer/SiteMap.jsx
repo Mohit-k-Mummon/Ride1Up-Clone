@@ -1,16 +1,25 @@
 import React from 'react';
 
-import { ReactComponent as Logo } from '../../../assets/Footer/ride1up.svg';
+// Components
+import FooterForm from './FooterForm';
 
 // React-Router
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Icons
+import { ReactComponent as Logo } from '../../../assets/Footer/ride1up.svg';
 import facebook from '../../../assets/Footer/facebook-app-symbol.png';
 import instagram from '../../../assets/Footer/instagram.png';
 import youtube from '../../../assets/Footer/youtube.png';
 
 const SiteMap = () => {
+	const navigate = useNavigate();
+
+	const navigateHandler = async (event, id) => {
+		await navigate('/product/' + id);
+		const section = document.getElementById('top-notification-bar');
+		section.scrollIntoView({ behavior: 'smooth' });
+	};
 	return (
 		<div className='site-map'>
 			<div className='site-map-links'>
@@ -18,14 +27,54 @@ const SiteMap = () => {
 				<div className='site-map-links__container'>
 					<div className='site-map-links__shop'>
 						<h1>SHOP</h1>
-						<Link>700 Series</Link>
-						<Link>Cafe Cruiser</Link>
-						<Link>Core-5</Link>
-						<Link>LMT'D</Link>
-						<Link>Prodigy</Link>
-						<Link>Revv1</Link>
-						<Link>Roadster v2</Link>
-						<Link>Turris</Link>
+						<Link
+							to={'/product/700-series'}
+							onClick={event => navigateHandler(event, '700-series')}
+						>
+							700 Series
+						</Link>
+						<Link
+							to={'/product/cruiser'}
+							onClick={event => navigateHandler(event, 'cruiser')}
+						>
+							Cafe Cruiser
+						</Link>
+						<Link
+							to={'/product/core-5'}
+							onClick={event => navigateHandler(event, 'core-5')}
+						>
+							Core-5
+						</Link>
+						<Link
+							to={'/product/lmtd'}
+							onClick={event => navigateHandler(event, 'lmtd')}
+						>
+							LMT'D
+						</Link>
+						<Link
+							to={'/product/prodigy'}
+							onClick={event => navigateHandler(event, 'prodigy')}
+						>
+							Prodigy
+						</Link>
+						<Link
+							to={'/product/revv-1'}
+							onClick={event => navigateHandler(event, 'revv-1')}
+						>
+							Revv1
+						</Link>
+						<Link
+							to={'/product/roadster-v2'}
+							onClick={event => navigateHandler(event, 'roadster-v2')}
+						>
+							Roadster v2
+						</Link>
+						<Link
+							to={'/product/turris'}
+							onClick={event => navigateHandler(event, 'turris')}
+						>
+							Turris
+						</Link>
 						<Link>Parts</Link>
 						<Link>Open Box Ebikes</Link>
 					</div>
@@ -69,23 +118,7 @@ const SiteMap = () => {
 						</a>
 					</div>
 				</div>
-				<form className='newsletter-form'>
-					<div className='newsletter-form__input-group'>
-						<label htmlFor='email' className='sr-only'>
-							Email:
-						</label>
-						<input
-							type='email'
-							id='email'
-							name='email'
-							className='newsletter-form__input'
-							placeholder='Enter email for updates & promotions'
-						/>
-					</div>
-					<button type='submit' className='newsletter-form__submit'>
-						SUBSCRIBE
-					</button>
-				</form>
+				<FooterForm />
 			</div>
 		</div>
 	);

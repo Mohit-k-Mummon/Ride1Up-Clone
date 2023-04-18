@@ -265,7 +265,9 @@ const Bike = props => {
 						))}
 				</div>
 			</div>
-			<Link className='button'>Select Frame</Link>
+			<Link to={`/product/${props.id}`} className='button'>
+				Select Frame
+			</Link>
 		</div>
 	);
 };

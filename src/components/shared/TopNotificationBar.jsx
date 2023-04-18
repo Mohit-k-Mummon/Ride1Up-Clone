@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const TopNotificationBar = () => {
 	return (
-		<section className='top-notification-bar'>
+		<section id='top-notification-bar' className='top-notification-bar'>
 			<Link to={'/promotions-and-discounts'}>up to $200 off select ebikes</Link>
 		</section>
 	);

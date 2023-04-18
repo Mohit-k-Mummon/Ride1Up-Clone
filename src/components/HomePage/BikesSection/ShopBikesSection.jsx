@@ -17,7 +17,7 @@ const ShopBikesSection = () => {
 			</header>
 			<div className='shop-bikes__container'>
 				{bikesData.bikes.map(bike => (
-					<Bike key={bike.name} name={bike.name} versions={bike.versions} />
+					<Bike key={bike.id} id={bike.id} name={bike.name} versions={bike.versions} />
 				))}
 			</div>
 		</section>

@@ -14,6 +14,7 @@ import ContactUsPage from './pages/ContactUs';
 import ReviewsPage from './pages/Reviews';
 import CartPage from './pages/Cart';
 import PromotionsPage from './pages/Promotions';
+import BikeDetailsPage from './pages/BikeDetailsPage';
 
 const router = createBrowserRouter([
 	{
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
 					{ path: 'batteries', element: <BatteriesPage /> },
 				],
 			},
+			{ path: '/product/:bikeId', element: <BikeDetailsPage /> },
 			{ path: '/about-us', element: <AboutUsPage /> },
 			{ path: '/contact', element: <ContactUsPage /> },
 			{ path: '/social-reviews', element: <ReviewsPage /> },

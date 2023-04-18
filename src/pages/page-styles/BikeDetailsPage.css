@@ -1,0 +1,23 @@
+/* Slick Styling */
+.slick-prev::before,
+.slick-next::before {
+	color: #000;
+}
+
+/* Product Showcase */
+.product-showcase {
+	padding: 0 1.8rem;
+}
+
+/* Slider Container */
+.slider-container {
+	max-width: 51rem;
+	width: 90%;
+}
+
+.product-container {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

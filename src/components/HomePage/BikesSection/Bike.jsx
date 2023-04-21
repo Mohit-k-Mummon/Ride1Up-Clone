@@ -177,7 +177,6 @@ const Bike = props => {
 	// ^ versionColors looks like { "Burgundy, Matte": 1095, "Gravel Gray": 1245, "Black, Matte": 1095, … }
 	// Then here we set the initial currentColor to the first key in the versionColors Obj
 	const [currentColor, setCurrentColor] = useState(Object.keys(versionColors)[0]);
-
 	// Event handlers to update current version and color
 	const versionChangeHandler = newVersion => {
 		setCurrentVersion(newVersion);

@@ -4,7 +4,7 @@ import React from 'react';
 import FooterForm from './FooterForm';
 
 // React-Router
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 
 // Icons
 import { ReactComponent as Logo } from '../../../assets/Footer/ride1up.svg';
@@ -13,10 +13,8 @@ import instagram from '../../../assets/Footer/instagram.png';
 import youtube from '../../../assets/Footer/youtube.png';
 
 const SiteMap = () => {
-	const navigate = useNavigate();
-
-	const navigateHandler = async (event, id) => {
-		await navigate('/product/' + id);
+	const navigateHandler = (event, id) => {
+		redirect('/product/' + id);
 		const section = document.getElementById('top-notification-bar');
 		section.scrollIntoView({ behavior: 'smooth' });
 	};

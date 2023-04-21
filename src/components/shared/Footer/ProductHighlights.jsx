@@ -10,10 +10,10 @@ const ProductHighlights = () => {
 	return (
 		<div className='product-highlights'>
 			<div className='product-highlight'>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<img className='product-highlight__icon' src={serviceIcon} alt='' />
 				</a>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<h1 className='product-highlight__title'>Service & Support</h1>
 				</a>
 				<p className='product-highlight__description'>
@@ -25,10 +25,10 @@ const ProductHighlights = () => {
 				</a>
 			</div>
 			<div className='product-highlight'>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<img className='product-highlight__icon' src={warrantyIcon} alt='' />
 				</a>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<h1 className='product-highlight__title'>1-Year Warranty</h1>
 				</a>
 				<p className='product-highlight__description'>
@@ -40,10 +40,10 @@ const ProductHighlights = () => {
 				</a>
 			</div>
 			<div className='product-highlight'>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<img className='product-highlight__icon' src={trialIcon} alt='' />
 				</a>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<h1 className='product-highlight__title'>30-Day Returns*</h1>
 				</a>
 				<p className='product-highlight__description'>
@@ -55,10 +55,10 @@ const ProductHighlights = () => {
 				</a>
 			</div>
 			<div className='product-highlight'>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<img className='product-highlight__icon' src={shippingIcon} alt='' />
 				</a>
-				<a href=''>
+				<a href='https://www.google.com'>
 					<h1 className='product-highlight__title'>Free Shipping</h1>
 				</a>
 				<p className='product-highlight__description'>

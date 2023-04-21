@@ -4,42 +4,64 @@
             "name": "Roadster v2",
             "id": "roadster-v2",
             "versions": [
-              {
-                "name": "Large",
-                "priceByColor": {
-                  "Burgundy, Matte": 1095,
-                  "Gravel Gray": 1245,
-                  "Black, Matte": 1095,
-                  "Silver, Matte": 1095
+                {
+                    "name": "Large",
+                    "priceByColor": {
+                        "Burgundy, Matte": 1095,
+                        "Gravel Gray": 1245,
+                        "Black, Matte": 1095,
+                        "Silver, Matte": 1095
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Burgundy, Matte": null,
+                        "Gravel Gray": null,
+                        "Black, Matte": null,
+                        "Silver, Matte": null
+                    }
                 },
-                "inStock": true,
-                "onSale": false,
-                "originalPrice": {
-                    "Burgundy, Matte": null,
-                    "Gravel Gray": null,
-                    "Black, Matte": null,
-                    "Silver, Matte": null
+                {
+                    "name": "Small",
+                    "priceByColor": {
+                        "Burgundy, Matte": 1095,
+                        "Gravel Gray": 1245,
+                        "Black, Matte": 1095,
+                        "Silver, Matte": 1095
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Burgundy, Matte": null,
+                        "Gravel Gray": null,
+                        "Black, Matte": null,
+                        "Silver, Matte": null
+                    }
                 }
-              },
-              {
-                "name": "Small",
-                "priceByColor": {
-                  "Burgundy, Matte": 1095,
-                  "Gravel Gray": 1245,
-                  "Black, Matte": 1095,
-                  "Silver, Matte": 1095
-                },
-                "inStock": true,
-                "onSale": false,
-                "originalPrice": {
-                    "Burgundy, Matte": null,
-                    "Gravel Gray": null,
-                    "Black, Matte": null,
-                    "Silver, Matte": null
-                }
-              }
-            ]
-          },
+            ],
+            "pageDetail": {
+                "tagline": "Urban Lightweight Electric Bike",
+                "note": null,
+                "description": "Our original roadster is back again. Simple, fast, and fun, this electric bike is as clean as it gets. With a completely concealed battery and quiet motor, onlookers aren’t going to understand how you pedal so fast. The Roadster V2 features a single speed belt drive, internal Samsung Cells, a compact LCD display, and fully smoothed alloy frame. Perfect for flat surfaces and urban commutes."
+            },
+            "dropdown": {
+                "defaultValue": "Large",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "Large",
+                        "value": "Large"
+                    },
+                    {
+                        "option": "Small",
+                        "value": "Small"
+                    }
+                ]
+            }
+        },
         {
             "name": "Core-5",
             "id": "core-5",
@@ -74,7 +96,29 @@
                         "Midnight Gray": null
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Best value starter ebike",
+                "note": null,
+                "description": "Simple, clean, efficient. Will anyone even know it’s electric? We’ve built an entry level eBike with standard components built to replace your car and outlast it. You will save on the cost, and sacrifice nothing. We’ve outfitted the Core-5 with all the essentials, now get to riding!"
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "Turris",
@@ -110,7 +154,29 @@
                         "Graphite Gray": null
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Powerful adventure touring-style ebike",
+                "note": null,
+                "description": "With an upright yet responsive geometry, touring tires, hydraulic brakes, and a powerful class-3 capable motor, the Turris is an all-around comfort ebike equipped to explore and built for adventure."
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "Cafe Cruiser",
@@ -146,7 +212,29 @@
                         "Latte, Gloss": null
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Upright casual electric cruiser bike",
+                "note": null,
+                "description": "Blissful comfort and plus-one cargo capabilities blended together for one of the most versatile and functional eBikes money can buy. Install our passenger kit and add a passenger on the back of the electric bike while cruising around your town. You no longer have to sacrifice style or comfort to have all the features you want on electric bikes, the Cafe Cruiser blends them all into one ebike. "
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "700 Series",
@@ -155,30 +243,52 @@
                 {
                     "name": "XR",
                     "priceByColor": {
-                        "Steel Blue" : 1695,
-                        "Graphite Gray" : 1695
+                        "Steel Blue": 1695,
+                        "Graphite Gray": 1695
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Steel Blue" : null,
-                        "Graphite Gray" : null
+                        "Steel Blue": null,
+                        "Graphite Gray": null
                     }
                 },
                 {
                     "name": "ST",
                     "priceByColor": {
-                        "Steel Blue" : 1595,
-                        "Graphite Gray" : 1595
+                        "Steel Blue": 1595,
+                        "Graphite Gray": 1595
                     },
                     "inStock": true,
                     "onSale": true,
                     "originalPrice": {
-                        "Steel Blue" : 1695,
-                        "Graphite Gray" : 1695
+                        "Steel Blue": 1695,
+                        "Graphite Gray": 1695
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Fully-loaded commuter ebike",
+                "note": null,
+                "description": "It is here. The ultimate electric biking experience. Hydraulic fork, hydraulic brakes, color display, 15 ah Samsung cells, high performance 27.5″x2.4″ ebike rated tires, fully integrated aluminum frame. The decision to ditch your car has never been easier. Enter the high-end electric bike market today… for half the price! "
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "LMT'D",
@@ -187,30 +297,52 @@
                 {
                     "name": "XR",
                     "priceByColor": {
-                        "Midnight Gray" : 1495,
-                        "SandStone" : 1495
+                        "Midnight Gray": 1495,
+                        "SandStone": 1495
                     },
                     "inStock": true,
                     "onSale": true,
                     "originalPrice": {
-                        "Midnight Gray" : 1695,
-                        "SandStone" : 1695
+                        "Midnight Gray": 1695,
+                        "SandStone": 1695
                     }
                 },
                 {
                     "name": "ST",
                     "priceByColor": {
-                        "Midnight Gray" : 1495,
-                        "SandStone" : 1495
+                        "Midnight Gray": 1495,
+                        "SandStone": 1495
                     },
                     "inStock": true,
                     "onSale": true,
                     "originalPrice": {
-                        "Midnight Gray" : 1695,
-                        "SandStone" : 1695
+                        "Midnight Gray": 1695,
+                        "SandStone": 1695
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Powerful torque-sensing ebike",
+                "note": "This generation now features a TORQUE sensor.",
+                "description": "Built with higher-end components and a powerful 95nm geared motor for faster acceleration. The torque sensor gives riders a smoother and more responsive experience with improved range and efficiency. WTB Groov-e tires, an air suspension fork, and Dual Piston Tektro Hydraulic brakes make for the ultimate commuter ride."
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "Prodigy",
@@ -219,49 +351,75 @@
                 {
                     "name": "ST",
                     "priceByColor": {
-                        "Carbon, Matte" : 2295,
-                        "Chalk, Gloss" : 2295,
-                        "Chameleon, Gloss" : null
+                        "Carbon, Matte": 2295,
+                        "Chalk, Gloss": 2295,
+                        "Chameleon, Gloss": null
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Carbon, Matte" : null,
-                        "Chalk, Gloss" : null,
-                        "Chameleon, Gloss" : null
+                        "Carbon, Matte": null,
+                        "Chalk, Gloss": null,
+                        "Chameleon, Gloss": null
                     }
                 },
                 {
                     "name": "XC",
                     "priceByColor": {
-                        "Carbon, Matte" : 2395,
-                        "Chalk, Gloss" : null,
-                        "Chameleon, Gloss" : 2445
+                        "Carbon, Matte": 2395,
+                        "Chalk, Gloss": null,
+                        "Chameleon, Gloss": 2445
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Carbon, Matte" : null,
-                        "Chalk, Gloss" : null,
-                        "Chameleon, Gloss" : null
+                        "Carbon, Matte": null,
+                        "Chalk, Gloss": null,
+                        "Chameleon, Gloss": null
                     }
                 },
                 {
                     "name": "XR",
                     "priceByColor": {
-                        "Carbon, Matte" : 2295,
-                        "Chalk, Gloss" : null,
-                        "Chameleon, Gloss" : 2345
+                        "Carbon, Matte": 2295,
+                        "Chalk, Gloss": null,
+                        "Chameleon, Gloss": 2345
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Carbon, Matte" : null,
-                        "Chalk, Gloss" : null,
-                        "Chameleon, Gloss" : null
+                        "Carbon, Matte": null,
+                        "Chalk, Gloss": null,
+                        "Chameleon, Gloss": null
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Brose mid-drive motor ebike",
+                "note": null,
+                "description": "Riding feels so natural, you will forget it’s electric. Featuring a refined Brose control system, the Prodigy electric bike will take your riding to the next level at a value that is unbeatable in the industry. A true class 3 experience that refuses to be considered ‘budget’ in any regard. This is the bike for those that demand more, but are smart enough to pay less. This electric bike offers riders top-quality performance at an affordable price."
+            },
+            "dropdown": {
+                "defaultValue": "XC",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XC - Step-Over w/Front Suspension",
+                        "value": "XC"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
         },
         {
             "name": "Revv1",
@@ -270,30 +428,52 @@
                 {
                     "name": "FS",
                     "priceByColor": {
-                        "Moss Green" : 2395,
-                        "Graphite Gray" : 2395
+                        "Moss Green": 2395,
+                        "Graphite Gray": 2395
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Moss Green" : null,
-                        "Graphite Gray" : null
+                        "Moss Green": null,
+                        "Graphite Gray": null
                     }
                 },
                 {
                     "name": "HT",
                     "priceByColor": {
-                        "Moss Green" : 1895,
-                        "Graphite Gray" : 1895
+                        "Moss Green": 1895,
+                        "Graphite Gray": 1895
                     },
                     "inStock": true,
                     "onSale": false,
                     "originalPrice": {
-                        "Moss Green" : null,
-                        "Graphite Gray" : null
+                        "Moss Green": null,
+                        "Graphite Gray": null
                     }
                 }
-            ]
+            ],
+            "pageDetail": {
+                "tagline": "Powerful moto-inspired moped ebike",
+                "note": "IN STOCK, orders ship out in 2-4 business days",
+                "description": "A bold, moped-style electric bike perfect for that extra kick of adrenaline on your rides. Whether commuting, joy-riding, running errands or exploring, the Revv 1 is made for thrill rides no matter the use case. Boasting high-end specs, this rugged custom bike is peak performance at a value price that only Ride1Up can deliver."
+            },
+            "dropdown": {
+                "defaultValue": "FS",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "FS - Full Suspension",
+                        "value": "FS"
+                    },
+                    {
+                        "option": "HT - Hardtail",
+                        "value": "HT"
+                    }
+                ]
+            }
         }
     ]
 }

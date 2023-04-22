@@ -12,7 +12,7 @@ import BatteriesPage from './pages/Batteries';
 import AboutUsPage from './pages/AboutUs';
 import ContactUsPage from './pages/ContactUs';
 import ReviewsPage from './pages/Reviews';
-import CartPage from './pages/Cart';
+import CartPage from './pages/CartPage';
 import PromotionsPage from './pages/Promotions';
 import BikeDetailsPage from './pages/BikeDetailsPage';
 

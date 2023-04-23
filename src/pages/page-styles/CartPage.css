@@ -185,3 +185,184 @@
 		margin: 8rem 0;
 	}
 }
+
+/*******************
+	Mobile Cart Active 
+********************/
+.mobile-cart-active {
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 5rem;
+}
+
+/* INDIVIDUAL PRODUCTS */
+.cart-product {
+	height: fit-content;
+}
+
+/* REMOVES BORDER BOTTOM FOR LAST SUBTOTAL CONTAINER AS TO NOT DOUBLE THE BORDERBOTTOM */
+.cart-product:last-of-type > .subtotal-container {
+	border-bottom: none;
+}
+
+/* EVEN CART PRODUCTS WILL HAVE DIFFERENT BG COLOR */
+.cart-product:nth-of-type(even) {
+	background-color: #f6f6f6;
+}
+
+/* REMOVE BUTTON CONTAINER */
+.remove-button-container {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	font-size: 2rem;
+	height: 3.6rem;
+}
+
+/* REMOVE BUTTON ICON */
+.cart-cross-icon {
+	border-radius: 50%;
+	box-sizing: content-box;
+	cursor: pointer;
+	fill: #c92626;
+	height: 1.2rem;
+	margin-left: 1rem;
+	padding: 0.35rem 0.5rem;
+	transition: all 0.3s;
+}
+
+@media (hover: hover) {
+	.cart-cross-icon:hover {
+		fill: #fff;
+		background-color: #c92626;
+	}
+}
+
+.product-container,
+.price-container,
+.quantity-container,
+.subtotal-container {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+/* DISPLAY FLEX FOR INNER CONTAINERS */
+.product-name,
+.product-frame,
+.product-color,
+.product-quantity,
+.product-subtotal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* TITLE FOR OPTIONS. LEFT SIDE */
+.product-info-title {
+	font-size: 1.2rem;
+}
+
+/* OPTIONS. RIGHT SIDE */
+.product-option {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: rgb(54, 54, 54);
+}
+
+.product-option.subtotal-bold {
+	font-weight: 700;
+}
+
+.link-to-product {
+	text-decoration: none;
+	color: rgba(54, 54, 54, 1);
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	font-weight: 600;
+}
+
+/* ESTIMATED DELIVERY CONTAINER */
+.estimated-delivery {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: rgb(117, 117, 117);
+	padding: 0.8rem 0;
+}
+
+/* QUANTITY CONTAINER INPUT */
+.quantity-input {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	padding: 0.5rem 0 0.5rem 1rem;
+	width: 4rem;
+	font-size: 1.2rem;
+	font-family: inherit;
+	border-radius: 3px;
+}
+
+/* UPDATE CART CONTAINER */
+.update-cart-container {
+	padding: 1rem 1rem;
+	background-color: #f6f6f6;
+}
+
+.coupon-container {
+	display: flex;
+	justify-content: flex-start;
+	gap: 2.5rem;
+}
+
+.coupon-container input {
+	padding: 0.5rem;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	font-size: 1.2rem;
+	max-width: 14.4rem;
+}
+
+:-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+	color: #000;
+}
+
+.coupon-button {
+	background-color: rgb(235, 233, 235);
+	color: rgb(81, 81, 81);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.2rem;
+	max-width: 14.4rem;
+}
+
+.update-cart-button {
+	background-color: rgb(235, 233, 235);
+	color: rgb(81, 81, 81);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	transition: all 0.3s;
+}
+
+.update-cart-button:disabled {
+	opacity: 0.6;
+}
+
+@media (hover: hover) {
+	.coupon-button:hover,
+	.update-cart-button:hover {
+		background-color: rgb(209, 209, 209);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-cart-active {
+		display: none;
+	}
+}

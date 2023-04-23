@@ -1,23 +1,12 @@
 import React from 'react';
 
-import MobileCartProduct from './MobileCartProduct';
+import MobileCart from './MobileCart';
 import DesktopCartProduct from './DesktopCartProduct';
 
 const CartActive = () => {
 	return (
 		<>
-			{/* Mobile Cart */}
-			<div className='mobile-cart-active'>
-				<MobileCartProduct />
-				<MobileCartProduct />
-				<div className='update-cart-container'>
-					<div className='coupon-container'>
-						<input type='text' placeholder='Coupon code' />
-						<button className='coupon-button'>Apply Coupon</button>
-					</div>
-					<button className='update-cart-button'>Update cart</button>
-				</div>
-			</div>
+			<MobileCart />
 			{/* Desktop Cart */}
 			<div className='desktop-cart-active'>
 				<div className='desktop-product-titles'>

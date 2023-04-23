@@ -1,0 +1,104 @@
+/* Mobile Cart Product */
+.product {
+	height: fit-content;
+}
+
+/* removes border bottom from last subtotal row */
+.product:last-of-type > .subtotal {
+	border-bottom: none;
+}
+
+/* Even products have different backgrounds */
+.product:nth-of-type(even) {
+	background-color: #f6f6f6;
+}
+
+/* Container with red cross */
+.remove-icon {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	font-size: 2rem;
+	height: 3.6rem;
+}
+
+/* Red Cross icon */
+.remove-icon svg {
+	border-radius: 50%;
+	box-sizing: content-box;
+	cursor: pointer;
+	fill: #c92626;
+	height: 1.2rem;
+	width: 1.2rem;
+	margin-left: 1rem;
+	padding: 0.4rem 0.4rem 0.35rem 0.35rem;
+	transition: all 0.3s;
+}
+
+@media (hover: hover) {
+	.remove-icon svg:hover {
+		fill: #fff;
+		background-color: #c92626;
+	}
+}
+
+/* Border seperated rows */
+.row {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+}
+
+/* Inner containers */
+.name,
+.frame,
+.color,
+.price,
+.quantity,
+.subtotal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Bold titles, h1's */
+.title {
+	font-size: 1.2rem;
+}
+
+.option {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: rgb(54, 54, 54);
+}
+
+/* Bold class for subtotal price */
+.bold {
+	font-weight: 700;
+}
+
+/* Product name link */
+.product-link {
+	text-decoration: none;
+	color: rgba(54, 54, 54, 1);
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	font-weight: 600;
+}
+
+/* Delivery estimate */
+.estimate {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: rgb(117, 117, 117);
+	padding: 0.8rem 0;
+}
+
+/* Input */
+.quantity-input {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	padding: 0.5rem 0 0.5rem 1rem;
+	width: 4rem;
+	font-size: 1.2rem;
+	font-family: inherit;
+	border-radius: 3px;
+}

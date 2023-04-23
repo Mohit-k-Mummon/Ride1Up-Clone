@@ -4,50 +4,52 @@ import { Link } from 'react-router-dom';
 
 import { ReactComponent as CrossIcon } from '../../assets/Cart/xmark-solid.svg';
 
+import styles from './MobileCartProduct.module.css';
+
 const MobileCartProduct = () => {
 	return (
-		<div className='cart-product'>
-			<div className='remove-button-container'>
-				<CrossIcon className='cart-cross-icon' />
+		<div className={styles.product}>
+			<div className={styles['remove-icon']}>
+				<CrossIcon />
 			</div>
-			<div className='product-container'>
-				<div className='product-name'>
-					<h1 className='product-info-title'>Product:</h1>
-					<Link className='link-to-product' to={'/product/roadster-v2'}>
-						Roadster v2
+			<div className={styles.row}>
+				<div className={styles.name}>
+					<h1 className={styles.title}>Product:</h1>
+					<Link className={styles['product-link']} to={'/product/revv-1'}>
+						Revv 1
 					</Link>
 				</div>
-				<div className='estimated-delivery'>Estimated delivery Apr 27th - May 1st</div>
-				<div className='product-frame'>
-					<h1 className='product-info-title'>Frame Type:</h1>
-					<p className='product-option'>Large</p>
+				<div className={styles.estimate}>Estimated delivery Apr 27th - May 1st</div>
+				<div className={styles.frame}>
+					<h1 className={styles.title}>Frame Type:</h1>
+					<p className={styles.option}>FS</p>
 				</div>
-				<div className='product-color'>
-					<h1 className='product-info-title'>Color:</h1>
-					<p className='product-option'>Black, Matte</p>
-				</div>
-			</div>
-			<div className='price-container'>
-				<div className='product-color'>
-					<h1 className='product-info-title'>Price:</h1>
-					<p className='product-option'>$1095.00</p>
+				<div className={styles.color}>
+					<h1 className={styles.title}>Color:</h1>
+					<p className={styles.option}>Graphite Gray</p>
 				</div>
 			</div>
-			<div className='quantity-container'>
-				<div className='product-quantity'>
-					<h1 className='product-info-title'>Quantity:</h1>
+			<div className={styles.row}>
+				<div className={styles.price}>
+					<h1 className={styles.title}>Price:</h1>
+					<p className={styles.option}>$2,395.00</p>
+				</div>
+			</div>
+			<div className={styles.row}>
+				<div className={styles.quantity}>
+					<h1 className={styles.title}>Quantity:</h1>
 					<input
-						defaultValue={2}
-						className='quantity-input'
+						defaultValue={1}
+						className={styles['quantity-input']}
 						type='number'
 						inputMode='numeric'
 					/>
 				</div>
 			</div>
-			<div className='subtotal-container'>
-				<div className='product-subtotal'>
-					<h1 className='product-info-title'>Subtotal:</h1>
-					<p className='product-option subtotal-bold'>$2,190.00</p>
+			<div className={styles.row}>
+				<div className={styles.subtotal}>
+					<h1 className={styles.title}>Subtotal:</h1>
+					<p className={`${styles.option} ${styles.bold}`}>$2,395.00</p>
 				</div>
 			</div>
 		</div>

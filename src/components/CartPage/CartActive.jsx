@@ -6,7 +6,9 @@ import DesktopCartProduct from './DesktopCartProduct';
 const CartActive = () => {
 	return (
 		<>
+			{/* Mobile Cart */}
 			<div className='mobile-cart-active'>
+				<MobileCartProduct />
 				<MobileCartProduct />
 				<div className='update-cart-container'>
 					<div className='coupon-container'>
@@ -16,6 +18,7 @@ const CartActive = () => {
 					<button className='update-cart-button'>Update cart</button>
 				</div>
 			</div>
+			{/* Desktop Cart */}
 			<div className='desktop-cart-active'>
 				<div className='desktop-product-titles'>
 					<div className='desktop-product-title'></div>

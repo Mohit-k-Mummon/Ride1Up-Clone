@@ -1,0 +1,36 @@
+.cart {
+	padding: 0 1.8rem;
+	margin-top: 6rem;
+	position: relative;
+}
+
+.heading {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Prompt', sans-serif;
+	font-weight: 600;
+	line-height: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+	.heading {
+		font-size: 3.6rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.cart {
+		margin-top: 8rem;
+	}
+	.heading {
+		font-size: 6.4rem;
+		line-height: 6.4rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.cart {
+		max-width: 134rem;
+		margin: 8rem auto 0;
+	}
+}

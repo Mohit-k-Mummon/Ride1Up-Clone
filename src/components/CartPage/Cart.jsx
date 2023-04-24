@@ -6,10 +6,12 @@ import ShippingAccordian from './ShippingAccordian';
 
 import CartEmpty from './CartEmpty';
 
+import styles from './Cart.module.css';
+
 const Cart = () => {
 	return (
-		<section className='cart-container'>
-			<h1 className='cart-heading'>Cart</h1>
+		<section className={styles.cart}>
+			<h1 className={styles.heading}>Cart</h1>
 			{/* <CartEmpty /> */}
 			<CartActive />
 			<ShippingAccordian />

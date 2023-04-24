@@ -1,19 +1,6 @@
 /*************
     Cart 
 **************/
-.cart-container {
-	padding: 0 1.8rem;
-	margin-top: 6rem;
-	position: relative;
-}
-
-.cart-heading {
-	text-align: center;
-	font-size: 3rem;
-	font-family: 'Prompt', sans-serif;
-	font-weight: 600;
-	line-height: 3rem;
-}
 
 /* EMPTY STATE */
 .cart-empty-state {
@@ -138,10 +125,6 @@
 }
 
 @media screen and (min-width: 768px) {
-	.cart-heading {
-		font-size: 3.6rem;
-	}
-
 	/* Background Logo */
 	.bg-logo {
 		margin: 7rem auto 0;
@@ -159,14 +142,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-	.cart-container {
-		margin-top: 8rem;
-	}
-	.cart-heading {
-		font-size: 6.4rem;
-		line-height: 6.4rem;
-	}
-
 	/* Accordian */
 	.accordian-wrapper {
 		margin: 8rem auto;
@@ -174,152 +149,8 @@
 }
 
 @media screen and (min-width: 1400px) {
-	.cart-container {
-		max-width: 134rem;
-		margin: 8rem auto 0;
-	}
-
-	/* Accordian */
 	.accordian-wrapper {
 		max-width: 60vw;
 		margin: 8rem 0;
-	}
-}
-
-/*******************
-	Desktop Cart Active 
-********************/
-.desktop-cart-active {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	display: none;
-	margin-top: 5rem;
-}
-
-/* TOP ROW AND MIDDLE PRODUCT ROW */
-.desktop-product-titles,
-.desktop-cart-product {
-	display: grid;
-	grid-template-columns: 30% 30% 15% 15% 10%;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 1rem 0;
-	align-items: center;
-}
-
-/* TOP ROW TEXT */
-.desktop-product-title {
-	color: rgb(54, 54, 54);
-	font-size: 1.2rem;
-	font-weight: 700;
-}
-
-/* BIKE IMG CONTAINER */
-.desktop-bike-img-container {
-	display: flex;
-	align-items: center;
-	gap: 3rem;
-}
-
-.desktop-bike-img-container img {
-	width: 100%;
-	margin-right: 2rem;
-	max-width: 18rem;
-}
-
-/* BIKE NAME */
-.desktop-product-name {
-	text-decoration: none;
-	color: inherit;
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin-bottom: 0.5rem;
-	display: inline-block;
-}
-
-/* ESTIMATED DELIVERY DATE */
-.desktop-estimated-delivery-time {
-	font-size: 1.2rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-	color: rgb(117, 117, 117);
-}
-
-/* FRAME AND COLOR TITLES */
-.desktop-frame,
-.desktop-color {
-	font-weight: 400;
-	font-size: 1.2rem;
-	margin-bottom: 0.5rem;
-}
-
-.desktop-frame span,
-.desktop-color span {
-	font-weight: 700;
-}
-
-/* PRICE TEXT */
-.desktop-product-price-container p {
-	font-size: 1.2rem;
-}
-
-/* INPUT TEXT */
-.desktop-product-quantity-container input {
-	border: 1px solid rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-	padding: 0.5rem;
-	width: 5rem;
-	font-size: 1.2rem;
-}
-
-/* SUBTOTAL TEXT */
-.desktop-product-subtotal-container {
-	font-size: 1.2rem;
-	font-weight: 600;
-}
-
-/* Desktop update cart */
-.desktop-update-cart-container {
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem;
-}
-
-/* COUPON CONTAINER */
-.desktop-coupon-container {
-	display: flex;
-	gap: 1rem;
-}
-
-.desktop-coupon-container input {
-	border: 1px solid rgba(0, 0, 0, 0.4);
-	font-size: 1.2rem;
-	padding-left: 0.5rem;
-}
-
-/* BUTTONS */
-.desktop-coupon-button,
-.desktop-update-cart-button {
-	background-color: rgb(235, 233, 235);
-	color: rgb(81, 81, 81);
-	cursor: pointer;
-	font-weight: 700;
-	padding: 0.8rem 1rem;
-	border-radius: 5px;
-	width: 100%;
-	font-size: 1.2rem;
-	max-width: 14.4rem;
-	transition: all 0.3s;
-}
-
-@media (hover: hover) {
-	.desktop-coupon-button:hover,
-	.desktop-update-cart-button:hover {
-		background-color: rgb(209, 209, 209);
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.desktop-cart-active {
-		display: grid;
 	}
 }

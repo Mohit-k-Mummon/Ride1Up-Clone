@@ -1,0 +1,64 @@
+.desktop-cart {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	display: none;
+	margin-top: 5rem;
+}
+
+.titles {
+	display: grid;
+	grid-template-columns: 30% 30% 15% 15% 10%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem 0;
+	align-items: center;
+}
+
+.title {
+	color: rgb(54, 54, 54);
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.update-cart {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.coupon {
+	display: flex;
+	gap: 1rem;
+}
+
+.coupon input {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	font-size: 1.2rem;
+	padding-left: 0.5rem;
+}
+
+.coupon-button,
+.update-button {
+	background-color: rgb(235, 233, 235);
+	color: rgb(81, 81, 81);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 0.8rem 1rem;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.2rem;
+	max-width: 14.4rem;
+	transition: all 0.3s;
+}
+
+@media (hover: hover) {
+	.coupon-button:hover,
+	.update-button:hover {
+		background-color: rgb(209, 209, 209);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.desktop-cart {
+		display: grid;
+	}
+}

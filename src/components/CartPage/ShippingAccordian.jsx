@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 
 import chevron from '../../assets/Navigation/red-chevron.png';
 
+import styles from './ShippingAccordian.module.css';
+
 const ShippingAccordian = () => {
 	const [active, setActive] = useState(false);
 
@@ -11,22 +13,22 @@ const ShippingAccordian = () => {
 	};
 
 	return (
-		<div className='accordian-wrapper'>
-			<div className='shipping-accordian'>
-				<div className='shipping-accordian-header' onClick={handleToggle}>
+		<div className={styles.accordian}>
+			<div className={styles.container}>
+				<header className={styles.header} onClick={handleToggle}>
 					<img
-						className={`accordian-chevron ${active ? 'active' : ''}`}
+						className={active ? styles.chevron : styles['chevron-active']}
 						src={chevron}
 						alt=''
 					/>
-					<h1 className='accordian-title'>Shipping Information</h1>
-				</div>
+					<h1 className={styles.title}>Shipping Information</h1>
+				</header>
 				<div
 					ref={contentEl}
-					className={`accordian-collapse ${active ? 'show' : ''}`}
+					className={active ? styles['collapse-show'] : styles.collapse}
 					style={active ? { height: contentEl.current.scrollHeight } : { height: '0px' }}
 				>
-					<div className='accordian-body'>
+					<div className={styles.body}>
 						<h1>Shipping Cost</h1>
 						<p>
 							Shipping within the Contiguous United States is FREE for orders over

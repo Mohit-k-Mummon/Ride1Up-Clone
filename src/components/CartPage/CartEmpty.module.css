@@ -1,9 +1,4 @@
-/*************
-    Cart 
-**************/
-
-/* EMPTY STATE */
-.cart-empty-state {
+.cart-empty {
 	border-top: 3px solid rgb(30, 133, 190);
 	background-color: rgb(247, 246, 247);
 	padding: 1.8rem 2.4rem;
@@ -13,7 +8,7 @@
 	margin-top: 4.3rem;
 }
 
-.cart-empty-state__icon {
+.icon {
 	height: 2rem;
 	width: 2rem;
 	border-bottom: 2px solid rgb(30, 133, 190);
@@ -23,7 +18,7 @@
 	flex-shrink: 0;
 }
 
-.cart-empty-state p {
+.cart-empty p {
 	font-size: 1.8rem;
 	font-weight: 500;
 	line-height: 2.4rem;
@@ -31,13 +26,11 @@
 	white-space: nowrap;
 }
 
-/* Background Logo */
 .bg-logo {
 	margin-top: 7rem;
 }
 
-/* Return Home Button */
-.cart-return-home-link {
+.return-link {
 	background-color: #c92626;
 	color: #fff;
 	text-decoration: none;
@@ -53,20 +46,19 @@
 }
 
 @media (hover: hover) {
-	.cart-return-home-link:hover {
+	.return-link:hover {
 		background-color: #fff;
 		color: #c92626;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	/* Background Logo */
 	.bg-logo {
 		margin: 7rem auto 0;
 		max-width: 65rem;
 	}
 
-	.cart-return-home-link {
+	.return-link {
 		margin: 3rem auto 0;
 	}
 }

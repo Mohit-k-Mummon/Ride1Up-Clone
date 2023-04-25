@@ -69,3 +69,17 @@ button {
 	font-size: inherit;
 	line-height: inherit;
 }
+
+/* Slick Styling */
+.slick-prev::before,
+.slick-next::before {
+	color: #000 !important;
+	display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+	.slick-next::before,
+	.slick-prev::before {
+		display: initial !important;
+	}
+}

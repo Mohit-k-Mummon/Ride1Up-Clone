@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SliderContainer.module.css';
 
 // React-Slick
 import Slider from 'react-slick';
@@ -15,7 +16,7 @@ const SliderContainer = props => {
 		slidesToScroll: 1,
 	};
 	return (
-		<div className='slider-container'>
+		<div className={styles.slider}>
 			<Slider {...settings}>
 				{images.map(image => {
 					return (

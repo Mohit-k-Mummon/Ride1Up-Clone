@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // Importing the ColorSwatches component, which will be used to display color options for each bike
 import ColorSwatches from './ColorSwatches';
 
-// Object ofArray of paths to bike images
+// JS Object that stores paths to different bikes
 import { imageArray } from '../../BikeDetailsPage/bikeImagePath';
 
 const Bike = props => {

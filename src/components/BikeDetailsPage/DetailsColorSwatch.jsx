@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './DetailsColorSwatch.module.css';
+
 // Swatches
 import burgundySwatch from '../../assets/Home/Color Swatches/Burgandy.png';
 import gravelGraySwatch from '../../assets/Home/Color Swatches/gold4.png';
@@ -70,7 +72,8 @@ const DetailsColorSwatch = props => {
 
 	return (
 		<span
-			className={`product-color-swatch ${props.color === props.currentColor ? 'active' : ''}`}
+			className={props.color === props.currentColor ? styles['swatch-active'] : styles.swatch}
+			// className={`product-color-swatch ${props.color === props.currentColor ? 'active' : ''}`}
 		>
 			<img src={swatch} alt='color-swatch' onClick={() => props.onSwatchClick(props.color)} />
 		</span>

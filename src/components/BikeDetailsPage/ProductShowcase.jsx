@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import styles from './ProductShowcase.module.css';
+
+// Router
 import { useParams } from 'react-router-dom';
 
+// Redux
 import { useDispatch } from 'react-redux';
 import { addBike } from '../features/cart-slice';
 
@@ -112,23 +116,23 @@ const ProductShowcase = () => {
 	};
 
 	return (
-		<section className='product-section'>
-			<div className='product-wrapper'>
+		<section className={styles.product}>
+			<div className={styles.wrapper}>
 				<SliderContainer images={images} />
-				<div className='product-content-wrapper'>
-					<h1 className='product-title'>{currentBike.name}</h1>
-					<p className='product-tagline'>{currentBike.pageDetail.tagline}</p>
+				<div className={styles.content}>
+					<h1 className={styles.name}>{currentBike.name}</h1>
+					<p className={styles.tagline}>{currentBike.pageDetail.tagline}</p>
 					{currentBike.pageDetail.note && (
-						<p className='product-note'>{currentBike.pageDetail.note}</p>
+						<p className={styles.note}>{currentBike.pageDetail.note}</p>
 					)}
-					<p className='product-description'>{currentBike.pageDetail.description}</p>
+					<p className={styles.description}>{currentBike.pageDetail.description}</p>
 					<form onSubmit={formSubmitHandler} className='product-form'>
 						<Selector
 							dropdown={currentBike.dropdown}
 							onSelectionChange={selectionChangeHandler}
 						/>
-						<div className='product-swatch-label'>Color:</div>
-						<div className='product-color-swatches-wrapper'>
+						<div className={styles['color-label']}>Color:</div>
+						<div className={styles['swatches-wrapper']}>
 							{typeof colorsAvailable === 'object' &&
 								Object.keys(colorsAvailable).map((swatchColor, index) => (
 									<DetailsColorSwatch
@@ -139,21 +143,21 @@ const ProductShowcase = () => {
 									/>
 								))}
 						</div>
-						<p className='product-current-color'>{color}</p>
-						<span className='product-call-us'>
+						<p className={styles['current-color']}>{color}</p>
+						<span className={styles.call}>
 							<span>"Is this the right bike for me?"</span> Let's chat:{' '}
 							<a href='tel: +18884941415'>{`(888)494-1415`}</a>
-							<div className='info-icon-wrapper'>
+							<div className={styles['info-icon']}>
 								<InfoIcon />
-								<div className='info-popup'>
+								<div className={styles.popup}>
 									<h2>Pre-Sale Support Hours</h2>
 									<p>9:00 AM - 5:00 PM PST</p>
 									<p>Monday-Friday</p>
 								</div>
 							</div>
 						</span>
-						<div className='product-price'>{`$${bikePrice}`}</div>
-						<button className=' product-form-button'>Add To Cart</button>
+						<div className={styles.price}>{`$${bikePrice}`}</div>
+						<button className={styles.button}>Add To Cart</button>
 					</form>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Selector.module.css';
 
 const Selector = props => {
 	const { dropdown, onSelectionChange } = props;
@@ -10,11 +11,11 @@ const Selector = props => {
 
 	return (
 		<>
-			<label className='bike-type-select-label' htmlFor='bike-type-select'>
+			<label className={styles.label} htmlFor='bike-type-select'>
 				Frame Type:
 			</label>
 			<select
-				className='bike-type-select'
+				className={styles.selector}
 				defaultValue={dropdown.defaultValue}
 				aria-label='Choose a bike type'
 				aria-describedby='bike-type-description'

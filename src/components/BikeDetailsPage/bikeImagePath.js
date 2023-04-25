@@ -247,13 +247,13 @@ export const imageArray = {
 				'/Bikes/Rift/ST/green-2.jpg',
 				'/Bikes/Rift/ST/green-3.jpg',
 				'/Bikes/Rift/ST/green-4.jpg',
+				'/Bikes/Rift/ST/green-5.jpg',
 			],
 			'Arctic White': [
 				'/Bikes/Rift/ST/white-1.jpg',
 				'/Bikes/Rift/ST/white-2.jpg',
 				'/Bikes/Rift/ST/white-3.jpg',
 				'/Bikes/Rift/ST/white-4.jpg',
-				'/Bikes/Rift/ST/white-5.jpg',
 			],
 			'Graphite Gray': [
 				'/Bikes/Rift/ST/gray-1.jpg',

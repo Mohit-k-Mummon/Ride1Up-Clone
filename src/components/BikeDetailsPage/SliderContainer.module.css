@@ -1,0 +1,10 @@
+.slider {
+	width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+	.slider {
+		width: 60%;
+		flex-grow: 1;
+	}
+}

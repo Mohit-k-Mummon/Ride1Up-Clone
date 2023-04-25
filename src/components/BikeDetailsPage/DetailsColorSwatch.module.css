@@ -1,0 +1,17 @@
+.swatch {
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.swatch-active {
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 2px #cf2e2e;
+}
+
+.swatch img,
+.swatch-active img {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}

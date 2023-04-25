@@ -83,7 +83,6 @@
 
 @media screen and (min-width: 1400px) {
 	.accordian {
-		max-width: 60vw;
-		margin: 8rem 0;
+		max-width: 108rem;
 	}
 }

@@ -9,8 +9,8 @@ const HeroSection = () => {
 				<div className='home-hero__content'>
 					<h1>
 						Introducing<br></br>
-						<span>TURRIS</span>
-						<br></br>Adventure touring-style ebike
+						<span>RIFT</span>
+						<br></br>All-Terrain Fat Tire Bike
 					</h1>
 				</div>
 				<Link className='home-hero__button'>Learn More</Link>

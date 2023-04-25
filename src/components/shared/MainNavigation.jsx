@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './MainNavigation.css';
 
-import logo from '../../assets/Navigation/Logo.png';
 import cartIcon from '../../assets/Navigation/shopping-cart.png';
 import menuHamburger from '../../assets/Navigation/menu-hamburger.png';
 import chevron from '../../assets/Navigation/down-arrow.png';
 import redChevron from '../../assets/Navigation/red-chevron.png';
 import closeIcon from '../../assets/Navigation/close.png';
+
+import { ReactComponent as Logo } from '../../assets/Navigation/logo.svg';
 
 // Router
 import { NavLink, useNavigate } from 'react-router-dom';
@@ -65,7 +66,7 @@ const MainNavigation = () => {
 		<header className='main-navigation'>
 			<nav className='nav container-nav'>
 				<NavLink className='logo-container' to={'/'}>
-					<img className='logo-container__icon' src={logo} alt='Ride1Up logo' />
+					<Logo className='logo-container__icon' />
 					<span>The Best Value Electric Bikes</span>
 				</NavLink>
 				<ul className='desktop-menu'>

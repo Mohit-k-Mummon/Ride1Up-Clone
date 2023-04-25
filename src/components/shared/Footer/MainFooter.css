@@ -113,6 +113,10 @@
 	margin-bottom: 3rem;
 }
 
+.site-map__logo g path {
+	fill: #fff;
+}
+
 .site-map-links__container {
 	display: flex;
 	flex-direction: column;

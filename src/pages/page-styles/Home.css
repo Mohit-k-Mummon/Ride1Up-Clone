@@ -2,7 +2,7 @@
     HERO SECTION 
 ********************/
 .home-hero {
-	background: url(../../assets/Home/Turris-Hero-min-scaled.jpg) no-repeat 70% / cover;
+	background: url(../../assets/Home/Rift-Hero-Launch1.jpg) no-repeat 70% / cover;
 	min-height: 69vh;
 	padding: 1.875rem;
 }
@@ -12,7 +12,7 @@
 }
 
 .home-hero__content h1 {
-	color: #fff;
+	color: #000;
 	font-weight: 400;
 	font-size: 3.2rem;
 }

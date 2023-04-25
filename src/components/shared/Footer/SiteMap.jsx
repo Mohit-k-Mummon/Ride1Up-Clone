@@ -7,7 +7,7 @@ import FooterForm from './FooterForm';
 import { Link, redirect } from 'react-router-dom';
 
 // Icons
-import { ReactComponent as Logo } from '../../../assets/Footer/ride1up.svg';
+import { ReactComponent as Logo } from '../../../assets/Navigation/logo.svg';
 import facebook from '../../../assets/Footer/facebook-app-symbol.png';
 import instagram from '../../../assets/Footer/instagram.png';
 import youtube from '../../../assets/Footer/youtube.png';

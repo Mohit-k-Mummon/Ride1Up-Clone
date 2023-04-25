@@ -4,7 +4,11 @@ import DesktopCartProduct from './DesktopCartProduct';
 
 import styles from './DesktopCart.module.css';
 
+// Redux
+import { useSelector } from 'react-redux';
+
 const DesktopCart = () => {
+	const cart = useSelector(state => state.cart);
 	return (
 		<div className={styles['desktop-cart']}>
 			<div className={styles.titles}>
@@ -14,7 +18,18 @@ const DesktopCart = () => {
 				<div className={styles.title}>Quantity</div>
 				<div className={styles.title}>Subtotal</div>
 			</div>
-			<DesktopCartProduct />
+			{cart.cartItems.map(item => (
+				<DesktopCartProduct
+					key={item.id}
+					id={item.id}
+					name={item.name}
+					frame={item.frame}
+					color={item.color}
+					price={item.price}
+					quantity={item.quantity}
+					subtotal={item.subtotal}
+				/>
+			))}
 			<div className={styles['update-cart']}>
 				<div className={styles.coupon}>
 					<input type='text' placeholder='Coupon code' />

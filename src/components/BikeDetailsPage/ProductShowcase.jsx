@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { useDispatch } from 'react-redux';
+import { addBike } from '../features/cart-slice';
+
 // Importing a JSON file containing bike data
 import BikesJSON from '../../Bikes.json';
 
@@ -94,8 +97,18 @@ const ProductShowcase = () => {
 		setColor(clickedColor);
 	};
 
+	// Redux
+	const dispatch = useDispatch();
 	const formSubmitHandler = event => {
 		event.preventDefault();
+		const product = {
+			name: bikeId,
+			frame: version,
+			color: color,
+			price: currentBike.versions[selectedVersionIndex]?.priceByColor[color],
+			quantity: 1,
+		};
+		dispatch(addBike(product));
 	};
 
 	return (

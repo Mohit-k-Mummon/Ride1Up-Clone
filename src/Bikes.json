@@ -345,6 +345,64 @@
             }
         },
         {
+            "name": "Rift",
+            "id": "rift",
+            "versions": [
+                {
+                    "name": "ST",
+                    "priceByColor": {
+                        "Forest Green": 1895,
+                        "Arctic White": 1895,
+                        "Graphite Gray": 1895
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Forest Green": null,
+                        "Arctic White": null,
+                        "Graphite Gray": null
+                    }
+                },
+                {
+                    "name": "XR",
+                    "priceByColor": {
+                        "Forest Green": 1895,
+                        "Arctic White": 1895,
+                        "Graphite Gray": 1895
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Forest Green": null,
+                        "Arctic White": null,
+                        "Graphite Gray": null
+                    }
+                }
+            ],
+            "pageDetail": {
+                "tagline": "All-terrain fat tire ebike",
+                "note": null,
+                "description": "Robustly designed to thrive in rugged environments with precision and stability, the Rift fat tire ebike is the epitome of adventure. Quad piston brakes, mammoth range and power, bundled with class 2-3 capabilities bridge the gap between versatility and comfort."
+            },
+            "dropdown": {
+                "defaultValue": "XR",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "ST - Step-Through",
+                        "value": "ST"
+                    },
+                    {
+                        "option": "XR - Step-Over",
+                        "value": "XR"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Prodigy",
             "id": "prodigy",
             "versions": [

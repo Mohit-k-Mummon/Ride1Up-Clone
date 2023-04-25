@@ -60,6 +60,9 @@ const ColorSwatches = props => {
 		case 'SandStone':
 			swatch = sandStoneSwatch;
 			break;
+		case 'Arctic White':
+			swatch = silverMatteSwatch;
+			break;
 		default:
 			swatch = '';
 			break;

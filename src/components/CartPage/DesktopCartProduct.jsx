@@ -53,6 +53,9 @@ const DesktopCartProduct = props => {
 		case 'prodigy':
 			convertedName = 'Prodigy';
 			break;
+		case 'rift':
+			convertedName = 'Rift';
+			break;
 		default:
 			break;
 	}
@@ -86,7 +89,7 @@ const DesktopCartProduct = props => {
 				<img src={bike} alt='cart-bike' />
 			</div>
 			<div>
-				<Link className={styles.name} to={'/product/revv-1'}>
+				<Link className={styles.name} to={`/product/${name}`}>
 					{convertedName}
 				</Link>
 				<p className={styles['estimated-delivery']}>

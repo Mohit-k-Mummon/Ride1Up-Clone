@@ -49,6 +49,9 @@ const MobileCartProduct = props => {
 		case 'prodigy':
 			convertedName = 'Prodigy';
 			break;
+		case 'rift':
+			convertedName = 'Rift';
+			break;
 		default:
 			break;
 	}
@@ -80,7 +83,7 @@ const MobileCartProduct = props => {
 			<div className={styles.row}>
 				<div className={styles.name}>
 					<h1 className={styles.title}>Product:</h1>
-					<Link className={styles['product-link']} to={'/product/revv-1'}>
+					<Link className={styles['product-link']} to={`/product/${name}`}>
 						{convertedName}
 					</Link>
 				</div>

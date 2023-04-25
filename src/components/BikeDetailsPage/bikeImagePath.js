@@ -220,6 +220,49 @@ export const imageArray = {
 			],
 		},
 	},
+	rift: {
+		XR: {
+			'Forest Green': [
+				'/Bikes/Rift/XR/green-1.jpg',
+				'/Bikes/Rift/XR/green-2.jpg',
+				'/Bikes/Rift/XR/green-3.jpg',
+				'/Bikes/Rift/XR/green-4.jpg',
+			],
+			'Arctic White': [
+				'/Bikes/Rift/XR/white-1.jpg',
+				'/Bikes/Rift/XR/white-2.jpg',
+				'/Bikes/Rift/XR/white-3.jpg',
+				'/Bikes/Rift/XR/white-4.jpg',
+			],
+			'Graphite Gray': [
+				'/Bikes/Rift/XR/gray-1.jpg',
+				'/Bikes/Rift/XR/gray-2.jpg',
+				'/Bikes/Rift/XR/gray-3.jpg',
+				'/Bikes/Rift/XR/gray-4.jpg',
+			],
+		},
+		ST: {
+			'Forest Green': [
+				'/Bikes/Rift/ST/green-1.jpg',
+				'/Bikes/Rift/ST/green-2.jpg',
+				'/Bikes/Rift/ST/green-3.jpg',
+				'/Bikes/Rift/ST/green-4.jpg',
+			],
+			'Arctic White': [
+				'/Bikes/Rift/ST/white-1.jpg',
+				'/Bikes/Rift/ST/white-2.jpg',
+				'/Bikes/Rift/ST/white-3.jpg',
+				'/Bikes/Rift/ST/white-4.jpg',
+				'/Bikes/Rift/ST/white-5.jpg',
+			],
+			'Graphite Gray': [
+				'/Bikes/Rift/ST/gray-1.jpg',
+				'/Bikes/Rift/ST/gray-2.jpg',
+				'/Bikes/Rift/ST/gray-3.jpg',
+				'/Bikes/Rift/ST/gray-4.jpg',
+			],
+		},
+	},
 	prodigy: {
 		XR: {
 			'Carbon, Matte': [

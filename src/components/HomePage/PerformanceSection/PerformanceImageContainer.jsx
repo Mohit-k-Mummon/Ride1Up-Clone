@@ -1,12 +1,9 @@
 import React from 'react';
 
-import series700 from '../../../assets/Home/Bikes/700 Series/XR/700-Series_XR_Gunmetal_Gray.jpg';
-
 const PerformanceImageContainer = () => {
 	return (
 		<div className='performance-image-container'>
-			<img src={series700} alt='' />
-
+			<img src='/Bikes/700 Series/XR/gray-1.jpg' alt='' />
 			<div className='performance-image-button display'>
 				<div className='inner'>
 					<div id='display'></div>

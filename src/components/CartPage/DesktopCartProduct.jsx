@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './DesktopCartProduct.module.css';
 
 // Imgs
-import { ReactComponent as CrossIcon } from '../../assets/Cart/xmark-solid.svg';
 import { imageArray } from '../BikeDetailsPage/bikeImagePath';
 // Redux
-import { removeBike } from '../features/cart-slice';
+import { removeBike, toggleUpdate } from '../features/cart-slice';
 import { useDispatch } from 'react-redux';
 
 // import bike from '../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Gray_Profile.jpg';
@@ -67,14 +66,23 @@ const DesktopCartProduct = props => {
 	// Display correct bike image
 	let bike = imageArray[name][frame][color][0];
 
+	// Quantity update handler
+	const quantityRef = useRef();
+	const quantityUpdateHandler = () => {
+		dispatch(toggleUpdate({ id: id, newQuantity: quantityRef.current.value }));
+	};
+
 	return (
 		<div className={styles.product}>
 			<div className={styles['bike-img']}>
-				<CrossIcon
+				<div
 					onClick={() => {
 						removeBikeHandler(id, price);
 					}}
-				/>
+					className={styles.cross}
+				>
+					<span>x</span>
+				</div>
 				<img src={bike} alt='cart-bike' />
 			</div>
 			<div>
@@ -95,7 +103,15 @@ const DesktopCartProduct = props => {
 				<p>${formattedPrice}</p>
 			</div>
 			<div className={styles['quantity-container']}>
-				<input inputMode='numeric' defaultValue={quantity} type='number' />
+				<input
+					ref={quantityRef}
+					onChange={quantityUpdateHandler}
+					inputMode='numeric'
+					defaultValue={quantity}
+					type='number'
+					min={'1'}
+					max={'25'}
+				/>
 			</div>
 			<div className={styles['subtotal-container']}>
 				<p>${formattedSubtotal}</p>

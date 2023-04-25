@@ -11,7 +11,13 @@ import closeIcon from '../../assets/Navigation/close.png';
 // Router
 import { NavLink, useNavigate } from 'react-router-dom';
 
+// Redux
+import { useSelector } from 'react-redux';
+
 const MainNavigation = () => {
+	// Redux
+	const cart = useSelector(state => state.cart);
+
 	// Mobile Menu Active State
 	const [menuExpanded, setMenuExpanded] = useState(false);
 	const menuToggleHandler = () => {
@@ -98,7 +104,7 @@ const MainNavigation = () => {
 				<div className='cart-menu'>
 					<NavLink className='cart-menu__icon-container' to={'/cart'}>
 						<img className='cart-icon' src={cartIcon} alt='Cart Icon' />
-						<span className='cart-total'>{0}</span>
+						<span className='cart-total'>{cart.cartQuantity}</span>
 					</NavLink>
 					<button
 						aria-expanded={menuExpanded}

@@ -7,10 +7,15 @@ import styles from './MobileCart.module.css';
 
 // Redux
 import { useSelector } from 'react-redux';
+import { updateCart } from '../features/cart-slice';
+import { useDispatch } from 'react-redux';
 
 const MobileCart = () => {
 	const cart = useSelector(state => state.cart);
-
+	const dispatch = useDispatch();
+	const cartUpdateHandler = () => {
+		dispatch(updateCart());
+	};
 	return (
 		<div className={styles['mobile-cart']}>
 			{cart.cartItems.map(item => (
@@ -30,7 +35,13 @@ const MobileCart = () => {
 					<input type='text' placeholder='Coupon code' />
 					<button>Apply Coupon</button>
 				</div>
-				<button className={styles['update-button']}>Update cart</button>
+				<button
+					onClick={cartUpdateHandler}
+					disabled={!cart.cartUpdated}
+					className={styles['update-button']}
+				>
+					Update cart
+				</button>
 			</div>
 		</div>
 	);

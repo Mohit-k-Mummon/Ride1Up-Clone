@@ -6,9 +6,15 @@ import styles from './DesktopCart.module.css';
 
 // Redux
 import { useSelector } from 'react-redux';
+import { updateCart } from '../features/cart-slice';
+import { useDispatch } from 'react-redux';
 
 const DesktopCart = () => {
 	const cart = useSelector(state => state.cart);
+	const dispatch = useDispatch();
+	const cartUpdateHandler = () => {
+		dispatch(updateCart());
+	};
 	return (
 		<div className={styles['desktop-cart']}>
 			<div className={styles.titles}>
@@ -35,7 +41,13 @@ const DesktopCart = () => {
 					<input type='text' placeholder='Coupon code' />
 					<button className={styles['coupon-button']}>Apply coupon</button>
 				</div>
-				<button className={styles['update-button']}>Update cart</button>
+				<button
+					onClick={cartUpdateHandler}
+					disabled={!cart.cartUpdated}
+					className={styles['update-button']}
+				>
+					Update cart
+				</button>
 			</div>
 		</div>
 	);

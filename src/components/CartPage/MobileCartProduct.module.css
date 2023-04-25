@@ -22,23 +22,41 @@
 	height: 3.6rem;
 }
 
-/* Red Cross icon */
-.remove-icon svg {
+/* Cross Icon */
+.cross {
+	height: 2rem;
+	width: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
-	box-sizing: content-box;
-	cursor: pointer;
-	fill: #c92626;
-	height: 1.2rem;
-	width: 1.2rem;
+	transition: all 0.3s;
 	margin-left: 1rem;
-	padding: 0.4rem 0.4rem 0.35rem 0.35rem;
+	cursor: pointer;
+	position: relative;
+}
+
+.cross span {
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+	line-height: 0.7888rem;
+	color: #c92626;
+	font-weight: 700;
+	font-family: 'Dongle', sans-serif;
 	transition: all 0.3s;
 }
 
 @media (hover: hover) {
-	.remove-icon svg:hover {
-		fill: #fff;
+	.cross:hover {
 		background-color: #c92626;
+		color: #fff;
+	}
+
+	.cross:hover span {
+		color: #fff;
 	}
 }
 

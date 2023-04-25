@@ -50,6 +50,15 @@
 	transition: all 0.3s;
 }
 
+.update-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.update-button:disabled:hover {
+	background-color: rgb(235, 233, 235);
+}
+
 @media (hover: hover) {
 	.coupon-button:hover,
 	.update-button:hover {

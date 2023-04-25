@@ -1,13 +1,12 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
-
-import { ReactComponent as CrossIcon } from '../../assets/Cart/xmark-solid.svg';
-
+import React, { useRef } from 'react';
 import styles from './MobileCartProduct.module.css';
 
+// Router
+import { Link } from 'react-router-dom';
+
+// Redux
 import { useDispatch } from 'react-redux';
-import { removeBike } from '../features/cart-slice';
+import { removeBike, toggleUpdate } from '../features/cart-slice';
 
 const MobileCartProduct = props => {
 	const { id, name, frame, color, price, subtotal, quantity } = props;
@@ -54,15 +53,29 @@ const MobileCartProduct = props => {
 			break;
 	}
 
+	// Remove bike handler
 	const dispatch = useDispatch();
 	const removeBikeHandler = (id, price) => {
 		dispatch(removeBike({ id: id, price: price }));
 	};
 
+	// Quantity update handler
+	const quantityRef = useRef();
+	const quantityUpdateHandler = () => {
+		dispatch(toggleUpdate({ id: id, newQuantity: quantityRef.current.value }));
+	};
+
 	return (
 		<div className={styles.product}>
 			<div className={styles['remove-icon']}>
-				<CrossIcon onClick={() => removeBikeHandler(id, price)} />
+				<div
+					onClick={() => {
+						removeBikeHandler(id, price);
+					}}
+					className={styles.cross}
+				>
+					<span>x</span>
+				</div>
 			</div>
 			<div className={styles.row}>
 				<div className={styles.name}>
@@ -91,10 +104,14 @@ const MobileCartProduct = props => {
 				<div className={styles.quantity}>
 					<h1 className={styles.title}>Quantity:</h1>
 					<input
+						ref={quantityRef}
+						onChange={quantityUpdateHandler}
 						defaultValue={quantity}
 						className={styles['quantity-input']}
 						type='number'
 						inputMode='numeric'
+						min={'1'}
+						max={'25'}
 					/>
 				</div>
 			</div>

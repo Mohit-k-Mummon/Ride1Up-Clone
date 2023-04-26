@@ -1,0 +1,91 @@
+.highlights {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+	max-width: 54rem;
+	margin: 0 auto;
+	row-gap: 6rem;
+	column-gap: 2rem;
+	padding-bottom: 10rem;
+}
+
+.highlight {
+	max-width: 21.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+.highlight a {
+	text-decoration: none;
+}
+
+.icon {
+	height: 6.5rem;
+	width: auto;
+}
+
+.title {
+	color: #c92626;
+	font-family: 'Prompt', sans-serif;
+	margin-top: 2rem;
+	font-weight: 500;
+}
+
+.description {
+	color: #fff;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.link {
+	text-decoration: none;
+	color: #c92626;
+	font-weight: 500;
+	font-size: 1.4rem;
+	margin-top: auto;
+}
+
+@media (hover: hover) {
+	.title:hover,
+	.link:hover {
+		color: #e13030;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.highlights {
+		max-width: 72rem;
+	}
+
+	.title {
+		font-size: 2.5rem;
+		white-space: nowrap;
+	}
+
+	.description {
+		font-size: 1.6rem;
+	}
+
+	.link {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.highlights {
+		max-width: 96rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.highlights {
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 134rem;
+	}
+}

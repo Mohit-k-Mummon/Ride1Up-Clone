@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './MainFooter.css';
+import styles from './MainFooter.module.css';
 
 // Components
 import ProductHighlights from './ProductHighlights';
@@ -9,7 +8,7 @@ import CopyRight from './CopyRight';
 
 const MainFooter = () => {
 	return (
-		<section className='footer'>
+		<section className={styles.footer}>
 			<ProductHighlights />
 			<SiteMap />
 			<CopyRight />

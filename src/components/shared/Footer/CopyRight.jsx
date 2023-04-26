@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './CopyRight.module.css';
 
 import visa from '../../../assets/Footer/visa.png';
 import mastercard from '../../../assets/Footer/mastercard.png';
@@ -8,8 +9,8 @@ import paypal from '../../../assets/Footer/paypal.png';
 
 const CopyRight = () => {
 	return (
-		<div className='copyright'>
-			<div className='copyright__links'>
+		<div className={styles.copyright}>
+			<div className={styles['links-container']}>
 				<a className='link' href='google.com'>
 					Terms of Use
 				</a>
@@ -17,8 +18,10 @@ const CopyRight = () => {
 					Privacy Policy
 				</a>
 			</div>
-			<div className='copy-text'>Copyright Ride1UP © 2023. All Rights Reserved.</div>
-			<div className='accepted-payments'>
+			<div className={styles['copy-text']}>
+				Copyright Ride1UP © 2023. All Rights Reserved.
+			</div>
+			<div className={styles.payments}>
 				<img className='payment-icon' src={visa} alt='visa logo' />
 				<img className='payment-icon' src={mastercard} alt='mastercard logo' />
 				<img className='payment-icon' src={americanexpress} alt='american express logo' />

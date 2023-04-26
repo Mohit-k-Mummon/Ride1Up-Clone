@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SiteMap.module.css';
 
 // Components
 import FooterForm from './FooterForm';
@@ -19,11 +20,11 @@ const SiteMap = () => {
 		section.scrollIntoView({ behavior: 'smooth' });
 	};
 	return (
-		<div className='site-map'>
-			<div className='site-map-links'>
-				<Logo className='site-map__logo' />
-				<div className='site-map-links__container'>
-					<div className='site-map-links__shop'>
+		<div className={styles.map}>
+			<div>
+				<Logo className={styles.logo} />
+				<div className={styles['links-container']}>
+					<div className={styles.shop}>
 						<h1>SHOP</h1>
 						<Link
 							to={'/product/700-series'}
@@ -76,7 +77,7 @@ const SiteMap = () => {
 						<Link>Parts</Link>
 						<Link>Open Box Ebikes</Link>
 					</div>
-					<div className='site-map-links__company'>
+					<div className={styles.company}>
 						<h1>Company</h1>
 						<Link>About Us</Link>
 						<Link>Blog</Link>
@@ -86,13 +87,13 @@ const SiteMap = () => {
 					</div>
 				</div>
 			</div>
-			<div className='socials-wrapper'>
-				<div className='socials'>
-					<h2 className='socials__title'>Follow Us</h2>
-					<div className='socials__icons'>
+			<div className={styles['socials-wrapper']}>
+				<div className={styles.socials}>
+					<h2 className={styles.title}>Follow Us</h2>
+					<div className={styles['icons-container']}>
 						<a
 							href='https://www.facebook.com/ride1up/'
-							className='socials__icon'
+							className={styles.icon}
 							target='_blank'
 							rel='noreferrer'
 						>
@@ -100,7 +101,7 @@ const SiteMap = () => {
 						</a>
 						<a
 							href='https://www.instagram.com/ride_1up/'
-							className='socials__icon'
+							className={styles.icon}
 							target='_blank'
 							rel='noreferrer'
 						>
@@ -108,7 +109,7 @@ const SiteMap = () => {
 						</a>
 						<a
 							href='https://www.youtube.com/channel/UCaIZ_dsdNRFSSH5HdNjsYBg'
-							className='socials__icon'
+							className={styles.icon}
 							target='_blank'
 							rel='noreferrer'
 						>

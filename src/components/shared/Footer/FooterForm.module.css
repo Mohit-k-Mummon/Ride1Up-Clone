@@ -1,0 +1,28 @@
+.form {
+	display: flex;
+	align-items: center;
+	margin: 2rem auto;
+}
+
+.input-group {
+	flex-grow: 1;
+}
+
+.input {
+	font-size: 1.6rem;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	padding: 1rem 0 1rem 1rem;
+	width: 100%;
+}
+
+.button {
+	background-color: #c92626;
+	font-family: inherit;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.6rem;
+	padding: 1.1rem 1rem;
+	cursor: pointer;
+}

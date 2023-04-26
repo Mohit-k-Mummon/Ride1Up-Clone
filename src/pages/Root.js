@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainNavigation from '../components/shared/MainNavigation';
+import MainNavigation from '../components/shared/MainNavigation/MainNavigation';
 import TopNotificationBar from '../components/shared/TopNotificationBar';
 import MainFooter from '../components/shared/Footer/MainFooter';
 // Router

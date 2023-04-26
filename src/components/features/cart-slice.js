@@ -5,6 +5,7 @@ const initialState = {
 	cartQuantity: 0,
 	cartSubtotal: 0,
 	cartUpdated: false,
+	addToCartClicked: false,
 };
 
 const cartSlice = createSlice({
@@ -95,9 +96,23 @@ const cartSlice = createSlice({
 			// const fetchedCartItems = JSON.parse(localStorage.getItem('ride1up_cartItems'));
 			// console.log(fetchedCartItems);
 		},
+		startCartAnimation: state => {
+			state.addToCartClicked = true;
+		},
+		stopCartAnimation: state => {
+			state.addToCartClicked = false;
+		},
 	},
 });
 
-export const { addBike, fetchCartItems, removeBike, toggleUpdate, updateCart } = cartSlice.actions;
+export const {
+	addBike,
+	fetchCartItems,
+	removeBike,
+	toggleUpdate,
+	updateCart,
+	startCartAnimation,
+	stopCartAnimation,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

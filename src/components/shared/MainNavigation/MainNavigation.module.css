@@ -1,6 +1,3 @@
-/*******************
-    Main Containers 
-********************/
 .main-navigation {
 	align-items: center;
 	background-color: #fff;
@@ -20,45 +17,52 @@
 	align-items: center;
 	width: 100%;
 	position: relative;
+	max-width: 134rem;
+	margin: 0 auto;
 }
 
 /***********
     Logo 
 ************/
-.nav .logo-container__icon {
+.logo-link svg {
 	width: 11.5rem;
 }
 
-.nav .logo-container span {
+.logo-link span {
 	display: none;
 }
 
 /********************
     Nav Desktop Menu 
 *********************/
-.nav .desktop-menu {
+.desktop-menu {
 	display: none;
 }
 
 /***********************
     Cart and Menu Icon 
 ************************/
-.nav .cart-menu {
+.cart {
 	display: flex;
 	gap: 3rem;
 	width: 7.3rem;
 }
 
-.nav .cart-menu .cart-menu__icon-container {
+.cart-container {
 	position: relative;
 }
 
-.nav .cart-menu .cart-menu__icon-container .cart-icon {
+.animating {
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+.cart-icon {
 	height: 2.3rem;
 	width: auto;
 }
 
-.nav .cart-menu .cart-menu__icon-container .cart-total {
+.cart-total {
 	background-color: #c92626;
 	color: #fff;
 	font-size: 1.1rem;
@@ -75,12 +79,12 @@
 	right: -1rem;
 }
 
-.nav .cart-menu button .menu-icon-hamburger {
+.menu-hamburger {
 	height: 2rem;
 	cursor: pointer;
 }
 
-.nav .cart-menu button .menu-icon-close {
+.menu-close {
 	height: 1.6rem;
 	cursor: pointer;
 }
@@ -102,13 +106,12 @@
 	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu Active Styling */
-.mobile-menu.menu-active {
+.menu-active {
 	display: initial;
 }
 
-/* Sub Menu Active positioning */
-.mobile-menu.sub-menu-active {
+/* Menu Active Styling */
+.sub-menu-active {
 	top: 22.3rem;
 }
 
@@ -131,14 +134,14 @@
 }
 
 /* Chevron Icon for Mobile Menu */
-.mobile-menu li .chevron-icon {
+.mobile-menu li .chevron {
 	height: 2rem;
 	padding: 0 1rem;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-.mobile-menu li .chevron-icon[aria-expanded='true'] {
+.mobile-menu li .chevron[aria-expanded='true'] {
 	transform: rotateX(180deg);
 }
 
@@ -147,13 +150,13 @@
 	display: none;
 }
 
-.mobile-menu.sub-menu-active .accessories-list {
+.sub-menu-active .accessories-list {
 	background-color: #f4f4f4;
 	display: flex;
 	padding-left: 3rem;
 }
 
-.mobile-menu.menu-active .accessories-list a {
+.menu-active .accessories-list a {
 	width: 100%;
 }
 
@@ -162,12 +165,16 @@
 		padding: 0 4.2rem;
 		height: 6.64rem;
 	}
+
+	/***********
+        Logo 
+    ************/
+	.logo-link svg {
+		width: 15rem;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-	/*******************
-    	Main Containers 
-	********************/
 	.main-navigation {
 		padding: 0 5.12rem;
 		height: 7.73rem;
@@ -176,21 +183,29 @@
 	/***********
     	Logo 
 	************/
-	.nav .logo-container__icon {
-		width: 15rem;
+	.logo-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		text-decoration: none;
+		font-size: 1.32rem;
+		font-style: italic;
+		color: inherit;
 	}
 
 	/********************
-    	Nav Desktop Menu 
+    	Desktop Menu 
 	*********************/
-	.nav .desktop-menu {
+	.desktop-menu {
 		display: initial;
 		list-style: none;
 		display: flex;
 		gap: 3rem;
 	}
 
-	.nav .desktop-menu li {
+	.desktop-menu li {
 		font-weight: 600;
 		font-size: 1.5rem;
 		cursor: pointer;
@@ -198,7 +213,7 @@
 	}
 
 	/* Accessories li */
-	.nav .desktop-menu li:nth-of-type(2) {
+	.desktop-menu li:nth-of-type(2) {
 		display: flex;
 		justify-content: space-between;
 		gap: 0.8rem;
@@ -207,14 +222,14 @@
 	}
 
 	/* Red chevron Desktop */
-	.nav .desktop-menu li .chevron-icon-red {
+	.desktop-chevron {
 		height: 0.9rem;
 		position: relative;
 		top: 0.1rem;
 	}
 
 	/* Drop Down for Accessories */
-	.nav .desktop-menu .nav__desktop-drop-down {
+	.desktop-dropdown {
 		position: absolute;
 		background-color: #fff;
 		bottom: -8.4rem;
@@ -228,7 +243,7 @@
 		visibility: hidden;
 	}
 
-	.nav .desktop-menu .nav__desktop-drop-down::after {
+	.desktop-dropdown::after {
 		content: '';
 		position: absolute;
 		width: 0;
@@ -241,66 +256,121 @@
 		transform: translate(-50%, -50%);
 	}
 
-	.nav .desktop-menu li:nth-of-type(2):hover .nav__desktop-drop-down {
+	.desktop-menu li:nth-of-type(2):hover .desktop-dropdown {
 		visibility: visible;
 	}
 
-	.nav .desktop-menu a:hover {
+	.desktop-menu a:hover {
 		color: #c92626;
 	}
 
 	/* a tags in li's */
-	.nav .desktop-menu li a {
+	.desktop-menu li a {
 		text-decoration: none;
 		color: inherit;
 	}
 
 	/* Every li but not the second one */
-	.nav .desktop-menu li:not(:nth-child(2)):hover {
+	.desktop-menu li:not(:nth-child(2)):hover {
 		color: #cf2e2e;
+	}
+
+	/***********************
+        Mobile Menu 
+    ************************/
+	.menu-active {
+		display: none;
 	}
 
 	/***********************
     	Cart and Menu Icon 
 	************************/
-	.nav .cart-menu button .menu-icon-close,
-	.nav .cart-menu button .menu-icon-hamburger {
-		display: none;
-	}
-
-	/***********************
-    	Mobile Menu 
-	************************/
-	.mobile-menu.menu-active {
+	.menu-close,
+	.menu-hamburger {
 		display: none;
 	}
 }
 
 @media screen and (min-width: 1400px) {
-	/***********
-    	Logo 
-	************/
-	.nav .logo-container {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1.5rem;
-		text-decoration: none;
-		font-size: 1.32rem;
-		font-style: italic;
-		color: inherit;
-	}
-
-	.nav .logo-container span {
-		display: initial;
-	}
-
-	/********************
-    	Nav Desktop Menu 
-	*********************/
-	.nav .desktop-menu {
+	.desktop-menu {
 		position: relative;
 		right: 5rem;
+	}
+
+	.logo-link span {
+		display: initial;
+	}
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-4-26 9:21:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-horizontal {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes jello-horizontal {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
 	}
 }

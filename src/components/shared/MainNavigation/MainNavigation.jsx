@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
-import './MainNavigation.css';
+import React, { useEffect, useState } from 'react';
+import styles from './MainNavigation.module.css';
 
-import cartIcon from '../../assets/Navigation/shopping-cart.png';
-import menuHamburger from '../../assets/Navigation/menu-hamburger.png';
-import chevron from '../../assets/Navigation/down-arrow.png';
-import redChevron from '../../assets/Navigation/red-chevron.png';
-import closeIcon from '../../assets/Navigation/close.png';
+import cartIcon from '../../../assets/Navigation/shopping-cart.png';
+import menuHamburger from '../../../assets/Navigation/menu-hamburger.png';
+import chevron from '../../../assets/Navigation/down-arrow.png';
+import redChevron from '../../../assets/Navigation/red-chevron.png';
+import closeIcon from '../../../assets/Navigation/close.png';
 
-import { ReactComponent as Logo } from '../../assets/Navigation/logo.svg';
+import { ReactComponent as Logo } from '../../../assets/Navigation/logo.svg';
 
 // Router
 import { NavLink, useNavigate } from 'react-router-dom';
 
 // Redux
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { stopCartAnimation } from '../../features/cart-slice';
 
 const MainNavigation = () => {
 	// Redux
@@ -35,10 +37,10 @@ const MainNavigation = () => {
 	// Menu Icon Toggle Img
 	let MenuIcon;
 	if (menuExpanded) {
-		MenuIcon = <img className='menu-icon-close' src={closeIcon} alt='Menu Icon' />;
+		MenuIcon = <img className={styles['menu-close']} src={closeIcon} alt='Menu Icon' />;
 	} else {
 		MenuIcon = (
-			<img className='menu-icon-hamburger' src={menuHamburger} alt='Close Menu Icon' />
+			<img className={styles['menu-hamburger']} src={menuHamburger} alt='Close Menu Icon' />
 		);
 	}
 
@@ -62,14 +64,26 @@ const MainNavigation = () => {
 		section.scrollIntoView({ behavior: 'smooth' });
 	};
 
+	// Cart Animation State
+	const dispatch = useDispatch();
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			dispatch(stopCartAnimation());
+		}, 800);
+
+		return () => {
+			clearTimeout(timer);
+		};
+	}, [cart.addToCartClicked, dispatch]);
+
 	return (
-		<header className='main-navigation'>
-			<nav className='nav container-nav'>
-				<NavLink className='logo-container' to={'/'}>
-					<Logo className='logo-container__icon' />
+		<header className={styles['main-navigation']}>
+			<nav className={styles.nav}>
+				<NavLink className={styles['logo-link']} to={'/'}>
+					<Logo />
 					<span>The Best Value Electric Bikes</span>
 				</NavLink>
-				<ul className='desktop-menu'>
+				<ul className={styles['desktop-menu']}>
 					<li>
 						<NavLink to={'/'} onClick={scrollToBikesHandler}>
 							Ebikes
@@ -79,12 +93,12 @@ const MainNavigation = () => {
 						Accessories
 						<img
 							aria-expanded={mobileSubMenuExpanded}
-							className='chevron-icon-red'
+							className={styles['desktop-chevron']}
 							onClick={subMenuToggleHandler}
 							src={redChevron}
 							alt=''
 						/>
-						<div className='nav__desktop-drop-down'>
+						<div className={styles['desktop-dropdown']}>
 							<NavLink to={'/shop/parts'}>Parts & Accessories</NavLink>
 							<NavLink to={'/shop/batteries'}>Batteries</NavLink>
 						</div>
@@ -102,10 +116,15 @@ const MainNavigation = () => {
 						<NavLink to={'/social-reviews'}>Reviews</NavLink>
 					</li>
 				</ul>
-				<div className='cart-menu'>
-					<NavLink className='cart-menu__icon-container' to={'/cart'}>
-						<img className='cart-icon' src={cartIcon} alt='Cart Icon' />
-						<span className='cart-total'>{cart.cartQuantity}</span>
+				<div className={styles.cart}>
+					<NavLink
+						className={`${styles['cart-container']} ${
+							cart.addToCartClicked ? styles.animating : ''
+						}`}
+						to={'/cart'}
+					>
+						<img className={styles['cart-icon']} src={cartIcon} alt='Cart Icon' />
+						<span className={styles['cart-total']}>{cart.cartQuantity}</span>
 					</NavLink>
 					<button
 						aria-expanded={menuExpanded}
@@ -117,9 +136,9 @@ const MainNavigation = () => {
 				</div>
 				<ul
 					id='mobile-menu'
-					className={`mobile-menu ${menuExpanded ? 'menu-active' : ''} ${
-						mobileSubMenuExpanded ? 'sub-menu-active' : ''
-					}`}
+					className={`${styles['mobile-menu']} ${
+						menuExpanded ? styles['menu-active'] : ''
+					} ${mobileSubMenuExpanded ? styles['sub-menu-active'] : ''}`}
 				>
 					<li>
 						<NavLink onClick={mobileScrollToBikesAndToggleHandler}>Ebikes</NavLink>
@@ -128,18 +147,18 @@ const MainNavigation = () => {
 						Accessories
 						<img
 							aria-expanded={mobileSubMenuExpanded}
-							className='chevron-icon'
+							className={styles.chevron}
 							onClick={subMenuToggleHandler}
 							src={chevron}
 							alt=''
 						/>
 					</li>
-					<li className='accessories-list'>
+					<li className={styles['accessories-list']}>
 						<NavLink to={'/shop/parts'} onClick={menuToggleHandler}>
 							Parts & Accessories
 						</NavLink>
 					</li>
-					<li className='accessories-list'>
+					<li className={styles['accessories-list']}>
 						<NavLink to={'/shop/batteries'} onClick={menuToggleHandler}>
 							Batteries
 						</NavLink>

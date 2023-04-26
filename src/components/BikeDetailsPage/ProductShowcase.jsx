@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 // Redux
 import { useDispatch } from 'react-redux';
-import { addBike } from '../features/cart-slice';
+import { addBike, startCartAnimation } from '../features/cart-slice';
 
 // Importing a JSON file containing bike data
 import BikesJSON from '../../Bikes.json';
@@ -113,6 +113,7 @@ const ProductShowcase = () => {
 			quantity: 1,
 		};
 		dispatch(addBike(product));
+		dispatch(startCartAnimation()); // Starts cart icon animation in MainNavigation
 	};
 
 	return (

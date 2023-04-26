@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Bike.module.css';
 
 // Importing Link from react-router-dom to create hyperlinks that use client-side routing
 import { Link } from 'react-router-dom';
@@ -61,16 +62,21 @@ const Bike = props => {
 	});
 
 	return (
-		<div className={`bike ${onSale ? 'onSale' : ''}`}>
-			<span className='bike__sale-badge'>Sale!</span>
-			<header className='bike__header'>
+		<div className={onSale ? styles['bike-onsale'] : styles.bike}>
+			<span className={styles.badge}>Sale!</span>
+
+			<header className={styles.header}>
 				{/* Bike name and version buttons */}
-				<div className='bike__heading-container'>
+				<div className={styles['heading-container']}>
 					<h1>{props.name}</h1>
-					<div className='bike__button-container'>
+					<div className={styles['frame-buttons']}>
 						{versionsNames.map(name => (
 							<button
-								className={`${name === currentVersion ? 'active' : ''}`}
+								className={
+									name === currentVersion
+										? styles['frame-button-active']
+										: styles['frame-button']
+								}
 								key={name}
 								onClick={() => versionChangeHandler(name)}
 							>
@@ -79,23 +85,34 @@ const Bike = props => {
 						))}
 					</div>
 				</div>
+
 				{/* Bike price */}
-				<div className='bike__price-container'>
+				<div className={styles['price-container']}>
 					{/* Original Price Span */}
-					<span className={`original-price ${originalPrice ? 'active' : ''}`}>
+					<span
+						className={
+							originalPrice
+								? styles['original-price-active']
+								: styles['original-price']
+						}
+					>
 						${formattedOriginalPrice}
 					</span>
+
 					{/* Current Price Span */}
-					<span className={`price ${originalPrice ? 'active' : ''}`}>
+					<span className={originalPrice ? styles['price-active'] : styles.price}>
 						${formattedPrice}
 					</span>
-					<span className='in-stock'>In Stock</span>
+
+					<span className={styles['in-stock']}>In Stock</span>
 				</div>
 			</header>
+
 			{/* Bike image and color swatches */}
-			<div className='bike__image-container'>
+			<div className={styles['image-container']}>
 				<img src={bikeImage} alt='' />
-				<div className='color-swatches-container'>
+
+				<div className={styles.swatches}>
 					{/* Color swatch buttons */}
 					{Object.keys(versionColors)
 						.filter(color => versionColors[color])
@@ -109,7 +126,8 @@ const Bike = props => {
 						))}
 				</div>
 			</div>
-			<Link to={`/product/${props.id}`} className='button'>
+
+			<Link to={`/product/${props.id}`} className={styles.button}>
 				Select Frame
 			</Link>
 		</div>

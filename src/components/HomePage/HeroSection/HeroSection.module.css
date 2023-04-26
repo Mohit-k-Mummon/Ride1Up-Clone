@@ -1,0 +1,59 @@
+.hero {
+	background: url(../../../assets//Home/Rift-Hero-Launch1.jpg) no-repeat 70% / cover;
+	min-height: 69vh;
+	padding: 1.875rem;
+}
+.container {
+	max-width: 134rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.content h1 {
+	color: #000;
+	font-weight: 400;
+	font-size: 3.2rem;
+}
+
+.content span {
+	font-size: 7rem;
+	font-weight: 800;
+}
+
+.link {
+	background-color: #fff;
+	border-radius: 3rem;
+	color: #000;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.66;
+	margin-top: 3rem;
+	padding: 1.15rem 3.1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		padding: 3.87rem;
+	}
+
+	.content h1 {
+		font-size: 3.6rem;
+	}
+
+	.content span {
+		font-size: 14rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: 80vh;
+	}
+}

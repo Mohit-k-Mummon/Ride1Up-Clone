@@ -1,19 +1,22 @@
 import React from 'react';
+import styles from './HeroSection.module.css';
 
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
-		<section className='home-hero'>
-			<div className='home-hero__container container-nav'>
-				<div className='home-hero__content'>
+		<section className={styles.hero}>
+			<div className={styles.container}>
+				<div className={styles.content}>
 					<h1>
 						Introducing<br></br>
 						<span>RIFT</span>
 						<br></br>All-Terrain Fat Tire Bike
 					</h1>
 				</div>
-				<Link className='home-hero__button'>Learn More</Link>
+				<Link to={'/product/rift'} className={styles.link}>
+					Learn More
+				</Link>
 			</div>
 		</section>
 	);

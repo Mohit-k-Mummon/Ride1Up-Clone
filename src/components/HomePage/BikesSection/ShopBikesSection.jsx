@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ShopBikesSection.module.css';
 
 import bikesData from '../../../Bikes.json';
 
@@ -10,12 +11,12 @@ import { ReactComponent as ElectricIcon } from '../../../assets/Home/electric-ic
 
 const ShopBikesSection = () => {
 	return (
-		<section id='shop-bikes-section' className='shop-bikes'>
-			<header className='shop-bikes__header'>
+		<section id='shop-bikes-section' className={styles['shop-bikes']}>
+			<header className={styles.header}>
 				<ElectricIcon />
 				<h1>Find the Best Value Electric Bike</h1>
 			</header>
-			<div className='shop-bikes__container'>
+			<div className={styles.container}>
 				{bikesData.bikes.map(bike => (
 					<Bike key={bike.id} id={bike.id} name={bike.name} versions={bike.versions} />
 				))}

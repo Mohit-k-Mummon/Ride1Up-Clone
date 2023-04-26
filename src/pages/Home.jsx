@@ -1,5 +1,4 @@
 import React from 'react';
-import './page-styles/Home.css';
 
 import HeroSection from '../components/HomePage/HeroSection/HeroSection';
 import FeaturedInSection from '../components/HomePage/FeaturedInSection/FeaturedInSection';

@@ -1,0 +1,284 @@
+/*****************************
+ PERFORMANCE IMAGE CONTAINER 
+******************************/
+
+/* Bike Image Container */
+.performance-image-container {
+	margin: 4rem auto;
+	position: relative;
+}
+
+/* BUTTONS ON THE BIKE */
+@media (any-hover: none) {
+	.performance-image-button {
+		display: none;
+	}
+}
+
+.performance-image-button {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	/*********************************
+	 Those little buttons on the bike
+	***********************************/
+	@media (hover: hover) {
+		.performance-image-button {
+			display: initial;
+		}
+	}
+
+	/* SPECIFIC BUTTONS */
+	.performance-image-button {
+		height: 3.5rem;
+		width: 3.5rem;
+		background-color: rgba(147, 147, 147, 0.335);
+		border-radius: 50%;
+		position: absolute;
+	}
+
+	/* POSITIONING OF THE BUTTONS */
+	.performance-image-button.display {
+		top: 4%;
+		right: 32%;
+	}
+	.performance-image-button.safety {
+		top: 7.5%;
+		right: 26%;
+	}
+	.performance-image-button.fenders {
+		top: 35%;
+		right: 16%;
+	}
+	.performance-image-button.suspension {
+		top: 34%;
+		right: 26%;
+	}
+	.performance-image-button.battery {
+		top: 45%;
+		right: 46%;
+	}
+	.performance-image-button.comfort {
+		top: 19%;
+		right: 63.5%;
+	}
+	.performance-image-button.lights {
+		top: 34%;
+		left: 8%;
+	}
+	.performance-image-button.speed {
+		bottom: 26%;
+		right: 52.3%;
+	}
+	.performance-image-button.power {
+		bottom: 32.5%;
+		left: 19.7%;
+	}
+	.performance-image-button.traction {
+		bottom: 35%;
+		left: 2%;
+	}
+
+	/* INNER WHITE CONTAINER */
+	.performance-image-button .inner {
+		height: 2rem;
+		width: 2rem;
+		background-color: #fff;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* INNER CIRCLE COLORS */
+	.performance-image-button > .inner > div {
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 0.7rem;
+		width: 0.7rem;
+	}
+
+	#display {
+		background-color: #ed1c24;
+	}
+
+	#safety {
+		background-color: #ff8531;
+	}
+	#fenders {
+		background-color: #03a4ea;
+	}
+
+	#suspension {
+		background-color: #4fd332;
+	}
+	#battery {
+		background-color: #8d0e1c;
+	}
+
+	#comfort {
+		background-color: #6f94c6;
+	}
+	#lights {
+		background-color: #306cd2;
+	}
+
+	#speed {
+		background-color: #ff8531;
+	}
+	#power {
+		background-color: #cdcdd3;
+	}
+	#traction {
+		background-color: #ffce2d;
+	}
+
+	/* CONTENT DISPLAY */
+	.performance-image-button__content {
+		z-index: 10;
+	}
+
+	/* CONTENT CONTAINERS */
+	.performance-image-button__content {
+		position: absolute;
+		height: min-content;
+		width: 32rem;
+		background-color: #fff;
+		border: 2px solid #cccccc;
+		border-radius: 5px;
+		padding: 2.5rem;
+		opacity: 0;
+		transition: 0.3s;
+		pointer-events: none;
+		transform: translate(-50%, -50%);
+	}
+
+	.performance-image-button__content.display {
+		top: 350%;
+		left: 50%;
+	}
+
+	.performance-image-button__content.safety {
+		top: 350%;
+		left: 50%;
+	}
+	.performance-image-button__content.fenders {
+		top: 350%;
+		left: 50%;
+	}
+
+	.performance-image-button__content.suspension {
+		top: 350%;
+		left: 50%;
+	}
+	.performance-image-button__content.battery {
+		top: 350%;
+		left: 50%;
+	}
+
+	.performance-image-button__content.comfort {
+		top: 350%;
+		left: 50%;
+	}
+	.performance-image-button__content.lights {
+		top: 350%;
+		left: 50%;
+	}
+
+	.performance-image-button__content.speed {
+		top: 350%;
+		left: 50%;
+	}
+	.performance-image-button__content.power {
+		top: 350%;
+		left: 50%;
+	}
+
+	.performance-image-button__content.traction {
+		top: 350%;
+		left: 50%;
+	}
+
+	/* CONTAINERS HOVER STATE */
+	.performance-image-button.display:hover .performance-image-button__content.display,
+	.performance-image-button.safety:hover .performance-image-button__content.safety,
+	.performance-image-button.fenders:hover .performance-image-button__content.fenders,
+	.performance-image-button.suspension:hover .performance-image-button__content.suspension,
+	.performance-image-button.battery:hover .performance-image-button__content.battery,
+	.performance-image-button.comfort:hover .performance-image-button__content.comfort,
+	.performance-image-button.lights:hover .performance-image-button__content.lights,
+	.performance-image-button.speed:hover .performance-image-button__content.speed,
+	.performance-image-button.power:hover .performance-image-button__content.power,
+	.performance-image-button.traction:hover .performance-image-button__content.traction {
+		opacity: 1;
+	}
+
+	/* CONTENT HEADINGS */
+	.performance-image-button__content h2 {
+		padding-left: 2rem;
+		font-size: 2.8rem;
+		line-height: 2.8rem;
+		text-transform: uppercase;
+		color: #5b5b5b;
+		font-family: 'Prompt';
+		font-weight: 500;
+	}
+	.performance-image-button__content.display h2 {
+		border-left: 4px solid #ed1c24;
+	}
+
+	.performance-image-button__content.safety h2 {
+		border-left: 4px solid #ff8531;
+	}
+	.performance-image-button__content.fenders h2 {
+		border-left: 4px solid #03a4ea;
+	}
+	.performance-image-button__content.suspension h2 {
+		border-left: 4px solid #4fd332;
+	}
+	.performance-image-button__content.battery h2 {
+		border-left: 4px solid #8d0e1c;
+	}
+	.performance-image-button__content.comfort h2 {
+		border-left: 4px solid #6f94c6;
+	}
+	.performance-image-button__content.lights h2 {
+		border-left: 4px solid #306cd2;
+	}
+	.performance-image-button__content.speed h2 {
+		border-left: 4px solid #ff8531;
+	}
+	.performance-image-button__content.power h2 {
+		border-left: 4px solid #cdcdd3;
+	}
+	.performance-image-button__content.traction h2 {
+		border-left: 4px solid #ffce2d;
+	}
+
+	/* CONTENT DESCRIPTION */
+	.performance-image-button__content p {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.performance-image-container {
+		max-width: 111rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	/* BIKE IMAGE */
+	/* POSITIONING OF THE BUTTONS */
+	.performance-image-button.speed {
+		bottom: 27.5%;
+		right: 53.2%;
+	}
+}

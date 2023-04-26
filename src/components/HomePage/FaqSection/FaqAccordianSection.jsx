@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import styles from './FaqAccordianSection.module.css';
 
 // Import an object named `items` from a separate file
 import items from './Items';
@@ -36,28 +37,34 @@ const FaqAccordianSection = () => {
 	// Use the `map` function to create an array of `div` elements containing FAQ items and their content
 
 	return (
-		<section className='faq-accordian'>
-			<button onClick={toggleFaqHandler} className='faq-accordian-button'>
-				Electric Ebike FAQ's
-				{icon}
-			</button>
-			<div
-				ref={contentElMain}
-				className={`faq-container ${faqActive ? 'active' : ''}`}
-				// style={
-				// 	faqActive ? { height: contentElMain.current.scrollHeight } : { height: '0px' }
-				// }
-			>
-				{items.map((item, index) => (
-					<FaqItem
-						key={index}
-						index={index}
-						title={item.title}
-						content={item.content}
-						activeIndex={activeIndex}
-						onToggle={toggleSubFaqHandler}
-					/>
-				))}
+		<section className={styles.accordian}>
+			<div>
+				<header onClick={toggleFaqHandler} className={styles.header}>
+					Electric Ebike FAQ's
+					{icon}
+				</header>
+				<div
+					ref={contentElMain}
+					className={faqActive ? styles['collapse-show'] : styles.collapse}
+					style={
+						faqActive
+							? { height: contentElMain.current.scrollHeight }
+							: { height: '0px' }
+					}
+				>
+					<div className={styles.body}>
+						{items.map((item, index) => (
+							<FaqItem
+								key={index}
+								index={index}
+								title={item.title}
+								content={item.content}
+								activeIndex={activeIndex}
+								onToggle={toggleSubFaqHandler}
+							/>
+						))}
+					</div>
+				</div>
 			</div>
 		</section>
 	);

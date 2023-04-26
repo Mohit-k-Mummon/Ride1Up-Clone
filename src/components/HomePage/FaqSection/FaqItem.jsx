@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import styles from './FaqItem.module.css';
 
 const FaqItem = props => {
 	const contentEl = useRef();
@@ -7,21 +8,21 @@ const FaqItem = props => {
 	const active = props.index === props.activeIndex;
 	// Return a `div` element containing the FAQ item's title, content, and the `active` class (if applicable)
 	return (
-		<div key={props.index} className='faq-accordian-card'>
-			<div className='faq-accordian-header'>
+		<div key={props.index} className={styles.accordian}>
+			<div>
+				<header className={styles.header} onClick={() => props.onToggle(props.index)}>
+					<h1 className={active ? styles['title-active'] : styles.title}>
+						{props.title}
+					</h1>
+				</header>
 				<div
-					className={`faq-accordian-toggle ${active ? 'active' : ''}`}
-					onClick={() => props.onToggle(props.index)}
+					ref={contentEl}
+					// className={`faq-accordian__collapse ${active ? 'show' : ''}`}
+					className={active ? styles['collapse-show'] : styles.collapse}
+					style={active ? { height: contentEl.current.scrollHeight } : { height: '0px' }}
 				>
-					<h1 className='faq-accordian__title'>{props.title}</h1>
+					<div className={styles.body}>{props.content}</div>
 				</div>
-			</div>
-			<div
-				ref={contentEl}
-				className={`faq-accordian__collapse ${active ? 'show' : ''}`}
-				style={active ? { height: contentEl.current.scrollHeight } : { height: '0px' }}
-			>
-				<div className='faq-accordian__body'>{props.content}</div>
 			</div>
 		</div>
 	);

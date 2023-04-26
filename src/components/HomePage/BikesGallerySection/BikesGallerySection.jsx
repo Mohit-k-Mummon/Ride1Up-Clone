@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './BikesGallerySection.module.css';
 
 // React-Slick Carousel CSS import
 import 'slick-carousel/slick/slick.css';
@@ -74,12 +75,12 @@ const BikesGallerySection = () => {
 	};
 
 	return (
-		<section className='bikes-gallery'>
-			<header className='bikes-gallery-header'>
+		<section className={styles.gallery}>
+			<header className={styles.header}>
 				<h2>
 					<span>#RIDE1UP</span> <span>Community</span>
 				</h2>
-				<Link className='view-gallery-button'>View Gallery</Link>
+				<Link className={styles.button}>View Gallery</Link>
 			</header>
 			<Slider {...settings} aria-label='Bikes Gallery'>
 				{images.map((image, index) => (

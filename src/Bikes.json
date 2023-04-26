@@ -1,6 +1,60 @@
 {
     "bikes": [
         {
+            "name": "Revv1",
+            "id": "revv-1",
+            "versions": [
+                {
+                    "name": "FS",
+                    "priceByColor": {
+                        "Moss Green": 2395,
+                        "Graphite Gray": 2395
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Moss Green": null,
+                        "Graphite Gray": null
+                    }
+                },
+                {
+                    "name": "HT",
+                    "priceByColor": {
+                        "Moss Green": 1895,
+                        "Graphite Gray": 1895
+                    },
+                    "inStock": true,
+                    "onSale": false,
+                    "originalPrice": {
+                        "Moss Green": null,
+                        "Graphite Gray": null
+                    }
+                }
+            ],
+            "pageDetail": {
+                "tagline": "Powerful moto-inspired moped ebike",
+                "note": "IN STOCK, orders ship out in 2-4 business days",
+                "description": "A bold, moped-style electric bike perfect for that extra kick of adrenaline on your rides. Whether commuting, joy-riding, running errands or exploring, the Revv 1 is made for thrill rides no matter the use case. Boasting high-end specs, this rugged custom bike is peak performance at a value price that only Ride1Up can deliver."
+            },
+            "dropdown": {
+                "defaultValue": "FS",
+                "options": [
+                    {
+                        "option": "Choose an option",
+                        "value": "option"
+                    },
+                    {
+                        "option": "FS - Full Suspension",
+                        "value": "FS"
+                    },
+                    {
+                        "option": "HT - Hardtail",
+                        "value": "HT"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Roadster v2",
             "id": "roadster-v2",
             "versions": [
@@ -475,60 +529,6 @@
                     {
                         "option": "XR - Step-Over",
                         "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Revv1",
-            "id": "revv-1",
-            "versions": [
-                {
-                    "name": "FS",
-                    "priceByColor": {
-                        "Moss Green": 2395,
-                        "Graphite Gray": 2395
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Moss Green": null,
-                        "Graphite Gray": null
-                    }
-                },
-                {
-                    "name": "HT",
-                    "priceByColor": {
-                        "Moss Green": 1895,
-                        "Graphite Gray": 1895
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Moss Green": null,
-                        "Graphite Gray": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Powerful moto-inspired moped ebike",
-                "note": "IN STOCK, orders ship out in 2-4 business days",
-                "description": "A bold, moped-style electric bike perfect for that extra kick of adrenaline on your rides. Whether commuting, joy-riding, running errands or exploring, the Revv 1 is made for thrill rides no matter the use case. Boasting high-end specs, this rugged custom bike is peak performance at a value price that only Ride1Up can deliver."
-            },
-            "dropdown": {
-                "defaultValue": "FS",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "FS - Full Suspension",
-                        "value": "FS"
-                    },
-                    {
-                        "option": "HT - Hardtail",
-                        "value": "HT"
                     }
                 ]
             }

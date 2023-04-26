@@ -1,0 +1,107 @@
+/***********************
+    Bikes Gallery
+************************/
+.gallery {
+	overflow-x: hidden;
+	position: relative;
+	top: 5px;
+}
+
+.header {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2rem;
+	padding: 0 1.8rem;
+	max-width: 69rem;
+}
+
+.header h2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.header span:nth-of-type(1) {
+	color: #c92626;
+	font-weight: 700;
+	font-size: 2.6rem;
+	font-family: 'Prompt', sans-serif;
+	line-height: 2.6rem;
+}
+
+.header span:nth-of-type(2) {
+	font-weight: 600;
+	font-size: 2.6rem;
+	font-family: 'Prompt', sans-serif;
+}
+
+.button {
+	color: rgb(54, 54, 54);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	padding: 1rem 3rem;
+	border: 2px solid rgb(54, 54, 54);
+	border-radius: 30px;
+	transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+	.button:hover {
+		color: #c92626;
+		border: 2px solid #c92626;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		margin-bottom: 5rem;
+	}
+	.header h2 {
+		gap: 1rem;
+		flex-direction: row;
+	}
+	.header span:nth-of-type(1) {
+		font-size: 2.8rem;
+		line-height: 2.8rem;
+	}
+
+	.header span:nth-of-type(2) {
+		font-size: 2.8rem;
+		line-height: 2.8rem;
+	}
+
+	.button {
+		color: rgb(54, 54, 54);
+		text-decoration: none;
+		font-weight: 600;
+		line-height: 1.6rem;
+		padding: 1.2rem 3rem;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header {
+		max-width: 96rem;
+	}
+
+	.header span:nth-of-type(1) {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+	}
+
+	.header span:nth-of-type(2) {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.header {
+		max-width: 131rem;
+	}
+}

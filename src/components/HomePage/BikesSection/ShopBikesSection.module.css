@@ -1,0 +1,56 @@
+.shop-bikes {
+	max-width: 72rem;
+	margin: 20rem auto 0;
+	padding: 0 1.5rem;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.header svg {
+	height: 7.8rem;
+	width: auto;
+	flex-shrink: 0;
+}
+
+.header h1 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.container {
+	display: grid;
+	row-gap: 2rem;
+	margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+	.header h1 {
+		font-size: 2.6rem;
+	}
+
+	.container {
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 1024px) {
+	.shop-bikes {
+		max-width: 96rem;
+	}
+
+	.header h1 {
+		font-size: 3.6rem;
+		line-height: 3.6rem;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.shop-bikes {
+		max-width: 134rem;
+	}
+}

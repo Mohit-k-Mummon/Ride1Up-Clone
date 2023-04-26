@@ -1,0 +1,17 @@
+.swatch-active {
+	outline: none;
+	box-shadow: 0 0 0 2px #c92626;
+	border-radius: 50%;
+}
+
+@media (hover: hover) {
+	.swatch,
+	.swatch-active {
+		cursor: pointer;
+	}
+}
+
+.swatch-img {
+	padding: 0.2rem;
+	border-radius: 50%;
+}

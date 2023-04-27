@@ -10,6 +10,7 @@ import { removeBike, toggleUpdate } from '../features/cart-slice';
 
 const MobileCartProduct = props => {
 	const { id, name, frame, color, price, subtotal, quantity } = props;
+	const { startDateString, endDateString } = props;
 
 	const formatPrice = num => {
 		if (num) {
@@ -87,7 +88,9 @@ const MobileCartProduct = props => {
 						{convertedName}
 					</Link>
 				</div>
-				<div className={styles.estimate}>Estimated delivery Apr 27th - May 1st</div>
+				<div
+					className={styles.estimate}
+				>{`Estimated delivery time ${startDateString} - ${endDateString}`}</div>
 				<div className={styles.frame}>
 					<h1 className={styles.title}>Frame Type:</h1>
 					<p className={styles.option}>{frame}</p>

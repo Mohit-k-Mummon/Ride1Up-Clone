@@ -18,7 +18,8 @@
 	padding: 0.5rem;
 	width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	font-size: 1.2rem;
+	/* Font Size 16px otherwise zooms on mobile devices */
+	font-size: 1.6rem;
 	max-width: 14.4rem;
 }
 

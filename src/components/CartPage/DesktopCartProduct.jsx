@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 
 const DesktopCartProduct = props => {
 	const { id, name, frame, color, price, subtotal, quantity } = props;
+	const { startDateString, endDateString } = props;
 
 	// Formatting bike price and subtotal
 	const formatNumber = num => {
@@ -26,7 +27,7 @@ const DesktopCartProduct = props => {
 	const formattedPrice = formatNumber(price);
 	const formattedSubtotal = formatNumber(subtotal);
 
-	// Convert bike name to displayable name
+	// CONVERT BIKE NAMES TO DISPLAYABLE NAME
 	let convertedName;
 	switch (name) {
 		case 'revv-1':
@@ -93,7 +94,7 @@ const DesktopCartProduct = props => {
 					{convertedName}
 				</Link>
 				<p className={styles['estimated-delivery']}>
-					Estimated delivery time Apr 27th - May 1st
+					{`Estimated delivery time ${startDateString} - ${endDateString}`}
 				</p>
 				<p className={styles.frame}>
 					<span>Frame Type:</span> {frame}

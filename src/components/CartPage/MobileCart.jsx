@@ -7,14 +7,21 @@ import styles from './MobileCart.module.css';
 
 // Redux
 import { useSelector } from 'react-redux';
-import { updateCart } from '../features/cart-slice';
+import { toggleOffUpdatedBanner, toggleOnUpdatedBanner, updateCart } from '../features/cart-slice';
 import { useDispatch } from 'react-redux';
 
-const MobileCart = () => {
+const MobileCart = props => {
 	const cart = useSelector(state => state.cart);
 	const dispatch = useDispatch();
 	const cartUpdateHandler = () => {
 		dispatch(updateCart());
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		setTimeout(() => {
+			dispatch(toggleOnUpdatedBanner());
+		}, 300);
+		setTimeout(() => {
+			dispatch(toggleOffUpdatedBanner());
+		}, 5_000);
 	};
 	return (
 		<div className={styles['mobile-cart']}>
@@ -28,6 +35,8 @@ const MobileCart = () => {
 					price={item.price}
 					quantity={item.quantity}
 					subtotal={item.subtotal}
+					startDateString={props.startDateString}
+					endDateString={props.endDateString}
 				/>
 			))}
 			<div className={styles['update-cart']}>

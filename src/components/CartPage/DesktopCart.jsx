@@ -6,14 +6,19 @@ import styles from './DesktopCart.module.css';
 
 // Redux
 import { useSelector } from 'react-redux';
-import { updateCart } from '../features/cart-slice';
+import { toggleOffUpdatedBanner, toggleOnUpdatedBanner, updateCart } from '../features/cart-slice';
 import { useDispatch } from 'react-redux';
 
-const DesktopCart = () => {
+const DesktopCart = props => {
 	const cart = useSelector(state => state.cart);
 	const dispatch = useDispatch();
 	const cartUpdateHandler = () => {
 		dispatch(updateCart());
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		dispatch(toggleOnUpdatedBanner());
+		setTimeout(() => {
+			dispatch(toggleOffUpdatedBanner());
+		}, 5_000);
 	};
 	return (
 		<div className={styles['desktop-cart']}>
@@ -34,6 +39,8 @@ const DesktopCart = () => {
 					price={item.price}
 					quantity={item.quantity}
 					subtotal={item.subtotal}
+					startDateString={props.startDateString}
+					endDateString={props.endDateString}
 				/>
 			))}
 			<div className={styles['update-cart']}>

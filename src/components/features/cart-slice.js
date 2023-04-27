@@ -7,6 +7,7 @@ const initialState = {
 	cartUpdated: false,
 	addToCartClicked: false,
 	bikeAddedDisplayBanner: false,
+	cartUpdatedDisplayBanner: false,
 };
 
 const cartSlice = createSlice({
@@ -109,6 +110,12 @@ const cartSlice = createSlice({
 		toggleOffBikeBanner: state => {
 			state.bikeAddedDisplayBanner = false;
 		},
+		toggleOnUpdatedBanner: state => {
+			state.cartUpdatedDisplayBanner = true;
+		},
+		toggleOffUpdatedBanner: state => {
+			state.cartUpdatedDisplayBanner = false;
+		},
 	},
 });
 
@@ -122,6 +129,8 @@ export const {
 	stopCartAnimation,
 	toggleOnBikeBanner,
 	toggleOffBikeBanner,
+	toggleOnUpdatedBanner,
+	toggleOffUpdatedBanner,
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

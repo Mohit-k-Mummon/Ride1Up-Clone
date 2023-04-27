@@ -1,0 +1,55 @@
+.banner {
+	height: 1px;
+	padding: 0 1.8rem;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: height 0.3s ease;
+}
+
+.banner-active {
+	padding: 0 1.8rem;
+	height: auto;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: height 0.3s ease;
+}
+
+.banner-container {
+	background-color: #f6f6f6;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 134rem;
+	padding: 1.8rem 3rem;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.6rem;
+	border-top: 4px solid #4bae4f;
+}
+
+.checkmark {
+	height: 2rem;
+	width: 2rem;
+	position: relative;
+	right: 10px;
+}
+
+.message {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.4rem;
+	color: rgb(81, 81, 81);
+}
+
+@media screen and (min-width: 768px) {
+	.banner {
+		padding: 0 4.2rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.banner {
+		padding: 0 4.8rem;
+	}
+}

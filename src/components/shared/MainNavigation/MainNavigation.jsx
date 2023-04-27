@@ -85,7 +85,11 @@ const MainNavigation = () => {
 				</NavLink>
 				<ul className={styles['desktop-menu']}>
 					<li>
-						<NavLink to={'/'} onClick={scrollToBikesHandler}>
+						<NavLink
+							className={styles['main-link']}
+							to={'/'}
+							onClick={scrollToBikesHandler}
+						>
 							Ebikes
 						</NavLink>
 					</li>
@@ -99,21 +103,31 @@ const MainNavigation = () => {
 							alt=''
 						/>
 						<div className={styles['desktop-dropdown']}>
-							<NavLink to={'/shop/parts'}>Parts & Accessories</NavLink>
-							<NavLink to={'/shop/batteries'}>Batteries</NavLink>
+							<NavLink className={styles['sub-link']} to={'/shop/parts'}>
+								Parts & Accessories
+							</NavLink>
+							<NavLink className={styles['sub-link']} to={'/shop/batteries'}>
+								Batteries
+							</NavLink>
 						</div>
 					</li>
 					<li>
-						<NavLink>Support</NavLink>
+						<NavLink className={styles['main-link']}>Support</NavLink>
 					</li>
 					<li>
-						<NavLink to={'/about-us'}>About Us</NavLink>
+						<NavLink className={styles['main-link']} to={'/about-us'}>
+							About Us
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to={'/contact'}>Contact Us</NavLink>
+						<NavLink className={styles['main-link']} to={'/contact'}>
+							Contact Us
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to={'/social-reviews'}>Reviews</NavLink>
+						<NavLink className={styles['main-link']} to={'/social-reviews'}>
+							Reviews
+						</NavLink>
 					</li>
 				</ul>
 				<div className={styles.cart}>

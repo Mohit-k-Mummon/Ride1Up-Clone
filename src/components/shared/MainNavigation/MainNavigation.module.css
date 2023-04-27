@@ -260,15 +260,24 @@
 		visibility: visible;
 	}
 
-	.desktop-menu a:hover {
+	.sub-link {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.sub-link:hover {
 		color: #c92626;
 	}
 
 	/* a tags in li's */
-	.desktop-menu li a {
+	.main-link {
 		text-decoration: none;
 		color: inherit;
 		padding: 2rem 0;
+	}
+
+	.main-link:hover {
+		color: #c92626;
 	}
 
 	/* Every li but not the second one */

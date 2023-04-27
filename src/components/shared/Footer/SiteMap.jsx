@@ -63,6 +63,12 @@ const SiteMap = () => {
 							Revv1
 						</Link>
 						<Link
+							to={'/product/rift'}
+							onClick={event => navigateHandler(event, 'rift')}
+						>
+							Rift
+						</Link>
+						<Link
 							to={'/product/roadster-v2'}
 							onClick={event => navigateHandler(event, 'roadster-v2')}
 						>

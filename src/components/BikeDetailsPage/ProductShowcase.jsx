@@ -28,6 +28,10 @@ import { ReactComponent as InfoIcon } from '../../assets/info.svg';
 import { imageArray } from './bikeImagePath';
 
 const ProductShowcase = () => {
+	// On component mount start at the top of the page
+	useEffect(() => {
+		window.scroll(0, 0);
+	}, []);
 	// Redux
 	const dispatch = useDispatch();
 

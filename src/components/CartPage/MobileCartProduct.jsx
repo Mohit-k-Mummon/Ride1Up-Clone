@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 // Redux
 import { useDispatch } from 'react-redux';
-import { removeBike, toggleUpdate } from '../features/cart-slice';
+import { removeBike, toggleCartUpdatedOn, toggleCartUpdatedOff } from '../features/cart-slice';
 
 const MobileCartProduct = props => {
 	const { id, name, frame, color, price, subtotal, quantity } = props;
@@ -66,7 +66,11 @@ const MobileCartProduct = props => {
 	// Quantity update handler
 	const quantityRef = useRef();
 	const quantityUpdateHandler = () => {
-		dispatch(toggleUpdate({ id: id, newQuantity: quantityRef.current.value }));
+		if (quantityRef.current.value < 1 || quantityRef.current.value > 25) {
+			dispatch(toggleCartUpdatedOff());
+		} else {
+			dispatch(toggleCartUpdatedOn({ id: id, newQuantity: quantityRef.current.value }));
+		}
 	};
 
 	return (

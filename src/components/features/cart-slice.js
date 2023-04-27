@@ -64,7 +64,7 @@ const cartSlice = createSlice({
 				return accumulator + currentValue.subtotal;
 			}, 0);
 		},
-		toggleUpdate: (state, action) => {
+		toggleCartUpdatedOn: (state, action) => {
 			// set cartUpdated to true so button is enabled
 			state.cartUpdated = true;
 
@@ -73,6 +73,9 @@ const cartSlice = createSlice({
 
 			// Set the bike that updated it's quantity's updatedQuantity prop to the newQuantity
 			state.cartItems[updatedBike].updatedQuantity = +action.payload.newQuantity;
+		},
+		toggleCartUpdatedOff: state => {
+			state.cartUpdated = false;
 		},
 		updateCart: state => {
 			state.cartItems.forEach(item => {
@@ -123,7 +126,8 @@ export const {
 	addBike,
 	fetchCartItems,
 	removeBike,
-	toggleUpdate,
+	toggleCartUpdatedOn,
+	toggleCartUpdatedOff,
 	updateCart,
 	startCartAnimation,
 	stopCartAnimation,

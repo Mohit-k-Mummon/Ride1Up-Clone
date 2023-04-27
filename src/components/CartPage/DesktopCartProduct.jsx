@@ -5,7 +5,7 @@ import styles from './DesktopCartProduct.module.css';
 // Imgs
 import { imageArray } from '../BikeDetailsPage/bikeImagePath';
 // Redux
-import { removeBike, toggleUpdate } from '../features/cart-slice';
+import { removeBike, toggleCartUpdatedOff, toggleCartUpdatedOn } from '../features/cart-slice';
 import { useDispatch } from 'react-redux';
 
 // import bike from '../../assets/Home/Bikes/Revv 1/FS/Revv1_FS_Gray_Profile.jpg';
@@ -73,7 +73,11 @@ const DesktopCartProduct = props => {
 	// Quantity update handler
 	const quantityRef = useRef();
 	const quantityUpdateHandler = () => {
-		dispatch(toggleUpdate({ id: id, newQuantity: quantityRef.current.value }));
+		if (quantityRef.current.value < 1 || quantityRef.current.value > 25) {
+			dispatch(toggleCartUpdatedOff());
+		} else {
+			dispatch(toggleCartUpdatedOn({ id: id, newQuantity: quantityRef.current.value }));
+		}
 	};
 
 	return (

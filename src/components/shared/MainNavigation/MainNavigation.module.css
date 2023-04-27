@@ -46,6 +46,7 @@
 	display: flex;
 	gap: 3rem;
 	width: 7.3rem;
+	justify-content: flex-end;
 }
 
 .cart-container {
@@ -278,6 +279,9 @@
 	/***********************
         Mobile Menu 
     ************************/
+	.hamburger-container {
+		display: none;
+	}
 	.menu-active {
 		display: none;
 	}

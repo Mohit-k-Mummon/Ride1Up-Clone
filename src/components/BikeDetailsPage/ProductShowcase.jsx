@@ -6,7 +6,12 @@ import { useParams } from 'react-router-dom';
 
 // Redux
 import { useDispatch } from 'react-redux';
-import { addBike, startCartAnimation } from '../features/cart-slice';
+import {
+	addBike,
+	startCartAnimation,
+	toggleOnBikeBanner,
+	toggleOffBikeBanner,
+} from '../features/cart-slice';
 
 // Importing a JSON file containing bike data
 import BikesJSON from '../../Bikes.json';
@@ -23,6 +28,10 @@ import { ReactComponent as InfoIcon } from '../../assets/info.svg';
 import { imageArray } from './bikeImagePath';
 
 const ProductShowcase = () => {
+	// Redux
+	const dispatch = useDispatch();
+
+	// Bike params/id, version, color state
 	const { bikeId } = useParams(); // destructuring the URL parameters to a constant
 	const { bikes: bikesArray } = BikesJSON; //Each object in the "bikesArray" represents a specific bike and contains information about that bike.
 	const [bike, setBike] = useState(bikeId);
@@ -101,10 +110,10 @@ const ProductShowcase = () => {
 		setColor(clickedColor);
 	};
 
-	// Redux
-	const dispatch = useDispatch();
 	const formSubmitHandler = event => {
 		event.preventDefault();
+
+		// Create our bike Product to send to redux store
 		const product = {
 			name: bikeId,
 			frame: version,
@@ -112,8 +121,32 @@ const ProductShowcase = () => {
 			price: currentBike.versions[selectedVersionIndex]?.priceByColor[color],
 			quantity: 1,
 		};
+
 		dispatch(addBike(product));
-		dispatch(startCartAnimation()); // Starts cart icon animation in MainNavigation
+
+		window.scroll({
+			// Scroll to the top of the page after add bike
+			top: 0,
+			behavior: 'smooth',
+		});
+
+		// Animation and Banner Related SetTimeouts
+		setTimeout(() => {
+			dispatch(toggleOnBikeBanner());
+		}, 300);
+		if (window.innerWidth < 1024) {
+			// If window width is tablet or mobile we start animation after 1 second
+			setTimeout(() => {
+				dispatch(startCartAnimation()); // Starts cart icon animation in MainNavigation
+			}, 900);
+		} else {
+			// Start cart animation right away
+			dispatch(startCartAnimation());
+		}
+		setTimeout(() => {
+			// toggle off the BikeDetailsPage Banner after 5 seconds
+			dispatch(toggleOffBikeBanner());
+		}, 5_000);
 	};
 
 	return (

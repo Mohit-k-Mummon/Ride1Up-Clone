@@ -127,6 +127,7 @@ const MainNavigation = () => {
 						<span className={styles['cart-total']}>{cart.cartQuantity}</span>
 					</NavLink>
 					<button
+						className={styles['hamburger-container']}
 						aria-expanded={menuExpanded}
 						aria-controls='mobile-menu'
 						onClick={menuToggleHandler}

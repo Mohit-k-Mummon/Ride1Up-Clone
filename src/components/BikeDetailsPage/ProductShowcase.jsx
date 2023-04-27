@@ -23,6 +23,7 @@ import SliderContainer from './SliderContainer';
 
 // Icon
 import { ReactComponent as InfoIcon } from '../../assets/info.svg';
+import truck from '../../assets/BikeDetailsPage/delivery-truck-1.png';
 
 // JavaScript object storing image paths for bike models, sizes, and colors. Provides easy access to bike images for web applications or digital platforms.
 import { imageArray } from './bikeImagePath';
@@ -153,6 +154,28 @@ const ProductShowcase = () => {
 		}, 5_000);
 	};
 
+	// DELIVERY DATE LOGIC
+	// Get the current date and add 7 to the start and 14 to the end
+	const startDate = new Date();
+	const endDate = new Date();
+	startDate.setDate(startDate.getDate() + 7);
+	endDate.setDate(endDate.getDate() + 9);
+
+	// Format the dates
+	const startMonth = startDate.toLocaleDateString('default', { month: 'short' });
+	const endMonth = endDate.toLocaleDateString('default', { month: 'short' });
+	const startDateString = `${startMonth} ${startDate.getDate()}${getDateSuffix(
+		startDate.getDate()
+	)}`;
+	const endDateString = `${endMonth} ${endDate.getDate()}${getDateSuffix(endDate.getDate())}`;
+
+	// Function to get the suffix for the day of the month (e.g. 1st, 2nd, 3rd)
+	function getDateSuffix(date) {
+		const suffixes = ['th', 'st', 'nd', 'rd'];
+		const suffix = suffixes[(date - 20) % 10] || suffixes[date] || suffixes[0];
+		return suffix;
+	}
+
 	return (
 		<section className={styles.product}>
 			<div className={styles.wrapper}>
@@ -196,6 +219,12 @@ const ProductShowcase = () => {
 						</span>
 						<div className={styles.price}>{`$${bikePrice}`}</div>
 						<button className={styles.button}>Add To Cart</button>
+						<div className={styles.delivery}>
+							<img className={styles.truck} src={truck} alt='truck-icon' />
+							<span
+								className={styles['delivery-text']}
+							>{`Estimated delivery ${startDateString} - ${endDateString}`}</span>
+						</div>
 					</form>
 				</div>
 			</div>

@@ -85,7 +85,7 @@ const SiteMap = () => {
 					</div>
 					<div className={styles.company}>
 						<h1>Company</h1>
-						<Link>About Us</Link>
+						<Link to={'/about-us'}>About Us</Link>
 						<Link>Blog</Link>
 						<Link>Careers</Link>
 						<Link>Partner Program</Link>

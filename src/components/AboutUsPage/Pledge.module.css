@@ -1,0 +1,70 @@
+.pledge {
+	background-color: rgb(232, 232, 232);
+	margin-top: 4rem;
+}
+
+.container {
+	padding: 1.8rem;
+	max-width: 94rem;
+	margin: 0 auto;
+}
+
+.heading {
+	font-size: 4.2rem;
+	text-transform: uppercase;
+	line-height: 4.2rem;
+	color: rgb(201, 38, 38);
+	text-align: center;
+	margin-top: 2rem;
+	font-weight: 800;
+}
+
+.tagline {
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	font-weight: 800;
+	margin-top: 3rem;
+	text-transform: uppercase;
+}
+
+.text {
+	text-align: center;
+	font-size: 1.6rem;
+	color: rgb(54, 54, 54);
+	font-weight: 400;
+	line-height: 2.88rem;
+	margin-top: 2rem;
+}
+
+.input-group {
+	border: 1px solid #f6f6f6;
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	margin: 6rem auto;
+	max-width: 45rem;
+}
+
+.input {
+	font-size: 1.6rem;
+	padding: 1rem 1.6rem;
+	width: 100%;
+	border-radius: 30px;
+	outline: none;
+	border: none;
+}
+
+.button {
+	background-color: #000;
+	color: #fff;
+	height: 100%;
+	font-size: 1.8rem;
+	white-space: nowrap;
+	padding: 1rem 2.8rem;
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: 700;
+}

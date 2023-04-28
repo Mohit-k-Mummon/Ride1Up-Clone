@@ -1,7 +1,8 @@
 import React from 'react';
+import ComingSoon from '../components/ComingSoonPage/ComingSoon';
 
 const BatteriesPage = () => {
-	return <h3>BatteriesPage</h3>;
+	return <ComingSoon />;
 };
 
 export default BatteriesPage;

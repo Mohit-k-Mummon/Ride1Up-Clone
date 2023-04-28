@@ -1,7 +1,9 @@
 import React from 'react';
 
+import ComingSoon from '../components/ComingSoonPage/ComingSoon';
+
 const PartsAndAccessoriesPage = () => {
-	return <h3>PartsAndAccessoriesPage</h3>;
+	return <ComingSoon />;
 };
 
 export default PartsAndAccessoriesPage;

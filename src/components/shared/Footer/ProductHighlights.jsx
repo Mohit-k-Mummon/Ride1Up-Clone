@@ -6,24 +6,25 @@ import serviceIcon from '../../../assets/Footer/ride1up-serviceandsupport.png';
 import warrantyIcon from '../../../assets/Footer/ride1up-1yearwarranty.png';
 import trialIcon from '../../../assets/Footer/ride1up-30daytrial.png';
 import shippingIcon from '../../../assets/Footer/ride1up-freeshipping.png';
+import { Link } from 'react-router-dom';
 
 const ProductHighlights = () => {
 	return (
 		<div className={styles.highlights}>
 			<div className={styles.highlight}>
-				<a href='https://www.google.com'>
+				<Link to={'/contact'}>
 					<img className={styles.icon} src={serviceIcon} alt='' />
-				</a>
-				<a href='https://www.google.com'>
+				</Link>
+				<Link to={'/contact'}>
 					<h1 className={styles.title}>Service & Support</h1>
-				</a>
+				</Link>
 				<p className={styles.description}>
 					Seasoned Bike Mechanics Offer Expert Technical Support and Friendly Customer
 					Service.
 				</p>
-				<a className={styles.link} href='google.com'>
+				<Link className={styles.link} to={'/contact'}>
 					Learn More
-				</a>
+				</Link>
 			</div>
 			<div className={styles.highlight}>
 				<a href='https://www.google.com'>
@@ -36,7 +37,7 @@ const ProductHighlights = () => {
 					Every Ride1Up eBike Comes With a Warranty Against Manufacturing Defects. *Terms
 					Apply
 				</p>
-				<a className={styles.link} href='google.com'>
+				<a className={styles.link} href='https://www.google.com'>
 					Learn More
 				</a>
 			</div>
@@ -51,7 +52,7 @@ const ProductHighlights = () => {
 					We're Confident That You'll Be Thrilled! If Conditions Are Met, Send It Back For
 					a Refund. *Terms and Model Exclusions Apply
 				</p>
-				<a className={styles.link} href='google.com'>
+				<a className={styles.link} href='https://www.google.com'>
 					Learn More
 				</a>
 			</div>
@@ -66,7 +67,7 @@ const ProductHighlights = () => {
 					On All Bikes to Contiguous 48 States. $100 Direct Shipping to Canada. Exclusions
 					Apply.
 				</p>
-				<a className={styles.link} href='google.com'>
+				<a className={styles.link} href='https://www.google.com'>
 					Learn More
 				</a>
 			</div>

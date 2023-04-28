@@ -11,10 +11,10 @@ const CopyRight = () => {
 	return (
 		<div className={styles.copyright}>
 			<div className={styles['links-container']}>
-				<a className='link' href='google.com'>
+				<a className='link' href='https://www.google.com'>
 					Terms of Use
 				</a>
-				<a className='link' href='google.com'>
+				<a className='link' href='https://www.google.com'>
 					Privacy Policy
 				</a>
 			</div>

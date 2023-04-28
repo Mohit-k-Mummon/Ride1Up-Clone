@@ -1,7 +1,8 @@
 import React from 'react';
+import ComingSoon from '../components/ComingSoonPage/ComingSoon';
 
 const ContactUsPage = () => {
-	return <h3>ContactUsPage</h3>;
+	return <ComingSoon />;
 };
 
 export default ContactUsPage;

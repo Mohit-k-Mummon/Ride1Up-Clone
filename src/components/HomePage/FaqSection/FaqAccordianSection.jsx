@@ -34,13 +34,11 @@ const FaqAccordianSection = () => {
 		}
 	};
 
-	// Use the `map` function to create an array of `div` elements containing FAQ items and their content
-
 	return (
 		<section className={styles.accordian}>
 			<div>
 				<header onClick={toggleFaqHandler} className={styles.header}>
-					Electric Ebike FAQ's
+					Ebike FAQ's
 					{icon}
 				</header>
 				<div
@@ -54,6 +52,7 @@ const FaqAccordianSection = () => {
 				>
 					<div className={styles.body}>
 						{items.map((item, index) => (
+							// Use the `map` function to create an array of `div` elements containing FAQ items and their content
 							<FaqItem
 								key={index}
 								index={index}

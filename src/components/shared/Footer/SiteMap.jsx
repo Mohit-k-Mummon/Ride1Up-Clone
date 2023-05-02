@@ -5,7 +5,7 @@ import styles from './SiteMap.module.css';
 import FooterForm from './FooterForm';
 
 // React-Router
-import { Link, redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Icons
 import { ReactComponent as Logo } from '../../../assets/Navigation/logo.svg';
@@ -14,11 +14,6 @@ import instagram from '../../../assets/Footer/instagram.png';
 import youtube from '../../../assets/Footer/youtube.png';
 
 const SiteMap = () => {
-	const navigateHandler = (event, id) => {
-		redirect('/product/' + id);
-		const section = document.getElementById('top-notification-bar');
-		section.scrollIntoView({ behavior: 'smooth' });
-	};
 	return (
 		<div className={styles.map}>
 			<div>
@@ -26,60 +21,15 @@ const SiteMap = () => {
 				<div className={styles['links-container']}>
 					<div className={styles.shop}>
 						<h1>SHOP</h1>
-						<Link
-							to={'/product/700-series'}
-							onClick={event => navigateHandler(event, '700-series')}
-						>
-							700 Series
-						</Link>
-						<Link
-							to={'/product/cruiser'}
-							onClick={event => navigateHandler(event, 'cruiser')}
-						>
-							Cafe Cruiser
-						</Link>
-						<Link
-							to={'/product/core-5'}
-							onClick={event => navigateHandler(event, 'core-5')}
-						>
-							Core-5
-						</Link>
-						<Link
-							to={'/product/lmtd'}
-							onClick={event => navigateHandler(event, 'lmtd')}
-						>
-							LMT'D
-						</Link>
-						<Link
-							to={'/product/prodigy'}
-							onClick={event => navigateHandler(event, 'prodigy')}
-						>
-							Prodigy
-						</Link>
-						<Link
-							to={'/product/revv-1'}
-							onClick={event => navigateHandler(event, 'revv-1')}
-						>
-							Revv1
-						</Link>
-						<Link
-							to={'/product/rift'}
-							onClick={event => navigateHandler(event, 'rift')}
-						>
-							Rift
-						</Link>
-						<Link
-							to={'/product/roadster-v2'}
-							onClick={event => navigateHandler(event, 'roadster-v2')}
-						>
-							Roadster v2
-						</Link>
-						<Link
-							to={'/product/turris'}
-							onClick={event => navigateHandler(event, 'turris')}
-						>
-							Turris
-						</Link>
+						<Link to={'/product/700-series'}>700 Series</Link>
+						<Link to={'/product/cruiser'}>Cafe Cruiser</Link>
+						<Link to={'/product/core-5'}>Core-5</Link>
+						<Link to={'/product/lmtd'}>LMT'D</Link>
+						<Link to={'/product/prodigy'}>Prodigy</Link>
+						<Link to={'/product/revv-1'}>Revv1</Link>
+						<Link to={'/product/rift'}>Rift</Link>
+						<Link to={'/product/roadster-v2'}>Roadster v2</Link>
+						<Link to={'/product/turris'}>Turris</Link>
 						<Link>Parts</Link>
 						<Link>Open Box Ebikes</Link>
 					</div>

@@ -10,9 +10,6 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
-	// When page is navigated to it starts the window at the top
-	window.scroll(0, 0);
-
 	// Navigate to shop bikes
 	const navigate = useNavigate();
 	const scrollToBikesHandler = async event => {

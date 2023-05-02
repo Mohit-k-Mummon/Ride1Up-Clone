@@ -3,7 +3,6 @@ import styles from './ComingSoon.module.css';
 import doggie from '../../assets/doggie.jpg';
 
 const ComingSoon = () => {
-	window.scrollTo(0, 0);
 	return (
 		<section className={styles['coming-soon']}>
 			<img className={styles.doggie} src={doggie} alt='' />

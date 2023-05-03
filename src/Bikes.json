@@ -56,6 +56,133 @@
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for a comfortable upright position"
 					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "52V Geared Hub Bafang Motor 750w"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller FS",
+						"content": "52V 28A 18 Mosfets"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller HT",
+						"content": "52V 25A 12 Mosfets"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery FS",
+						"content": "52V 20ah, Samsung 50E 21700 Cells (56 cells)"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery HT",
+						"content": "52V 15ah, Samsung 50E 21700 Cells (42 cells)"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "3.5' Center Mount w/ Watt 'RPM' bar and turn signal indicators"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "4-piston Hydraulic Disc Brakes w/ Electric Cut-Off Sensor"
+					},
+					{
+						"icon": "fork",
+						"title": "FS Fork",
+						"content": "Double-crown 120mm, Preload and Rebound adjust w/ hydraulic lockout"
+					},
+					{
+						"icon": "fork",
+						"title": "HT Fork",
+						"content": "100mm, Rebound adjust and hydraulic lockout"
+					},
+					{
+						"icon": "suspension",
+						"title": "Rear Suspension",
+						"content": "DNM AOY-38RC, rebound, air pressure adjust and lock-out"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Right-hand Twist Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "Width: 720mm, Sweep: 25°, Rise: 120mm"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem",
+						"content": "Promax. Height: 45mm, Rise: 6°"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Anti-slip Rubber Grips"
+					},
+					{
+						"icon": "chainring",
+						"title": "Chainring and Cranks",
+						"content": "32T Chainring w/127mm cranks"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Pro"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires FS",
+						"content": "CST Scout eMoped All-surface Tires, 20x4.0'"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires HT",
+						"content": "Kenda Krusade 20x4.0'"
+					},
+					{
+						"icon": "tubes",
+						"title": "Tubes",
+						"content": "Black Butyl added to prevent flats"
+					},
+					{
+						"icon": "fenders",
+						"title": "Fenders",
+						"content": "Hardened Alloy Fenders"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "Moto Style Round Headlight, 120 LUX, high & low beam"
+					},
+					{
+						"icon": "rear-light",
+						"title": "Rear light",
+						"content": "Starunion Brake Light"
+					},
+					{
+						"icon": "seat",
+						"title": "Seat",
+						"content": "Customized cafe style saddle"
+					},
+					{
+						"icon": "pedals",
+						"title": "Pedals",
+						"content": "Alloy Black Pedals"
+					}
 				]
 			},
 			"dropdown": {
@@ -140,6 +267,118 @@
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for road performance"
 					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "500w (peak) 350w (nominal) Geared Hub Shengyi"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "36V 7.0ah Samsung 35e Cells"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Ultra Sensitive, Bottom Bracket Cadence sensor"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "0-5 Level SW102 Minimalist Display"
+					},
+					{
+						"icon": "display",
+						"title": "Display Gravel",
+						"content": "0-5 Level King-Meter Throttle Display"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "36V 15A Landian Sinewave"
+					},
+					{
+						"icon": "chain",
+						"title": "Drivetrain",
+						"content": "64/20T Single Speed Toptrans Belt Drive"
+					},
+					{
+						"icon": "chain",
+						"title": "Drivetrain Gravel",
+						"content": "63/22T Single Speed Gates Belt Drive"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "25.4 mm x 550 mm Narrow Road Riser Bars"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Tektro R315 Dual Pivot Brakes"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes Gravel",
+						"content": "Tektro Aries Mechanical 160mm Disc"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brake Levers",
+						"content": "Alloy with Rubber-pad Inserts"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "13G Black Stainless Steel"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "Kenda Kwest 700Cx28"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires Gravel",
+						"content": "Varies by frame selection: Continental Terra or WTB Resolute 700Cx42"
+					},
+					{
+						"icon": "kickstand",
+						"title": "Kickstand",
+						"content": "Not Included"
+					},
+					{
+						"icon": "pedals",
+						"title": "Pedals",
+						"content": "9/16' Wellgo Alloy"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "350 mm x 30.4 mm"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "Custom Gel Ergonomic Road Saddle"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Durable Rubber Velo Round Grips"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem",
+						"content": "160mm x 20° - 25.4mm handlebar clamp, 28.6mm tube clamp"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses, Rear Rack Bungee, and Chainstay Guard"
+					}
 				]
 			},
 			"dropdown": {
@@ -220,6 +459,133 @@
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
 					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V Geared Hub Shengyi Motor 750w Sustained"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V18A Lishui Sine-wave (potential peak output of 1000w)"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V12.8ah Reention Eel Pro LG Cells, Smart BMS"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD21C Adjustable Speed Display"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor PAS"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Smooth Welded 6061 Alloy"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Tektro 160mm Mechanical Disc, w/ Electric Cut Off Sensor"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "Kenda Kwick Seven.5 27.5”x2.2"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Ergonomic Rubber Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "Shimano ASLTX30R 7-speed"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "44T Front Alloy Chainring"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano Altus"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "Shimano 11-32T"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Z7 7-speed Chain"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left side Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "ST: Swept-back Ergonomic Cafe Bars. XR: 50mm Rise 640mm Width"
+					},
+					{
+						"icon": "stem",
+						"title": "ST Stem",
+						"content": "Promax 28.6mm, 90mm ext. 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "tires",
+						"title": "Rims",
+						"content": "Powerwheel P19H"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "13G Black Stainless steel"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "Selle Royal Freeway Plush Gel"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "Promax 350mmx31.6mm Angle Adjustable Seat Post"
+					},
+					{
+						"icon": "kickstand",
+						"title": "Kickstand",
+						"content": "Adjustable Arm Chainstay Mounted"
+					},
+					{
+						"icon": "rack",
+						"title": "Rack",
+						"content": "Available As Accessory Purchase"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "60 Lux Front Light"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
+					}
 				]
 			},
 			"dropdown": {
@@ -279,7 +645,7 @@
 				"tagline": "Powerful adventure touring-style ebike",
 				"note": null,
 				"description": "With an upright yet responsive geometry, touring tires, hydraulic brakes, and a powerful class-3 capable motor, the Turris is an all-around comfort ebike equipped to explore and built for adventure.",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
@@ -299,6 +665,128 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V Geared Hub Shengyi Motor 750w Sustained"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V12.8ah Reention Eel Pro LG Cells, Smart BMS"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD21C Adjustable Speed LCD"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Zoom 180mm Hydraulic Disc Brakes w/ Cut-Off Sensor"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Hydraulic Lockout 100mm Travel Suspension"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "Kenda K1227 27.5'x2.4'"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left side Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "ST Handlebar",
+						"content": "City/Cafe Upright Handlebars"
+					},
+					{
+						"icon": "handlebar",
+						"title": "XR Handlebar",
+						"content": "31.8mm Riser Bars, 50mm Rise"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V18A Lishui Sine-wave"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Ergonomic Locking Rubber Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "Shimano ASLTX30R 7-speed"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "46T Prowheel Alloy Chainring"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "Shimano 12-32T"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano RD Altus"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Z7.3 7-speed Chain"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Black Stainless Steel, 13G"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "KNUS Ergo Gel MTB Saddle"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "400mm x 31.6mm Dual Bolt"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem",
+						"content": "45mm Ext. 31.8mm Bar Core"
+					},
+					{
+						"icon": "rack",
+						"title": "Rack",
+						"content": "Available As Accessory Purchase"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "60 Lux Front Light"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
 					}
 				]
 			},
@@ -359,7 +847,7 @@
 				"tagline": "Upright casual electric cruiser bike",
 				"note": null,
 				"description": "Blissful comfort and plus-one cargo capabilities blended together for one of the most versatile and functional eBikes money can buy. Install our passenger kit and add a passenger on the back of the electric bike while cruising around your town. You no longer have to sacrifice style or comfort to have all the features you want on electric bikes, the Cafe Cruiser blends them all into one ebike. ",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
@@ -379,6 +867,143 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V Geared Hub Bafang Motor 750w Sustained"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V18A DMHC Sine-wave"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V15ah Reention Rhino, 39 x 21700 Samsung Cells"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD21C Adjustable Speed Display"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor PAS"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Zoom 180mm Hydraulic Brakes w/ Electric Cut-Off Sensor"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Mozo Hydraulic Lockout, 80mm Suspension Travel"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "SandStorm 26'x3' Chaoyang"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left side Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "Zoom 25.4mm 50mm rise, 40° sweep"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem",
+						"content": "Promax 75mm ext, 15°"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "VELO Faux-Leather Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "SHIMANO ACERA 8 speed trigger shifter"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "46T Front Alloy Chainring"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "11-32T Shimano Cassette"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano Acera M360 8-Speed"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Professional 8-Speed Chain"
+					},
+					{
+						"icon": "tires",
+						"title": "Rims",
+						"content": "3D Double Wall Rim"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Stainless steel, 12G rear, 13G front"
+					},
+					{
+						"icon": "fenders",
+						"title": "Fenders",
+						"content": "Hardened Alloy Fenders"
+					},
+					{
+						"icon": "rack",
+						"title": "Rear Rack",
+						"content": "150lbs Rated Loading Weight With Pannier Side Mount"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "Buchel Shiny 80, Ultra-bright 80 lux headlight"
+					},
+					{
+						"icon": "rear-light",
+						"title": "Rear light",
+						"content": "Velo Edge 48V"
+					},
+					{
+						"icon": "seat",
+						"title": "Seat",
+						"content": "Plush Comfort Cruiser Saddle"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "Uno 31.6mm x 350mm Adjustable Angle"
+					},
+					{
+						"icon": "pedals",
+						"title": "Pedals",
+						"content": "Wellgo Alloy Pedals"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
 					}
 				]
 			},
@@ -435,7 +1060,7 @@
 				"tagline": "Fully-loaded commuter ebike",
 				"note": null,
 				"description": "It is here. The ultimate electric biking experience. Hydraulic fork, hydraulic brakes, color display, 15 ah Samsung cells, high performance 27.5″x2.4″ ebike rated tires, fully integrated aluminum frame. The decision to ditch your car has never been easier. Enter the high-end electric bike market today… for half the price! ",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
@@ -455,6 +1080,148 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V Geared Hub Bafang Motor"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V18A DMHC Sine-wave"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V15ah Reention Rhino, 39 x 21700 Samsung Cells"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD21C Adjustable Speed Display"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor PAS"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Tektro Dual Piston 180mm Hydraulic Brakes w/ Electric Cut-Off Sensor"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Mozo Hydraulic Lockout, 100mm Suspension Travel"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "27.5”x2.4” High Performance rated for ebikes - WTB Groov-E Tires"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left side Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "ST Frame: City/Café Upright Handlebars XR Frame: Riser Bars, 31.8mm Bar, with 25mm Rise"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "VELO Faux-Leather Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "SHIMANO ACERA 8 speed trigger shifter"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "45T Front Alloy Chainring"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "11-30T Shimano Cassette"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano Acera RD-M3000"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Professional 8-Speed Chain"
+					},
+					{
+						"icon": "tires",
+						"title": "Rims",
+						"content": "3D Double Wall Rim, 33mm Width"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Stainless steel, 12G rear, 13G front"
+					},
+					{
+						"icon": "fenders",
+						"title": "Fenders",
+						"content": "Hardened Alloy Fenders"
+					},
+					{
+						"icon": "rack",
+						"title": "Rear Rack",
+						"content": "50lbs Rated Loading Weight With Pannier Side Mount"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "Buchel Shiny 80, Ultra-bright 80 lux headlight"
+					},
+					{
+						"icon": "rear-light",
+						"title": "Rear light",
+						"content": "Spanninga Luceo Rear Light"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "Selle Royal Freeway Plush Gel"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "Promax 31.6mm x 350mm Adjustable Angle"
+					},
+					{
+						"icon": "pedals",
+						"title": "Pedals",
+						"content": "Wellgo Alloy Pedals"
+					},
+					{
+						"icon": "stem",
+						"title": "XR Stem",
+						"content": "PROMAX Adjustable 0-60° 90mm 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "stem",
+						"title": "ST Stem",
+						"content": "PROMAX Adjustable 0-60° 60mm 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
 					}
 				]
 			},
@@ -511,7 +1278,7 @@
 				"tagline": "Powerful torque-sensing ebike",
 				"note": "This generation now features a TORQUE sensor.",
 				"description": "Built with higher-end components and a powerful 95nm geared motor for faster acceleration. The torque sensor gives riders a smoother and more responsive experience with improved range and efficiency. WTB Groov-e tires, an air suspension fork, and Dual Piston Tektro Hydraulic brakes make for the ultimate commuter ride.",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
@@ -531,6 +1298,123 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V 750W Geared Hub Motor"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V14ah Reention Eel Pro Samsung Cells, Smart BMS"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD218 Adjustable Speed Color Display"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor PAS"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes Torque Version",
+						"content": "Tektro HD-M285 180mm Hydraulic"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Air Suspension 80mm Travel"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "WTB Groov-e 27.5'x2.4'"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left side Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "ST Frame: City/Cafe Upright Handlebars XR Frame: 31.8mm Riser Bars, 50mm Rise"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V22A Lishui Sine-wave"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Ergonomic Locking Rubber Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "Shimano 8-speed Rapidfire Plus"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "44T Prowheel Alloy Chainring"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "Shimano 11-32T"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano RD-M370"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Z8.3 8-speed Chain"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Black Stainless Steel, 13G"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "Selle Royal Freeway Plush Gel"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "Promax 350mmx31.6mm Angle Adjustable Seat Post"
+					},
+					{
+						"icon": "stem",
+						"title": "ST Stem",
+						"content": "Promax 28.6mm, 45mm Ext. 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "rack",
+						"title": "Rack",
+						"content": "Available As Accessory Purchase"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "60 Lux Front Light"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
 					}
 				]
 			},
@@ -591,7 +1475,7 @@
 				"tagline": "All-terrain fat tire ebike",
 				"note": null,
 				"description": "Robustly designed to thrive in rugged environments with precision and stability, the Rift fat tire ebike is the epitome of adventure. Quad piston brakes, mammoth range and power, bundled with class 2-3 capabilities bridge the gap between versatility and comfort.",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 2-3 capable ebike, with 28mph pedal assist and 20mph throttle"
@@ -611,6 +1495,128 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "48V Geared Hub, AKM Angled Gears, 750w Sustained"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "48V 20ah Reention Mammoth LG Cells, Smart BMS"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "KD218 Adjustable Speed Color Display"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Integrated Sensitive Cadence Sensor PAS"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes Torque Version",
+						"content": "180mm 4-piston Hydraulic Disc Brakes w/ Cut-Off Sensor"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork",
+						"content": "Hydraulic Lockout 120mm Travel Suspension"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires",
+						"content": "Kenda Krusade Anti-puncture tires 26x4.0'"
+					},
+					{
+						"icon": "throttle",
+						"title": "Throttle",
+						"content": "Left-hand Thumb Throttle"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebar",
+						"content": "680mm MTB double butted 9º Riser bars"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "48V 30A Sine-wave"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Ergonomic Locking Rubber Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "Shimano 8-speed SL-M315"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing",
+						"content": "44T Prowheel Alloy Chainring "
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "Shimano 11-32T"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano RD Altus"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC Z8.3 8-speed Chain"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Stainless Steel, 13G F - 12G R"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle",
+						"content": "KNUS Ergo Gel MTB Saddle"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "30.9mm, 350mm long Easton Dual Bolt "
+					},
+					{
+						"icon": "stem",
+						"title": "Stem",
+						"content": "50mm Ext. 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "rack",
+						"title": "Rack",
+						"content": "150lb rated loading weight with pannier side mount"
+					},
+					{
+						"icon": "front-light",
+						"title": "Front light",
+						"content": "Buchel Shiny 80, Ultra-bright 80 lux headlight"
+					},
+					{
+						"icon": "rear-light",
+						"title": "Rear light",
+						"content": "Velo Edge 48V, With Brake Light"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses, Rear Rack Bungee, and Chainstay Guard"
 					}
 				]
 			},
@@ -686,7 +1692,7 @@
 				"tagline": "Brose mid-drive motor ebike",
 				"note": null,
 				"description": "Riding feels so natural, you will forget it’s electric. Featuring a refined Brose control system, the Prodigy electric bike will take your riding to the next level at a value that is unbeatable in the industry. A true class 3 experience that refuses to be considered ‘budget’ in any regard. This is the bike for those that demand more, but are smart enough to pay less. This electric bike offers riders top-quality performance at an affordable price.",
-                "features": [
+				"features": [
 					{
 						"title": "speed",
 						"tagline": "Class 3 electric bike, with 28mph pedal assist"
@@ -706,6 +1712,153 @@
 					{
 						"title": "comfort",
 						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				],
+				"components": [
+					{
+						"icon": "motor",
+						"title": "Motor",
+						"content": "Brose TF Sprinter German made mid-drive motor with 90nm torque"
+					},
+					{
+						"icon": "battery",
+						"title": "Battery",
+						"content": "36V14ah Phylion BN21, Samsung Cells, Smart BMS"
+					},
+					{
+						"icon": "controller",
+						"title": "Controller",
+						"content": "Brose Frame integrated Controller"
+					},
+					{
+						"icon": "display",
+						"title": "Display",
+						"content": "Brose Display Allround, 1.5' Color"
+					},
+					{
+						"icon": "pas",
+						"title": "PAS Sensor",
+						"content": "Brose Integrated Torque Sensor"
+					},
+					{
+						"icon": "brakes",
+						"title": "Brakes",
+						"content": "Tektro HD-M275 180mm Hydraulic"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires XR & ST",
+						"content": "Maxxis Refuse 27.5”x2.0”"
+					},
+					{
+						"icon": "tires",
+						"title": "Tires XC",
+						"content": "Maxxis Forekaster 27.5'x2.4'"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebars",
+						"content": "ST & XR Frame: No Rise, 23° Sweep 31.8mm Ergonomic Bars"
+					},
+					{
+						"icon": "handlebar",
+						"title": "Handlebars",
+						"content": "MTB: 20mm Rise, 0° Sweep 31.8mm Bars"
+					},
+					{
+						"icon": "grips",
+						"title": "Grips",
+						"content": "Velo Locking Rubber Ergonomic Grips"
+					},
+					{
+						"icon": "shifters",
+						"title": "Shifters",
+						"content": "Shimano 9-Speed Trigger Shifter, Electric Shift Assist Sensor"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing: XR & ST",
+						"content": "46T Prowheel Alloy Chainring"
+					},
+					{
+						"icon": "gears",
+						"title": "Gearing: XC",
+						"content": "42T Narrow-Wide Alloy Chainring"
+					},
+					{
+						"icon": "chainring",
+						"title": "Cassette",
+						"content": "Shimano 11-32T"
+					},
+					{
+						"icon": "derailleur",
+						"title": "Derailleur",
+						"content": "Shimano Alivio RD M4000"
+					},
+					{
+						"icon": "chain",
+						"title": "Chain",
+						"content": "KMC e9 EPT, Mid-drive Chain"
+					},
+					{
+						"icon": "spokes",
+						"title": "Spokes",
+						"content": "Black Stainless Steel, 13G"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle XT & ST",
+						"content": "Selle Royal Viento"
+					},
+					{
+						"icon": "seat",
+						"title": "Saddle XC",
+						"content": "Selle Royal SRX"
+					},
+					{
+						"icon": "fork",
+						"title": "Fork: XR & ST",
+						"content": "Hydroformed 6061 Aluminum "
+					},
+					{
+						"icon": "fork",
+						"title": "Fork: XC",
+						"content": "120mm Travel, 32mm Stanchion diameter, Air Suspension, Hydraulic Lockout"
+					},
+					{
+						"icon": "seat-post",
+						"title": "Seat Post",
+						"content": "Uno SP-719 350mm x 31.6mm Dual Bolt"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem: XR & ST",
+						"content": "Wake, Smooth Alloy 0° 80mm 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "stem",
+						"title": "Stem: XC",
+						"content": "Wake, Smooth Alloy 10° 50mm 31.8mm Bar Clamp"
+					},
+					{
+						"icon": "front-light",
+						"title": "Headlight (all models)",
+						"content": "Buchel Shiny 80, Ultra-bright 80 lux headlight"
+					},
+					{
+						"icon": "tail-light",
+						"title": "Taillight: XR & ST",
+						"content": "Custom Rack Integrated"
+					},
+					{
+						"icon": "rack",
+						"title": "Rack: XR & ST",
+						"content": "Custom 40lbs Cargo Rack"
+					},
+					{
+						"icon": "additional",
+						"title": "Additional",
+						"content": "Water Bottle Bosses and Chainstay Guard"
 					}
 				]
 			},

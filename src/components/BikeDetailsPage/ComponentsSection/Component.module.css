@@ -1,0 +1,41 @@
+.component {
+	display: flex;
+	gap: 1rem;
+}
+
+.component-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.component img {
+	height: 3rem;
+	width: 3rem;
+}
+
+.component-content h1 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: rgb(54, 54, 54);
+}
+
+.component-content p {
+	color: rgb(54, 54, 54);
+	font-size: 1.4rem;
+	line-height: 1.89rem;
+}
+
+/* Icons */
+
+.icon-container {
+	min-width: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+.suspension {
+	height: 1.7rem !important;
+	width: 1.7rem !important;
+	margin-top: 0.3rem;
+}

@@ -1,0 +1,49 @@
+.feature {
+	max-width: 25.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.feature:nth-of-type(5) {
+	grid-row: 3;
+	grid-column: 1 / span 2;
+}
+
+.feature h1 {
+	font-size: 2.2rem;
+	font-weight: 600;
+	font-family: 'Prompt', sans-serif;
+	color: rgb(89, 90, 90);
+	text-transform: capitalize;
+	margin-top: 2rem;
+	line-height: 2.2rem;
+}
+
+.feature p {
+	font-size: 1.4rem;
+	color: rgb(54, 54, 54);
+	text-align: center;
+	line-height: 1.89rem;
+	margin-top: 1rem;
+}
+
+.icon {
+	height: 5.5rem;
+	width: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.feature:nth-of-type(5) {
+		grid-row: initial;
+		grid-column: initial;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.feature {
+		/* max-width: 16rem; */
+	}
+}

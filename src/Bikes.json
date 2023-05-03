@@ -1,537 +1,735 @@
 {
-    "bikes": [
-        {
-            "name": "Revv1",
-            "id": "revv-1",
-            "versions": [
-                {
-                    "name": "FS",
-                    "priceByColor": {
-                        "Moss Green": 2395,
-                        "Graphite Gray": 2395
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Moss Green": null,
-                        "Graphite Gray": null
-                    }
-                },
-                {
-                    "name": "HT",
-                    "priceByColor": {
-                        "Moss Green": 1895,
-                        "Graphite Gray": 1895
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Moss Green": null,
-                        "Graphite Gray": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Powerful moto-inspired moped ebike",
-                "note": "IN STOCK, orders ship out in 2-4 business days",
-                "description": "A bold, moped-style electric bike perfect for that extra kick of adrenaline on your rides. Whether commuting, joy-riding, running errands or exploring, the Revv 1 is made for thrill rides no matter the use case. Boasting high-end specs, this rugged custom bike is peak performance at a value price that only Ride1Up can deliver."
-            },
-            "dropdown": {
-                "defaultValue": "FS",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "FS - Full Suspension",
-                        "value": "FS"
-                    },
-                    {
-                        "option": "HT - Hardtail",
-                        "value": "HT"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Roadster v2",
-            "id": "roadster-v2",
-            "versions": [
-                {
-                    "name": "Large",
-                    "priceByColor": {
-                        "Burgundy, Matte": 1095,
-                        "Gravel Gray": 1245,
-                        "Black, Matte": 1095,
-                        "Silver, Matte": 1095
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Burgundy, Matte": null,
-                        "Gravel Gray": null,
-                        "Black, Matte": null,
-                        "Silver, Matte": null
-                    }
-                },
-                {
-                    "name": "Small",
-                    "priceByColor": {
-                        "Burgundy, Matte": 1095,
-                        "Gravel Gray": 1245,
-                        "Black, Matte": 1095,
-                        "Silver, Matte": 1095
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Burgundy, Matte": null,
-                        "Gravel Gray": null,
-                        "Black, Matte": null,
-                        "Silver, Matte": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Urban Lightweight Electric Bike",
-                "note": null,
-                "description": "Our original roadster is back again. Simple, fast, and fun, this electric bike is as clean as it gets. With a completely concealed battery and quiet motor, onlookers aren’t going to understand how you pedal so fast. The Roadster V2 features a single speed belt drive, internal Samsung Cells, a compact LCD display, and fully smoothed alloy frame. Perfect for flat surfaces and urban commutes."
-            },
-            "dropdown": {
-                "defaultValue": "Large",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "Large",
-                        "value": "Large"
-                    },
-                    {
-                        "option": "Small",
-                        "value": "Small"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Core-5",
-            "id": "core-5",
-            "versions": [
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Mint": 1045,
-                        "Azure Blue": 1045,
-                        "Midnight Gray": 1045
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Mint": null,
-                        "Azure Blue": null,
-                        "Midnight Gray": null
-                    }
-                },
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Mint": 1045,
-                        "Azure Blue": 1045,
-                        "Midnight Gray": 1045
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Mint": null,
-                        "Azure Blue": null,
-                        "Midnight Gray": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Best value starter ebike",
-                "note": null,
-                "description": "Simple, clean, efficient. Will anyone even know it’s electric? We’ve built an entry level eBike with standard components built to replace your car and outlast it. You will save on the cost, and sacrifice nothing. We’ve outfitted the Core-5 with all the essentials, now get to riding!"
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Turris",
-            "id": "turris",
-            "versions": [
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Forest Green": 1295,
-                        "Origami White": 1295,
-                        "Graphite Gray": 1295
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Forest Green": null,
-                        "Origami White": null,
-                        "Graphite Gray": null
-                    }
-                },
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Forest Green": 1295,
-                        "Origami White": 1295,
-                        "Graphite Gray": 1295
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Forest Green": null,
-                        "Origami White": null,
-                        "Graphite Gray": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Powerful adventure touring-style ebike",
-                "note": null,
-                "description": "With an upright yet responsive geometry, touring tires, hydraulic brakes, and a powerful class-3 capable motor, the Turris is an all-around comfort ebike equipped to explore and built for adventure."
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Cafe Cruiser",
-            "id": "cruiser",
-            "versions": [
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Carbon, Matte": 1495,
-                        "Indigo, Matte": 1495,
-                        "Latte, Gloss": 1495
-                    },
-                    "inStock": true,
-                    "onSale": true,
-                    "originalPrice": {
-                        "Carbon, Matte": 1595,
-                        "Indigo, Matte": 1595,
-                        "Latte, Gloss": 1595
-                    }
-                },
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Carbon, Matte": 1595,
-                        "Indigo, Matte": 1595,
-                        "Latte, Gloss": 1595
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Carbon, Matte": null,
-                        "Indigo, Matte": null,
-                        "Latte, Gloss": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Upright casual electric cruiser bike",
-                "note": null,
-                "description": "Blissful comfort and plus-one cargo capabilities blended together for one of the most versatile and functional eBikes money can buy. Install our passenger kit and add a passenger on the back of the electric bike while cruising around your town. You no longer have to sacrifice style or comfort to have all the features you want on electric bikes, the Cafe Cruiser blends them all into one ebike. "
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "700 Series",
-            "id": "700-series",
-            "versions": [
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Steel Blue": 1695,
-                        "Graphite Gray": 1695
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Steel Blue": null,
-                        "Graphite Gray": null
-                    }
-                },
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Steel Blue": 1595,
-                        "Graphite Gray": 1595
-                    },
-                    "inStock": true,
-                    "onSale": true,
-                    "originalPrice": {
-                        "Steel Blue": 1695,
-                        "Graphite Gray": 1695
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Fully-loaded commuter ebike",
-                "note": null,
-                "description": "It is here. The ultimate electric biking experience. Hydraulic fork, hydraulic brakes, color display, 15 ah Samsung cells, high performance 27.5″x2.4″ ebike rated tires, fully integrated aluminum frame. The decision to ditch your car has never been easier. Enter the high-end electric bike market today… for half the price! "
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "LMT'D",
-            "id": "lmtd",
-            "versions": [
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Midnight Gray": 1495,
-                        "SandStone": 1495
-                    },
-                    "inStock": true,
-                    "onSale": true,
-                    "originalPrice": {
-                        "Midnight Gray": 1695,
-                        "SandStone": 1695
-                    }
-                },
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Midnight Gray": 1495,
-                        "SandStone": 1495
-                    },
-                    "inStock": true,
-                    "onSale": true,
-                    "originalPrice": {
-                        "Midnight Gray": 1695,
-                        "SandStone": 1695
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Powerful torque-sensing ebike",
-                "note": "This generation now features a TORQUE sensor.",
-                "description": "Built with higher-end components and a powerful 95nm geared motor for faster acceleration. The torque sensor gives riders a smoother and more responsive experience with improved range and efficiency. WTB Groov-e tires, an air suspension fork, and Dual Piston Tektro Hydraulic brakes make for the ultimate commuter ride."
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Rift",
-            "id": "rift",
-            "versions": [
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Forest Green": 1895,
-                        "Arctic White": 1895,
-                        "Graphite Gray": 1895
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Forest Green": null,
-                        "Arctic White": null,
-                        "Graphite Gray": null
-                    }
-                },
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Forest Green": 1895,
-                        "Arctic White": 1895,
-                        "Graphite Gray": 1895
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Forest Green": null,
-                        "Arctic White": null,
-                        "Graphite Gray": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "All-terrain fat tire ebike",
-                "note": null,
-                "description": "Robustly designed to thrive in rugged environments with precision and stability, the Rift fat tire ebike is the epitome of adventure. Quad piston brakes, mammoth range and power, bundled with class 2-3 capabilities bridge the gap between versatility and comfort."
-            },
-            "dropdown": {
-                "defaultValue": "XR",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Prodigy",
-            "id": "prodigy",
-            "versions": [
-                {
-                    "name": "ST",
-                    "priceByColor": {
-                        "Carbon, Matte": 2295,
-                        "Chalk, Gloss": 2295,
-                        "Chameleon, Gloss": null
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Carbon, Matte": null,
-                        "Chalk, Gloss": null,
-                        "Chameleon, Gloss": null
-                    }
-                },
-                {
-                    "name": "XC",
-                    "priceByColor": {
-                        "Carbon, Matte": 2395,
-                        "Chalk, Gloss": null,
-                        "Chameleon, Gloss": 2445
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Carbon, Matte": null,
-                        "Chalk, Gloss": null,
-                        "Chameleon, Gloss": null
-                    }
-                },
-                {
-                    "name": "XR",
-                    "priceByColor": {
-                        "Carbon, Matte": 2295,
-                        "Chalk, Gloss": null,
-                        "Chameleon, Gloss": 2345
-                    },
-                    "inStock": true,
-                    "onSale": false,
-                    "originalPrice": {
-                        "Carbon, Matte": null,
-                        "Chalk, Gloss": null,
-                        "Chameleon, Gloss": null
-                    }
-                }
-            ],
-            "pageDetail": {
-                "tagline": "Brose mid-drive motor ebike",
-                "note": null,
-                "description": "Riding feels so natural, you will forget it’s electric. Featuring a refined Brose control system, the Prodigy electric bike will take your riding to the next level at a value that is unbeatable in the industry. A true class 3 experience that refuses to be considered ‘budget’ in any regard. This is the bike for those that demand more, but are smart enough to pay less. This electric bike offers riders top-quality performance at an affordable price."
-            },
-            "dropdown": {
-                "defaultValue": "XC",
-                "options": [
-                    {
-                        "option": "Choose an option",
-                        "value": "option"
-                    },
-                    {
-                        "option": "ST - Step-Through",
-                        "value": "ST"
-                    },
-                    {
-                        "option": "XC - Step-Over w/Front Suspension",
-                        "value": "XC"
-                    },
-                    {
-                        "option": "XR - Step-Over",
-                        "value": "XR"
-                    }
-                ]
-            }
-        }
-    ]
+	"bikes": [
+		{
+			"name": "Revv1",
+			"id": "revv-1",
+			"versions": [
+				{
+					"name": "FS",
+					"priceByColor": {
+						"Moss Green": 2395,
+						"Graphite Gray": 2395
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Moss Green": null,
+						"Graphite Gray": null
+					}
+				},
+				{
+					"name": "HT",
+					"priceByColor": {
+						"Moss Green": 1895,
+						"Graphite Gray": 1895
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Moss Green": null,
+						"Graphite Gray": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Powerful moto-inspired moped ebike",
+				"note": "IN STOCK, orders ship out in 2-4 business days",
+				"description": "A bold, moped-style electric bike perfect for that extra kick of adrenaline on your rides. Whether commuting, joy-riding, running errands or exploring, the Revv 1 is made for thrill rides no matter the use case. Boasting high-end specs, this rugged custom bike is peak performance at a value price that only Ride1Up can deliver.",
+				"features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w sustained geared hub motor with 60nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "25-45 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight 6061 alloy frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "FS",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "FS - Full Suspension",
+						"value": "FS"
+					},
+					{
+						"option": "HT - Hardtail",
+						"value": "HT"
+					}
+				]
+			}
+		},
+		{
+			"name": "Roadster v2",
+			"id": "roadster-v2",
+			"versions": [
+				{
+					"name": "Large",
+					"priceByColor": {
+						"Burgundy, Matte": 1095,
+						"Gravel Gray": 1245,
+						"Black, Matte": 1095,
+						"Silver, Matte": 1095
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Burgundy, Matte": null,
+						"Gravel Gray": null,
+						"Black, Matte": null,
+						"Silver, Matte": null
+					}
+				},
+				{
+					"name": "Small",
+					"priceByColor": {
+						"Burgundy, Matte": 1095,
+						"Gravel Gray": 1245,
+						"Black, Matte": 1095,
+						"Silver, Matte": 1095
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Burgundy, Matte": null,
+						"Gravel Gray": null,
+						"Black, Matte": null,
+						"Silver, Matte": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Urban Lightweight Electric Bike",
+				"note": null,
+				"description": "Our original roadster is back again. Simple, fast, and fun, this electric bike is as clean as it gets. With a completely concealed battery and quiet motor, onlookers aren’t going to understand how you pedal so fast. The Roadster V2 features a single speed belt drive, internal Samsung Cells, a compact LCD display, and fully smoothed alloy frame. Perfect for flat surfaces and urban commutes.",
+				"features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, up to 24 mph on pedal assist"
+					},
+					{
+						"title": "motor",
+						"tagline": "Efficient 350w geared hub motor with 40nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "20-30 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "6061 Aluminum Alloy Frame, integrated 36V battery and electric components"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for road performance"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "Large",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "Large",
+						"value": "Large"
+					},
+					{
+						"option": "Small",
+						"value": "Small"
+					}
+				]
+			}
+		},
+		{
+			"name": "Core-5",
+			"id": "core-5",
+			"versions": [
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Mint": 1045,
+						"Azure Blue": 1045,
+						"Midnight Gray": 1045
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Mint": null,
+						"Azure Blue": null,
+						"Midnight Gray": null
+					}
+				},
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Mint": 1045,
+						"Azure Blue": 1045,
+						"Midnight Gray": 1045
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Mint": null,
+						"Azure Blue": null,
+						"Midnight Gray": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Best value starter ebike",
+				"note": null,
+				"description": "Simple, clean, efficient. Will anyone even know it’s electric? We’ve built an entry level eBike with standard components built to replace your car and outlast it. You will save on the cost, and sacrifice nothing. We’ve outfitted the Core-5 with all the essentials, now get to riding!",
+				"features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "EPowerful 750w sustained geared hub motor with 60nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "25-45 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight 6061 alloy frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "Turris",
+			"id": "turris",
+			"versions": [
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Forest Green": 1295,
+						"Origami White": 1295,
+						"Graphite Gray": 1295
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Forest Green": null,
+						"Origami White": null,
+						"Graphite Gray": null
+					}
+				},
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Forest Green": 1295,
+						"Origami White": 1295,
+						"Graphite Gray": 1295
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Forest Green": null,
+						"Origami White": null,
+						"Graphite Gray": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Powerful adventure touring-style ebike",
+				"note": null,
+				"description": "With an upright yet responsive geometry, touring tires, hydraulic brakes, and a powerful class-3 capable motor, the Turris is an all-around comfort ebike equipped to explore and built for adventure.",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w geared hub motor with 60nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "25-45 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cafe Cruiser",
+			"id": "cruiser",
+			"versions": [
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Carbon, Matte": 1495,
+						"Indigo, Matte": 1495,
+						"Latte, Gloss": 1495
+					},
+					"inStock": true,
+					"onSale": true,
+					"originalPrice": {
+						"Carbon, Matte": 1595,
+						"Indigo, Matte": 1595,
+						"Latte, Gloss": 1595
+					}
+				},
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Carbon, Matte": 1595,
+						"Indigo, Matte": 1595,
+						"Latte, Gloss": 1595
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Carbon, Matte": null,
+						"Indigo, Matte": null,
+						"Latte, Gloss": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Upright casual electric cruiser bike",
+				"note": null,
+				"description": "Blissful comfort and plus-one cargo capabilities blended together for one of the most versatile and functional eBikes money can buy. Install our passenger kit and add a passenger on the back of the electric bike while cruising around your town. You no longer have to sacrifice style or comfort to have all the features you want on electric bikes, the Cafe Cruiser blends them all into one ebike. ",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w sustained geared hub motor with 60nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "30-50 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "700 Series",
+			"id": "700-series",
+			"versions": [
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Steel Blue": 1695,
+						"Graphite Gray": 1695
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Steel Blue": null,
+						"Graphite Gray": null
+					}
+				},
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Steel Blue": 1595,
+						"Graphite Gray": 1595
+					},
+					"inStock": true,
+					"onSale": true,
+					"originalPrice": {
+						"Steel Blue": 1695,
+						"Graphite Gray": 1695
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Fully-loaded commuter ebike",
+				"note": null,
+				"description": "It is here. The ultimate electric biking experience. Hydraulic fork, hydraulic brakes, color display, 15 ah Samsung cells, high performance 27.5″x2.4″ ebike rated tires, fully integrated aluminum frame. The decision to ditch your car has never been easier. Enter the high-end electric bike market today… for half the price! ",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w sustained geared hub motor with 60nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "30-50 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "LMT'D",
+			"id": "lmtd",
+			"versions": [
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Midnight Gray": 1495,
+						"SandStone": 1495
+					},
+					"inStock": true,
+					"onSale": true,
+					"originalPrice": {
+						"Midnight Gray": 1695,
+						"SandStone": 1695
+					}
+				},
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Midnight Gray": 1495,
+						"SandStone": 1495
+					},
+					"inStock": true,
+					"onSale": true,
+					"originalPrice": {
+						"Midnight Gray": 1695,
+						"SandStone": 1695
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Powerful torque-sensing ebike",
+				"note": "This generation now features a TORQUE sensor.",
+				"description": "Built with higher-end components and a powerful 95nm geared motor for faster acceleration. The torque sensor gives riders a smoother and more responsive experience with improved range and efficiency. WTB Groov-e tires, an air suspension fork, and Dual Piston Tektro Hydraulic brakes make for the ultimate commuter ride.",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w sustained geared hub motor with 95nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "30-50 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Lightweight Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rift",
+			"id": "rift",
+			"versions": [
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Forest Green": 1895,
+						"Arctic White": 1895,
+						"Graphite Gray": 1895
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Forest Green": null,
+						"Arctic White": null,
+						"Graphite Gray": null
+					}
+				},
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Forest Green": 1895,
+						"Arctic White": 1895,
+						"Graphite Gray": 1895
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Forest Green": null,
+						"Arctic White": null,
+						"Graphite Gray": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "All-terrain fat tire ebike",
+				"note": null,
+				"description": "Robustly designed to thrive in rugged environments with precision and stability, the Rift fat tire ebike is the epitome of adventure. Quad piston brakes, mammoth range and power, bundled with class 2-3 capabilities bridge the gap between versatility and comfort.",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 2-3 capable ebike, with 28mph pedal assist and 20mph throttle"
+					},
+					{
+						"title": "motor",
+						"tagline": "Powerful 750w sustained geared hub motor with 95nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "45-60 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Rugged Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XR",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		},
+		{
+			"name": "Prodigy",
+			"id": "prodigy",
+			"versions": [
+				{
+					"name": "ST",
+					"priceByColor": {
+						"Carbon, Matte": 2295,
+						"Chalk, Gloss": 2295,
+						"Chameleon, Gloss": null
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Carbon, Matte": null,
+						"Chalk, Gloss": null,
+						"Chameleon, Gloss": null
+					}
+				},
+				{
+					"name": "XC",
+					"priceByColor": {
+						"Carbon, Matte": 2395,
+						"Chalk, Gloss": null,
+						"Chameleon, Gloss": 2445
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Carbon, Matte": null,
+						"Chalk, Gloss": null,
+						"Chameleon, Gloss": null
+					}
+				},
+				{
+					"name": "XR",
+					"priceByColor": {
+						"Carbon, Matte": 2295,
+						"Chalk, Gloss": null,
+						"Chameleon, Gloss": 2345
+					},
+					"inStock": true,
+					"onSale": false,
+					"originalPrice": {
+						"Carbon, Matte": null,
+						"Chalk, Gloss": null,
+						"Chameleon, Gloss": null
+					}
+				}
+			],
+			"pageDetail": {
+				"tagline": "Brose mid-drive motor ebike",
+				"note": null,
+				"description": "Riding feels so natural, you will forget it’s electric. Featuring a refined Brose control system, the Prodigy electric bike will take your riding to the next level at a value that is unbeatable in the industry. A true class 3 experience that refuses to be considered ‘budget’ in any regard. This is the bike for those that demand more, but are smart enough to pay less. This electric bike offers riders top-quality performance at an affordable price.",
+                "features": [
+					{
+						"title": "speed",
+						"tagline": "Class 3 electric bike, with 28mph pedal assist"
+					},
+					{
+						"title": "motor",
+						"tagline": "Brose TF Sprinter German made mid-drive motor with 90nm torque"
+					},
+					{
+						"title": "range",
+						"tagline": "30-50 miles depending on rider weight, terrain, incline, level of assist, etc."
+					},
+					{
+						"title": "frame",
+						"tagline": "Rugged Alloy Frame with internal protected & locked electronics"
+					},
+					{
+						"title": "comfort",
+						"tagline": "Frame geometry & components built for 'the most comfortable ride ever'"
+					}
+				]
+			},
+			"dropdown": {
+				"defaultValue": "XC",
+				"options": [
+					{
+						"option": "Choose an option",
+						"value": "option"
+					},
+					{
+						"option": "ST - Step-Through",
+						"value": "ST"
+					},
+					{
+						"option": "XC - Step-Over w/Front Suspension",
+						"value": "XC"
+					},
+					{
+						"option": "XR - Step-Over",
+						"value": "XR"
+					}
+				]
+			}
+		}
+	]
 }

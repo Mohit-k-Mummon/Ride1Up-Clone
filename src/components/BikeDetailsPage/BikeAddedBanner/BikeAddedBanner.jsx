@@ -58,7 +58,7 @@ const BikeAddedBanner = () => {
 			className={cart.bikeAddedDisplayBanner ? styles['banner-active'] : styles.banner}
 			style={
 				cart.bikeAddedDisplayBanner
-					? { height: content.current.scrollHeight }
+					? { height: content?.current?.scrollHeight }
 					: { height: '0px' }
 			}
 		>

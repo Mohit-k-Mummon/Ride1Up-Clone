@@ -30,7 +30,7 @@ const SiteMap = () => {
 						<Link to={'/product/rift'}>Rift</Link>
 						<Link to={'/product/roadster-v2'}>Roadster v2</Link>
 						<Link to={'/product/turris'}>Turris</Link>
-						<Link>Parts</Link>
+						<Link to={'/shop/parts'}>Parts</Link>
 						<Link>Open Box Ebikes</Link>
 					</div>
 					<div className={styles.company}>

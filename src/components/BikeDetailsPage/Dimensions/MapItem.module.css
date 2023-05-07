@@ -1,0 +1,32 @@
+.map-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	margin-bottom: 1.3rem;
+}
+
+.option {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: rgb(54, 54, 54);
+	white-space: nowrap;
+}
+
+.dots {
+	border-bottom: 2px dotted rgb(199, 199, 199);
+	height: 2px;
+	display: inline-block;
+	width: 100%;
+	font-size: 2rem;
+	position: relative;
+	bottom: 4px;
+	margin: 0 0.4rem;
+}
+
+.value {
+	font-size: 1.5rem;
+	line-height: 2.025rem;
+	font-weight: 400;
+	white-space: nowrap;
+}

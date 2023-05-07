@@ -28,7 +28,8 @@ import truck from '../../assets/BikeDetailsPage/delivery-truck-1.png';
 // JavaScript object storing image paths for bike models, sizes, and colors. Provides easy access to bike images for web applications or digital platforms.
 import { imageArray } from './bikeImagePath';
 
-const ProductShowcase = () => {
+const ProductShowcase = props => {
+	const { onVersionUpdate } = props;
 	// On component mount start at the top of the page
 	useEffect(() => {
 		window.scroll(0, 0);
@@ -47,9 +48,10 @@ const ProductShowcase = () => {
 
 	// UseEffect for scrolling to top of the page onMount and when states related to displaying bike change
 	useEffect(() => {
+		onVersionUpdate(version); // passing version up to parent, to then pass to dimensions component
 		const section = document.getElementById('top-notification-bar');
 		section.scrollIntoView({ behavior: 'smooth' });
-	}, [bike, version, color]);
+	}, [bike, version, color, onVersionUpdate]);
 
 	// This useEffect hook updates the state variables when the URL params or bikesArray array changes
 	useEffect(() => {

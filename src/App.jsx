@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
 
 import 'react-slick';
@@ -9,12 +9,14 @@ import RootLayout from './pages/Root';
 import HomePage from './pages/Home';
 import PartsAndAccessoriesPage from './pages/PartsAndAccessories';
 import BatteriesPage from './pages/Batteries';
-import AboutUsPage from './pages/AboutUs';
 import ContactUsPage from './pages/ContactUs';
 import ReviewsPage from './pages/Reviews';
 import CartPage from './pages/CartPage';
 import PromotionsPage from './pages/Promotions';
 import BikeDetailsPage from './pages/BikeDetailsPage';
+import Loading from './components/shared/Loading';
+
+const AboutUsPage = lazy(() => import('./pages/AboutUs'));
 
 const router = createBrowserRouter([
 	{
@@ -30,7 +32,14 @@ const router = createBrowserRouter([
 				],
 			},
 			{ path: '/product/:bikeId', element: <BikeDetailsPage /> },
-			{ path: '/about-us', element: <AboutUsPage /> },
+			{
+				path: '/about-us',
+				element: (
+					<Suspense fallback={<Loading />}>
+						<AboutUsPage />
+					</Suspense>
+				),
+			},
 			{ path: '/contact', element: <ContactUsPage /> },
 			{ path: '/social-reviews', element: <ReviewsPage /> },
 			{ path: '/cart', element: <CartPage /> },

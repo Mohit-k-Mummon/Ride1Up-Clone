@@ -16,7 +16,7 @@ const AboutUs = () => {
 		event.preventDefault();
 		// The navigate function is asynchronous, if we do not use await
 		// here then the section variable will be undefined
-		await navigate('/');
+		navigate('/');
 		const section = document.getElementById('shop-bikes-section');
 		section.scrollIntoView({ behavior: 'smooth' });
 	};

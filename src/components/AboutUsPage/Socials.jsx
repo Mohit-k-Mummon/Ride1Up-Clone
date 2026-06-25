@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './socials.module.css';
 
-import { ReactComponent as Twitter } from '../../assets/AboutUs/twitter.svg';
-import { ReactComponent as Facebook } from '../../assets/AboutUs/facebook.svg';
-import { ReactComponent as Instagram } from '../../assets/AboutUs/instagram.svg';
-import { ReactComponent as Youtube } from '../../assets/AboutUs/youtube.svg';
+import Twitter from '../../assets/AboutUs/twitter.svg?react';
+import Facebook from '../../assets/AboutUs/facebook.svg?react';
+import Instagram from '../../assets/AboutUs/instagram.svg?react';
+import Youtube from '../../assets/AboutUs/youtube.svg?react';
 
 const Socials = () => {
 	return (

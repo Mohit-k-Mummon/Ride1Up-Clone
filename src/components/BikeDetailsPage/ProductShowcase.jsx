@@ -22,7 +22,7 @@ import DetailsColorSwatch from './DetailsColorSwatch';
 import SliderContainer from './SliderContainer';
 
 // Icon
-import { ReactComponent as InfoIcon } from '../../assets/info.svg';
+import InfoIcon from '../../assets/info.svg?react';
 import truck from '../../assets/BikeDetailsPage/delivery-truck-1.png';
 
 // JavaScript object storing image paths for bike models, sizes, and colors. Provides easy access to bike images for web applications or digital platforms.

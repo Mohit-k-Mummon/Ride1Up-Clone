@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CartTotals.module.css';
 
-import { ReactComponent as PaypalLogo } from '../../assets/Cart/paypal.svg';
+import PaypalLogo from '../../assets/Cart/paypal.svg?react';
 import acceptedPayments from '../../assets/Cart/safe_checkout.png';
 
 // Redux

@@ -7,7 +7,7 @@ import chevron from '../../../assets/Navigation/down-arrow.png';
 import redChevron from '../../../assets/Navigation/red-chevron.png';
 import closeIcon from '../../../assets/Navigation/close.png';
 
-import { ReactComponent as Logo } from '../../../assets/Navigation/logo.svg';
+import Logo from '../../../assets/Navigation/logo.svg?react';
 
 // Router
 import { NavLink, useNavigate } from 'react-router-dom';

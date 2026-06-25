@@ -5,8 +5,8 @@ import styles from './FaqAccordianSection.module.css';
 import items from './Items';
 
 // Import two SVG icons
-import { ReactComponent as Plus } from '../../../assets/Home/plus-solid.svg';
-import { ReactComponent as Minus } from '../../../assets/Home/minus-solid.svg';
+import Plus from '../../../assets/Home/plus-solid.svg?react';
+import Minus from '../../../assets/Home/minus-solid.svg?react';
 
 import FaqItem from './FaqItem';
 

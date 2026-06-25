@@ -7,7 +7,7 @@ import bikesData from '../../../Bikes.json';
 import Bike from './Bike';
 
 // Images
-import { ReactComponent as ElectricIcon } from '../../../assets/Home/electric-icon.svg';
+import ElectricIcon from '../../../assets/Home/electric-icon.svg?react';
 
 const ShopBikesSection = () => {
 	return (
